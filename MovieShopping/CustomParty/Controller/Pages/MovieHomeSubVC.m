@@ -11,6 +11,8 @@
 #import "UIView+KGViewExtend.h"
 #import "MoreHotShowCell.h"
 #import "MoreSoonShowCell.h"
+#import "YYPublic.h"
+#import "FilmDetailVC.h"
 
 static NSString *adCellID = @"adCell";
 
@@ -157,6 +159,9 @@ static NSString *adCellID = @"adCell";
     else if ([eventName isEqualToString:Event_HotShowSellSelected]) {
         NSIndexPath *indexPath = (NSIndexPath *)userInfo;
         NSLog(@"cellSelected: %ld", (long)indexPath.row);
+        FilmDetailVC *vc = [FilmDetailVC new];
+        vc.sourceData = self.hotShowView.dataList[indexPath.row];
+        [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
     }
 }
 

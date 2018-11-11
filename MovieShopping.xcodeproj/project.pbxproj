@@ -136,6 +136,8 @@
 		E4CF7108219859C100002384 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF7106219859C100002384 /* JSDropDownMenu.m */; };
 		E4CF710C219861F600002384 /* CinemaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF710A219861F600002384 /* CinemaCell.m */; };
 		E4CF710D219861F600002384 /* CinemaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF710B219861F600002384 /* CinemaCell.xib */; };
+		E4CF71102198702000002384 /* FilmDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF710F2198702000002384 /* FilmDetailVC.m */; };
+		E4CF7113219876F200002384 /* FilmInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF7112219876F200002384 /* FilmInfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -395,6 +397,10 @@
 		E4CF7109219861F600002384 /* CinemaCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaCell.h; sourceTree = "<group>"; };
 		E4CF710A219861F600002384 /* CinemaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaCell.m; sourceTree = "<group>"; };
 		E4CF710B219861F600002384 /* CinemaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaCell.xib; sourceTree = "<group>"; };
+		E4CF710E2198702000002384 /* FilmDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmDetailVC.h; sourceTree = "<group>"; };
+		E4CF710F2198702000002384 /* FilmDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmDetailVC.m; sourceTree = "<group>"; };
+		E4CF7111219876F200002384 /* FilmInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmInfoView.h; sourceTree = "<group>"; };
+		E4CF7112219876F200002384 /* FilmInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmInfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +576,8 @@
 				E4CF7109219861F600002384 /* CinemaCell.h */,
 				E4CF710A219861F600002384 /* CinemaCell.m */,
 				E4CF710B219861F600002384 /* CinemaCell.xib */,
+				E4CF7111219876F200002384 /* FilmInfoView.h */,
+				E4CF7112219876F200002384 /* FilmInfoView.m */,
 				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
@@ -632,6 +640,8 @@
 				E4CF70B92198330200002384 /* FilmSoonSubTableVC.m */,
 				E4735F2E2196CB5C001BE69E /* MovieCinemaSubVC.h */,
 				E4735F2F2196CB5C001BE69E /* MovieCinemaSubVC.m */,
+				E4CF710E2198702000002384 /* FilmDetailVC.h */,
+				E4CF710F2198702000002384 /* FilmDetailVC.m */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -1106,6 +1116,7 @@
 				E4735F4D21972DEE001BE69E /* CWCarousel.m in Sources */,
 				E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */,
 				E4735F272196CAC3001BE69E /* YYBaseSubViewController.m in Sources */,
+				E4CF7113219876F200002384 /* FilmInfoView.m in Sources */,
 				E4CF70EF21983A6500002384 /* MJRefreshAutoGifFooter.m in Sources */,
 				E4735F302196CB5C001BE69E /* MovieCinemaSubVC.m in Sources */,
 				E4735F6D21972F22001BE69E /* NSObject+MJCoding.m in Sources */,
@@ -1143,6 +1154,7 @@
 				E4735F0C2196BB1B001BE69E /* YYHallNameView.swift in Sources */,
 				E4CF70EA21983A6500002384 /* MJRefreshAutoFooter.m in Sources */,
 				E4CF70F221983A6500002384 /* MJRefreshBackGifFooter.m in Sources */,
+				E4CF71102198702000002384 /* FilmDetailVC.m in Sources */,
 				E4CF70F321983A6500002384 /* MJRefreshBackNormalFooter.m in Sources */,
 				E49A88D921981234003EDD10 /* SDWebImageManager.m in Sources */,
 				E49A88E121981234003EDD10 /* UIImage+WebP.m in Sources */,

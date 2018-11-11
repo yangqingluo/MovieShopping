@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YYNavigationController.h"
 
 @interface YYPublic : NSObject
 
-//+ (YYPublic *)getInstance;
++ (YYPublic *)getInstance;
 
-
+@property (nonatomic, weak) YYNavigationController *mainNav;
 
 @end

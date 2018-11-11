@@ -7,6 +7,7 @@
 //
 
 #import "YYNavigationController.h"
+#import "YYPublic.h"
 
 @interface YYNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
@@ -19,6 +20,7 @@
     if (self) {
         self.interactivePopGestureRecognizer.delegate = self;
 //        self.navigationBarHidden = true;
+        [YYPublic getInstance].mainNav = self;
     }
     
     return self;
