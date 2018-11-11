@@ -1,22 +1,22 @@
 //
-//  YYBaseSubViewController.m
+//  FileSoonSubTableVC.m
 //  MovieShopping
 //
-//  Created by 7kers on 2018/11/10.
+//  Created by 7kers on 2018/11/11.
 //  Copyright © 2018年 yang. All rights reserved.
 //
 
-#import "YYBaseSubViewController.h"
+#import "FilmSoonSubTableVC.h"
 
-@interface YYBaseSubViewController ()
+@interface FilmSoonSubTableVC ()
 
 @end
 
-@implementation YYBaseSubViewController
+@implementation FilmSoonSubTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

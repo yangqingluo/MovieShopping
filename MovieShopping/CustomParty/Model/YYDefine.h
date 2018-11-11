@@ -24,8 +24,9 @@
 #define YY_NAVIGATION_BAR_HEIGHT        44.0
 #define YY_TAB_BAR_HEIGHT               (YYIsX ? 83.0 : 49.0)
 
-#define YYSeparatorColor           RGBA(0xdb, 0xdb, 0xdb, 1.0)
-#define YYTextColor                RGBA(0x21, 0x21, 0x21, 1.0)
+#define YYSeparatorColor            RGBA(0xdb, 0xdb, 0xdb, 1.0)
+#define YYTextColor                 RGBA(0x21, 0x21, 0x21, 1.0)
+#define YYMainColor                 RGBA(0xff, 0x00, 0x00, 1.0)
 
 #define YYRedColor                  RGBA(0xff, 0x00, 0x00, 1.0)
 #define YYLightRedColor             RGBA(0xff, 0x8b, 0x74, 1.0)

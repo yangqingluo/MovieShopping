@@ -11,9 +11,12 @@
 @implementation UIImage (Color)
 
 /** 根据颜色生成纯色图片 */
-+ (UIImage *)imageWithColor:(UIColor *)color
-{
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
++ (UIImage *)imageWithColor:(UIColor *)color {
+    return [[self class] imageWithColor:color withSize:CGSizeMake(1.0, 1.0)];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color withSize:(CGSize)size {
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     

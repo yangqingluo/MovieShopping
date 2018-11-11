@@ -27,7 +27,7 @@ static NSString *cellID = @"cell_hot_show";
     if (self) {
         CGFloat m_height = 30;
         _sellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _sellBtn.frame = CGRectMake(0, self.contentView.height - m_height, 60, m_height);
+        _sellBtn.frame = CGRectMake(0, self.showLabel.bottom + YYEdgeSmall, 60, m_height);
         _sellBtn.centerX = 0.5 * self.contentView.width;
         _sellBtn.titleLabel.font = [UIFont systemFontOfSize:YYButtonTitleFontSize];
         _sellBtn.layer.cornerRadius = 0.5 * _sellBtn.height;

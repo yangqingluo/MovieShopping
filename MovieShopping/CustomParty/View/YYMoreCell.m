@@ -13,7 +13,7 @@
 @implementation YYMoreCell
 
 - (instancetype)init {
-    self = [super initWithFrame:CGRectMake(0, 0, YYScreenWidth, 260)];
+    self = [super initWithFrame:CGRectMake(0, 0, YYScreenWidth, 280)];
     if (self) {
         
     }

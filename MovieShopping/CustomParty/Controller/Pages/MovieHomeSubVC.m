@@ -10,6 +10,7 @@
 #import "CWCarousel.h"
 #import "UIView+KGViewExtend.h"
 #import "MoreHotShowCell.h"
+#import "MoreSoonShowCell.h"
 
 static NSString *adCellID = @"adCell";
 
@@ -19,7 +20,7 @@ static NSString *adCellID = @"adCell";
 @property (nonatomic, strong) CWCarousel *carousel;
 @property (nonatomic, strong) UIView *topADView;
 @property (nonatomic, strong) MoreHotShowCell *hotShowView;
-@property (nonatomic, strong) YYMoreCell *soonShowView;
+@property (nonatomic, strong) MoreSoonShowCell *soonShowView;
 
 @end
 
@@ -37,7 +38,6 @@ static NSString *adCellID = @"adCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     [self buildHeader];
 }
 
@@ -99,11 +99,11 @@ static NSString *adCellID = @"adCell";
 }
 
 - (void)buildSoonShows {
-    NSString *jsonString = @"{\"movieList\":[{\"Id\":42964,\"BackgroundPicture\":\"http://p7.qhmsg.com/t01de9a61e79f600505.jpg?size=300x400\",\"ShowMark\":\"IMAX 3D\",\"ShowName\":\"毒液：致命守护者\",\"OpenDay\":\"2018-11-09\"}]}";
+    NSString *jsonString = @"{\"movieList\":[{\"Id\":42964,\"BackgroundPicture\":\"http://p7.qhmsg.com/t01de9a61e79f600505.jpg?size=300x400\",\"ShowMark\":\"IMAX 3D\",\"ShowName\":\"毒液：致命守护者\",\"OpenDay\":\"2018-11-09\"},{\"Id\":42964,\"BackgroundPicture\":\"http://p5.qhmsg.com/t01bd4c5321d4ff62d1.jpg?size=300x400\",\"ShowMark\":\"IMAX 2D\",\"ShowName\":\"三国杀·幻\",\"OpenDay\":\"2018-11-09\"},{\"Id\":42964,\"BackgroundPicture\":\"http://p3.qhmsg.com/t0179b3505c849aa2c0.jpg?size=300x400\",\"ShowName\":\"我的冤家是条狗\",\"OpenDay\":\"2018-11-09\",\"BuyPre\": 1},{\"Id\":42964,\"BackgroundPicture\":\"http://p2.qhmsg.com/t012a15d849652372cd.jpg?size=300x400\",\"ShowMark\":\"IMAX 3D\",\"ShowName\":\"名侦探柯南：零的执行人\",\"OpenDay\":\"2018-11-09\"},{\"Id\":42964,\"BackgroundPicture\":\"http://p7.qhmsg.com/t01f9de129513d458d9.jpg?size=300x400\",\"ShowMark\":\"\",\"ShowName\":\"你好，之华\",\"OpenDay\":\"2018-11-09\"}]}";
     NSArray *m_array = [jsonString mj_JSONObject][@"movieList"];
-    NSLog(@"%@", m_array);
     
-    self.soonShowView = [YYMoreCell new];
+    self.soonShowView = [MoreSoonShowCell new];
+    self.soonShowView.dataList = m_array;
     self.soonShowView.top = self.hotShowView.bottom;
     [self.headerView addSubview:self.soonShowView];
 }

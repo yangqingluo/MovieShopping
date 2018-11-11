@@ -6,8 +6,8 @@
 //  Copyright © 2018年 yang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YYBaseViewController.h"
 
-@interface YYBaseSubViewController : UIViewController
+@interface YYBaseSubViewController : YYBaseViewController
 
 @end

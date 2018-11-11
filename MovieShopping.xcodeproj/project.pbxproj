@@ -106,6 +106,10 @@
 		E49A88F3219814C5003EDD10 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A88F0219814C5003EDD10 /* FLAnimatedImageView.m */; };
 		E4CF70AB21981F9F00002384 /* YYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70AA21981F9F00002384 /* YYImageView.m */; };
 		E4CF70AE219824FA00002384 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70AD219824FA00002384 /* UIResponder+Router.m */; };
+		E4CF70B121982B9900002384 /* YYSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70B021982B9900002384 /* YYSlideSwitchView.m */; };
+		E4CF70B421982D6900002384 /* MoreSoonShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70B321982D6900002384 /* MoreSoonShowCell.m */; };
+		E4CF70B7219832A000002384 /* FilmHotSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70B6219832A000002384 /* FilmHotSubTableVC.m */; };
+		E4CF70BA2198330200002384 /* FilmSoonSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70B92198330200002384 /* FilmSoonSubTableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +312,14 @@
 		E4CF70AA21981F9F00002384 /* YYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYImageView.m; sourceTree = "<group>"; };
 		E4CF70AC219824FA00002384 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		E4CF70AD219824FA00002384 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		E4CF70AF21982B9900002384 /* YYSlideSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSlideSwitchView.h; sourceTree = "<group>"; };
+		E4CF70B021982B9900002384 /* YYSlideSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSlideSwitchView.m; sourceTree = "<group>"; };
+		E4CF70B221982D6900002384 /* MoreSoonShowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreSoonShowCell.h; sourceTree = "<group>"; };
+		E4CF70B321982D6900002384 /* MoreSoonShowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreSoonShowCell.m; sourceTree = "<group>"; };
+		E4CF70B5219832A000002384 /* FilmHotSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmHotSubTableVC.h; sourceTree = "<group>"; };
+		E4CF70B6219832A000002384 /* FilmHotSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmHotSubTableVC.m; sourceTree = "<group>"; };
+		E4CF70B82198330200002384 /* FilmSoonSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmSoonSubTableVC.h; sourceTree = "<group>"; };
+		E4CF70B92198330200002384 /* FilmSoonSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmSoonSubTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +477,8 @@
 				E49A88792197E9A3003EDD10 /* YYMoreCell.m */,
 				E49A887B2197FBFF003EDD10 /* MoreHotShowCell.h */,
 				E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */,
+				E4CF70B221982D6900002384 /* MoreSoonShowCell.h */,
+				E4CF70B321982D6900002384 /* MoreSoonShowCell.m */,
 				E49A8880219805C0003EDD10 /* YYCollectionView.h */,
 				E49A8881219805C0003EDD10 /* YYCollectionView.m */,
 				E49A888321980BEE003EDD10 /* YYCollectionCell.h */,
@@ -473,6 +487,8 @@
 				E49A888721980C7F003EDD10 /* YYLabel.m */,
 				E4CF70A921981F9F00002384 /* YYImageView.h */,
 				E4CF70AA21981F9F00002384 /* YYImageView.m */,
+				E4CF70AF21982B9900002384 /* YYSlideSwitchView.h */,
+				E4CF70B021982B9900002384 /* YYSlideSwitchView.m */,
 				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
@@ -527,6 +543,10 @@
 				E4735F292196CAE2001BE69E /* MovieHomeSubVC.m */,
 				E4735F2B2196CB2E001BE69E /* MovieFilmSubVC.h */,
 				E4735F2C2196CB2E001BE69E /* MovieFilmSubVC.m */,
+				E4CF70B5219832A000002384 /* FilmHotSubTableVC.h */,
+				E4CF70B6219832A000002384 /* FilmHotSubTableVC.m */,
+				E4CF70B82198330200002384 /* FilmSoonSubTableVC.h */,
+				E4CF70B92198330200002384 /* FilmSoonSubTableVC.m */,
 				E4735F2E2196CB5C001BE69E /* MovieCinemaSubVC.h */,
 				E4735F2F2196CB5C001BE69E /* MovieCinemaSubVC.m */,
 			);
@@ -854,7 +874,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CF70B121982B9900002384 /* YYSlideSwitchView.m in Sources */,
 				E4735F0E2196BB1B001BE69E /* YYRowIndexView.swift in Sources */,
+				E4CF70B7219832A000002384 /* FilmHotSubTableVC.m in Sources */,
 				E4735E9F2196B854001BE69E /* ViewController.swift in Sources */,
 				E49A88D421981234003EDD10 /* SDWebImageDownloader.m in Sources */,
 				E4735F3F2196D0E6001BE69E /* UIImage+Color.m in Sources */,
@@ -905,7 +927,9 @@
 				E49A888521980BEE003EDD10 /* YYCollectionCell.m in Sources */,
 				E4CF70AB21981F9F00002384 /* YYImageView.m in Sources */,
 				E49A88CD21981234003EDD10 /* SDAnimatedImageRep.m in Sources */,
+				E4CF70B421982D6900002384 /* MoreSoonShowCell.m in Sources */,
 				E4735ECE2196B922001BE69E /* SeatViewController.m in Sources */,
+				E4CF70BA2198330200002384 /* FilmSoonSubTableVC.m in Sources */,
 				E4735F152196BB1B001BE69E /* YYSeat.m in Sources */,
 				E49A88D321981234003EDD10 /* SDWebImageCompat.m in Sources */,
 				E4735F6F21972F22001BE69E /* NSObject+MJProperty.m in Sources */,

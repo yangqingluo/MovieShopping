@@ -28,12 +28,11 @@
         _showImageView.titleLabel.layer.masksToBounds = YES;
         [self.contentView addSubview:_showImageView];
         
-        _showLabel = [[YYLabel alloc] initWithFrame:CGRectMake(0, self.showImageView.bottom + YYEdge, self.contentView.width, self.contentView.height - self.showImageView.bottom - YYEdge)];
+        _showLabel = [[YYLabel alloc] initWithFrame:CGRectMake(0, self.showImageView.bottom + YYEdge, self.contentView.width, 30)];
         _showLabel.textColor = YYTextColor;
         _showLabel.font = [UIFont systemFontOfSize:YYLabelFontSizeSmall];
         _showLabel.textAlignment = NSTextAlignmentCenter;
         _showLabel.numberOfLines = 2;
-        _showLabel.verticalAlignment = VerticalAlignmentTop;
         [self.contentView addSubview:_showLabel];
     }
     return self;
