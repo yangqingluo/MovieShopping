@@ -9,47 +9,51 @@
 #import "MovieHomeSubVC.h"
 #import "CWCarousel.h"
 #import "UIView+KGViewExtend.h"
+#import "MoreHotShowCell.h"
+
+static NSString *adCellID = @"adCell";
 
 @interface MovieHomeSubVC ()<CWCarouselDatasource, CWCarouselDelegate>
 
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) CWCarousel *carousel;
 @property (nonatomic, strong) UIView *topADView;
+@property (nonatomic, strong) MoreHotShowCell *hotShowView;
+@property (nonatomic, strong) YYMoreCell *soonShowView;
 
 @end
 
 @implementation MovieHomeSubVC
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.carousel controllerWillAppear];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.carousel controllerWillDisAppear];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self buildHeader];
+}
+
+- (void)buildHeader {
     CATransition *tr = [CATransition animation];
     tr.type = @"cube";
     tr.subtype = kCATransitionFromRight;
     tr.duration = 0.25;
     [self.topADView.layer addAnimation:tr forKey:nil];
     
-    self.view.backgroundColor = [UIColor whiteColor];
     if(self.carousel) {
         [self.carousel releaseTimer];
         [self.carousel removeFromSuperview];
         self.carousel = nil;
     }
-    
-    self.topADView.backgroundColor = [UIColor whiteColor];
     CWFlowLayout *flowLayout = [[CWFlowLayout alloc] initWithStyle:CWCarouselStyle_Normal];
-    
-    //    /*
-    //     使用frame创建视图
-    //     */
-    //    CWCarousel *carousel = [[CWCarousel alloc] initWithFrame:self.topADView.bounds
-    //                                                    delegate:self
-    //                                                  datasource:self
-    //                                                  flowLayout:flowLayout];
-    //    [self.topADView addSubview:carousel];
-    
-    // 使用layout创建视图(使用masonry 或者 系统api)
     CWCarousel *carousel = [[CWCarousel alloc] initWithFrame:CGRectZero
                                                     delegate:self
                                                   datasource:self
@@ -70,29 +74,54 @@
     carousel.isAuto = YES;
     carousel.autoTimInterval = 2;
     carousel.endless = YES;
-    carousel.backgroundColor = [UIColor whiteColor];
-    [carousel registerViewClass:[UICollectionViewCell class] identifier:@"cellId"];
+    carousel.backgroundColor = [UIColor clearColor];
+    [carousel registerViewClass:[UICollectionViewCell class] identifier:adCellID];
     [carousel freshCarousel];
     self.carousel = carousel;
     
-    self.headerView.height = self.topADView.bottom;
     [self.headerView addSubview:self.topADView];
+    
+    [self buildHotShows];
+    [self buildSoonShows];
+    
+    self.headerView.height = self.soonShowView.bottom;
     self.tableView.tableHeaderView = self.headerView;
 }
 
-#pragma mark - getter
-- (UIView *)topADView {
-    if(!_topADView) {
-        self.topADView = [[UIView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, CGRectGetWidth(self.view.frame), 160)];
-    }
-    return _topADView;
+- (void)buildHotShows {
+    NSString *jsonString = @"{\"movieList\":[{\"Id\":42964,\"BackgroundPicture\":\"http://p7.qhmsg.com/t01de9a61e79f600505.jpg?size=300x400\",\"ShowMark\":\"IMAX 3D\",\"ShowName\":\"毒液：致命守护者\",\"OpenDay\":\"2018-11-09\"}]}";
+    NSArray *m_array = [jsonString mj_JSONObject][@"movieList"];
+    NSLog(@"%@", m_array);
+    
+    self.hotShowView = [MoreHotShowCell new];
+    self.hotShowView.top = self.topADView.bottom;
+    [self.headerView addSubview:self.hotShowView];
 }
 
+- (void)buildSoonShows {
+    NSString *jsonString = @"{\"movieList\":[{\"Id\":42964,\"BackgroundPicture\":\"http://p7.qhmsg.com/t01de9a61e79f600505.jpg?size=300x400\",\"ShowMark\":\"IMAX 3D\",\"ShowName\":\"毒液：致命守护者\",\"OpenDay\":\"2018-11-09\"}]}";
+    NSArray *m_array = [jsonString mj_JSONObject][@"movieList"];
+    NSLog(@"%@", m_array);
+    
+    self.soonShowView = [YYMoreCell new];
+    self.soonShowView.top = self.hotShowView.bottom;
+    [self.headerView addSubview:self.soonShowView];
+}
+
+#pragma mark - getter
 - (UIView *)headerView {
     if (!_headerView) {
         _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 0)];
+        _headerView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"ad_01.jpg"].CGImage);
     }
     return _headerView;
+}
+
+- (UIView *)topADView {
+    if(!_topADView) {
+        _topADView = [[UIView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, CGRectGetWidth(self.view.frame), 160)];
+    }
+    return _topADView;
 }
 
 #pragma mark -CWCarouselDatasource, CWCarouselDelegate
@@ -101,11 +130,11 @@
 }
 
 - (UICollectionViewCell *)viewForCarousel:(CWCarousel *)carousel indexPath:(NSIndexPath *)indexPath index:(NSInteger)index {
-    UICollectionViewCell *cell = [carousel.carouselView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [carousel.carouselView dequeueReusableCellWithReuseIdentifier:adCellID forIndexPath:indexPath];
     NSInteger kViewTag = 666;
     UIImageView *imgView = [cell.contentView viewWithTag:kViewTag];
     if(!imgView) {
-        imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, cell.contentView.bounds.size.width - 2 * 20, cell.contentView.bounds.size.height)];
+        imgView = [[UIImageView alloc] initWithFrame:CGRectMake(YYEdgeMiddle, YYEdge, cell.contentView.bounds.size.width - 2 * YYEdgeMiddle, cell.contentView.bounds.size.height - 2 * YYEdge)];
         imgView.tag = kViewTag;
         [cell.contentView addSubview:imgView];
         imgView.layer.masksToBounds = YES;

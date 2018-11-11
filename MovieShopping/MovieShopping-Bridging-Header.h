@@ -6,3 +6,4 @@
 #import "MovieController.h"
 #import "SeatViewController.h"
 #import "YYSeat.h"
+#import "UIView+KGViewExtend.h"

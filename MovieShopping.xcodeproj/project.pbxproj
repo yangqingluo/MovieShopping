@@ -24,7 +24,6 @@
 		E4735F112196BB1B001BE69E /* YYSeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF22196BB1B001BE69E /* YYSeatModel.swift */; };
 		E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */; };
 		E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF42196BB1B001BE69E /* YYSeatView.swift */; };
-		E4735F142196BB1B001BE69E /* YYViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF52196BB1B001BE69E /* YYViewExtension.swift */; };
 		E4735F152196BB1B001BE69E /* YYSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF72196BB1B001BE69E /* YYSeat.m */; };
 		E4735F1D2196C06C001BE69E /* YYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F1C2196C06C001BE69E /* YYBaseViewController.m */; };
 		E4735F242196C136001BE69E /* MovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F232196C136001BE69E /* MovieController.m */; };
@@ -65,6 +64,9 @@
 		E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8B21973A0E001BE69E /* ad_04.jpg */; };
 		E4735F9621973A0E001BE69E /* ad_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8C21973A0E001BE69E /* ad_05.jpg */; };
 		E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */; };
+		E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A88792197E9A3003EDD10 /* YYMoreCell.m */; };
+		E49A887D2197FBFF003EDD10 /* MoreHotShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */; };
+		E49A887F2197FEF8003EDD10 /* YYButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +112,6 @@
 		E4735EF22196BB1B001BE69E /* YYSeatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatModel.swift; sourceTree = "<group>"; };
 		E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatSelectionView.swift; sourceTree = "<group>"; };
 		E4735EF42196BB1B001BE69E /* YYSeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatView.swift; sourceTree = "<group>"; };
-		E4735EF52196BB1B001BE69E /* YYViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYViewExtension.swift; sourceTree = "<group>"; };
 		E4735EF62196BB1B001BE69E /* YYSeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSeat.h; sourceTree = "<group>"; };
 		E4735EF72196BB1B001BE69E /* YYSeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSeat.m; sourceTree = "<group>"; };
 		E4735EF82196BB1B001BE69E /* Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swift.h; sourceTree = "<group>"; };
@@ -186,6 +187,11 @@
 		E4735F8C21973A0E001BE69E /* ad_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_05.jpg; sourceTree = "<group>"; };
 		E49A887521973C00003EDD10 /* YYBaseSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseSubTableVC.h; sourceTree = "<group>"; };
 		E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseSubTableVC.m; sourceTree = "<group>"; };
+		E49A88782197E9A3003EDD10 /* YYMoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMoreCell.h; sourceTree = "<group>"; };
+		E49A88792197E9A3003EDD10 /* YYMoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMoreCell.m; sourceTree = "<group>"; };
+		E49A887B2197FBFF003EDD10 /* MoreHotShowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreHotShowCell.h; sourceTree = "<group>"; };
+		E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreHotShowCell.m; sourceTree = "<group>"; };
+		E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +247,6 @@
 				E4735F4521972DEE001BE69E /* ThirdParty */,
 				E4735F1E2196C0EC001BE69E /* CustomParty */,
 				E4735EF92196BB1B001BE69E /* Resouce */,
-				E4735EEA2196BB1B001BE69E /* YYMovieSeat */,
 				E4735EA02196B854001BE69E /* Main.storyboard */,
 				E4735EA32196B854001BE69E /* Assets.xcassets */,
 				E4735EA52196B854001BE69E /* LaunchScreen.storyboard */,
@@ -282,7 +287,6 @@
 				E4735EF22196BB1B001BE69E /* YYSeatModel.swift */,
 				E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */,
 				E4735EF42196BB1B001BE69E /* YYSeatView.swift */,
-				E4735EF52196BB1B001BE69E /* YYViewExtension.swift */,
 			);
 			path = YYMovieSeat;
 			sourceTree = "<group>";
@@ -333,8 +337,14 @@
 		E4735F212196C0EC001BE69E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4735EEA2196BB1B001BE69E /* YYMovieSeat */,
 				E4735F7E219738B6001BE69E /* UIView+KGViewExtend.h */,
 				E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */,
+				E49A88782197E9A3003EDD10 /* YYMoreCell.h */,
+				E49A88792197E9A3003EDD10 /* YYMoreCell.m */,
+				E49A887B2197FBFF003EDD10 /* MoreHotShowCell.h */,
+				E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */,
+				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,6 +630,7 @@
 				E4735F0E2196BB1B001BE69E /* YYRowIndexView.swift in Sources */,
 				E4735E9F2196B854001BE69E /* ViewController.swift in Sources */,
 				E4735F3F2196D0E6001BE69E /* UIImage+Color.m in Sources */,
+				E49A887D2197FBFF003EDD10 /* MoreHotShowCell.m in Sources */,
 				E4735F1D2196C06C001BE69E /* YYBaseViewController.m in Sources */,
 				E4735F6B21972F22001BE69E /* MJPropertyType.m in Sources */,
 				E4735F0D2196BB1B001BE69E /* YYIndicatorView.swift in Sources */,
@@ -637,9 +648,9 @@
 				E4735F6D21972F22001BE69E /* NSObject+MJCoding.m in Sources */,
 				E4735F6C21972F22001BE69E /* NSObject+MJClass.m in Sources */,
 				E4735F6721972F22001BE69E /* MJExtensionConst.m in Sources */,
+				E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */,
 				E4735F0A2196BB1B001BE69E /* JSONParse.swift in Sources */,
 				E4735F0B2196BB1B001BE69E /* YYCenterLineView.swift in Sources */,
-				E4735F142196BB1B001BE69E /* YYViewExtension.swift in Sources */,
 				E4735F412196D0E6001BE69E /* UIImage+SubImage.m in Sources */,
 				E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */,
 				E4735F112196BB1B001BE69E /* YYSeatModel.swift in Sources */,
@@ -654,6 +665,7 @@
 				E4735F372196CFCD001BE69E /* YYViewPublic.m in Sources */,
 				E4735F2D2196CB2E001BE69E /* MovieFilmSubVC.m in Sources */,
 				E4735F80219738B7001BE69E /* UIView+KGViewExtend.m in Sources */,
+				E49A887F2197FEF8003EDD10 /* YYButtonExtension.swift in Sources */,
 				E4735F6921972F22001BE69E /* MJProperty.m in Sources */,
 				E4735F792197309E001BE69E /* MBProgressHUD.m in Sources */,
 				E4735F2A2196CAE2001BE69E /* MovieHomeSubVC.m in Sources */,

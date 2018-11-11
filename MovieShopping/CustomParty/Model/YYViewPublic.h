@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "YYDefine.h"
+#import "MJExtension.h"
+#import "UIView+KGViewExtend.h"
 
 @interface YYViewPublic : NSObject
 

@@ -9,8 +9,8 @@
 #ifndef YYDefine_h
 #define YYDefine_h
 
-#define screen_width [UIScreen mainScreen].bounds.size.width
-#define screen_height [UIScreen mainScreen].bounds.size.height
+#define YYScreenWidth [UIScreen mainScreen].bounds.size.width
+#define YYScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #define YYWEAKSELF typeof(self) __weak weakself = self;
 
@@ -27,12 +27,16 @@
 #define YYSeparatorColor           RGBA(0xdb, 0xdb, 0xdb, 1.0)
 #define YYTextColor                RGBA(0x21, 0x21, 0x21, 1.0)
 
-#define appButtonTitleFontSizeSmall  14.0
-#define appButtonTitleFontSize       16.0
-#define appLabelFontSizeSmall        14.0
-#define appLabelFontSize             16.0
-#define appLabelFontSizeMiddle       18.0
-#define appSeparaterLineSize         0.5//分割线尺寸
-#define appPageSize                  10//获取分页数据时分页size
+#define YYButtonTitleFontSizeSmall  14.0
+#define YYButtonTitleFontSize       16.0
+#define YYLabelFontSizeSmall        14.0
+#define YYLabelFontSize             16.0
+#define YYLabelFontSizeMiddle       18.0
+
+#define YYEdgeSmall                   5.0
+#define YYEdge                        10.0
+#define YYEdgeMiddle                  15.0
+#define YYEdgeBig                     20.0
+#define YYEdgeHuge                    30.0
 
 #endif /* YYDefine_h */

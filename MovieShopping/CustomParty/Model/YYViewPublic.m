@@ -26,7 +26,7 @@ UIButton *NewBackButton(UIColor *color) {
 }
 
 UIButton *NewRightButton(UIImage *image, UIColor *color) {
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(screen_width - 64, 0, 64, 44)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(YYScreenWidth - 64, 0, 64, 44)];
     if (color) {
         image = [image imageWithColor:color];
     }
@@ -36,17 +36,17 @@ UIButton *NewRightButton(UIImage *image, UIColor *color) {
 }
 
 UIButton *NewTextButton(NSString *title, UIColor *textColor) {
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(screen_width - 64, 0, 64, 44)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(YYScreenWidth - 64, 0, 64, 44)];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor:textColor forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize:appButtonTitleFontSize];
+    btn.titleLabel.font = [UIFont systemFontOfSize:YYButtonTitleFontSize];
     return btn;
 }
 
 UILabel *NewLabel(CGRect frame, UIColor *textColor, UIFont *font, NSTextAlignment alignment) {
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.textColor = textColor ? textColor : YYTextColor;
-    label.font = font ? font : [UIFont systemFontOfSize:appLabelFontSize];
+    label.font = font ? font : [UIFont systemFontOfSize:YYLabelFontSize];
     label.textAlignment = alignment;
     return label;
 }
