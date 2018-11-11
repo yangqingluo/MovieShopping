@@ -35,7 +35,7 @@
 #define YYBlueColor                 RGBA(0x00, 0xa4, 0xff, 1.0)
 #define YYLightBlueColor            RGBA(0x3f, 0xcc, 0xe9, 1.0)
 #define YYDarkOrangeColor           RGBA(0xff, 0x8c, 0x00, 1.0)
-#define YYLightWhiteColor           RGBA(0xf8, 0xf8, 0xf8, 1.0)
+#define YYLightWhiteColor           RGBA(0xe0, 0xe0, 0xe0, 1.0)
 #define YYSilverColor               RGBA(0xc0, 0xc0, 0xc0, 1.0)
 
 #define YYButtonTitleFontSizeSmall  12.0

@@ -16,7 +16,7 @@ static NSString *cellID = @"cell_hot_show";
 
 @interface HotShowCollectionCell: YYCollectionCell
 
-@property (nonatomic, strong) UIButton *sellBtn;
+@property (nonatomic, strong) UIButton *buyBtn;
 
 @end
 
@@ -26,15 +26,15 @@ static NSString *cellID = @"cell_hot_show";
     self = [super initWithFrame:frame];
     if (self) {
         CGFloat m_height = 30;
-        _sellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _sellBtn.frame = CGRectMake(0, self.showLabel.bottom + YYEdgeSmall, 60, m_height);
-        _sellBtn.centerX = 0.5 * self.contentView.width;
-        _sellBtn.titleLabel.font = [UIFont systemFontOfSize:YYButtonTitleFontSize];
-        _sellBtn.layer.cornerRadius = 0.5 * _sellBtn.height;
-        _sellBtn.layer.masksToBounds = YES;
-        [_sellBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [self.contentView addSubview:_sellBtn];
-        [_sellBtn addTarget:self action:@selector(sellBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+        _buyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _buyBtn.frame = CGRectMake(0, self.showLabel.bottom + YYEdgeSmall, 50, m_height);
+        _buyBtn.centerX = 0.5 * self.contentView.width;
+        _buyBtn.titleLabel.font = [UIFont systemFontOfSize:YYButtonTitleFontSize];
+        _buyBtn.layer.cornerRadius = 0.5 * _buyBtn.height;
+        _buyBtn.layer.masksToBounds = YES;
+        [_buyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.contentView addSubview:_buyBtn];
+        [_buyBtn addTarget:self action:@selector(sellBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
@@ -78,14 +78,14 @@ static NSString *cellID = @"cell_hot_show";
     NSDictionary *dic = self.dataList[indexPath.row];
     [cell.showImageView sd_setImageWithURL:dic[@"BackgroundPicture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
     cell.showLabel.text = dic[@"ShowName"];
-    cell.sellBtn.tag = indexPath.row;
+    cell.buyBtn.tag = indexPath.row;
     if (dic[@"BuyPre"]) {
-        [cell.sellBtn setTitle:@"预售" forState:UIControlStateNormal];
-        cell.sellBtn.backgroundColor = YYBlueColor;
+        [cell.buyBtn setTitle:@"预售" forState:UIControlStateNormal];
+        cell.buyBtn.backgroundColor = YYBlueColor;
     }
     else {
-        [cell.sellBtn setTitle:@"购票" forState:UIControlStateNormal];
-        cell.sellBtn.backgroundColor = YYRedColor;
+        [cell.buyBtn setTitle:@"购票" forState:UIControlStateNormal];
+        cell.buyBtn.backgroundColor = YYRedColor;
     }
     if (dic[@"ShowMark"] && [(NSString *)dic[@"ShowMark"] length]) {
         cell.showImageView.titleLabel.text = dic[@"ShowMark"];
