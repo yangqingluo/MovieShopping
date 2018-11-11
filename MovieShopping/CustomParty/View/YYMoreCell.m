@@ -13,7 +13,7 @@
 @implementation YYMoreCell
 
 - (instancetype)init {
-    self = [super initWithFrame:CGRectMake(0, 0, YYScreenWidth, 240)];
+    self = [super initWithFrame:CGRectMake(0, 0, YYScreenWidth, 260)];
     if (self) {
         
     }
@@ -24,13 +24,14 @@
     [super layoutSubviews];
     self.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.headerView];
+    [self addSubview:self.collectionView];
 }
 
 #pragma mark - getter
 - (UIView *)headerView {
     if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), 60)];
-        UIView *redLine = [[UIView alloc] initWithFrame:CGRectMake(YYEdgeMiddle, 0, 4, 30)];
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), 50)];
+        UIView *redLine = [[UIView alloc] initWithFrame:CGRectMake(YYEdgeMiddle, 0, 4, 20)];
         redLine.backgroundColor = [UIColor redColor];
         redLine.centerY = 0.5 * _headerView.height;
         [_headerView addSubview:redLine];
@@ -50,6 +51,36 @@
         [_headerView addSubview:_moreBtn];
     }
     return _headerView;
+}
+
+- (YYCollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *_flowLayout=[[UICollectionViewFlowLayout alloc] init];
+        [_flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+        _flowLayout.headerReferenceSize = CGSizeMake(0, 0);
+        _flowLayout.footerReferenceSize = CGSizeMake(0, 0);
+        _flowLayout.minimumInteritemSpacing = 10.0;
+        _flowLayout.minimumLineSpacing = 10.0;
+        
+        _collectionView = [[YYCollectionView alloc]initWithFrame:CGRectMake(YYEdgeMiddle, self.headerView.bottom, self.width - YYEdgeMiddle, self.height - self.headerView.bottom) collectionViewLayout:_flowLayout];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.backgroundColor = [UIColor clearColor];
+    }
+    return _collectionView;
+}
+
+#pragma mark <UICollectionViewDataSource>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of items
+    return 0;
 }
 
 @end

@@ -21,4 +21,11 @@ UIButton *NewTextButton(NSString *title, UIColor *textColor);
 UILabel *NewLabel(CGRect frame, UIColor *textColor, UIFont *font, NSTextAlignment alignment);
 UIView *NewSeparatorLine(CGRect frame);
 
+//文本尺寸
+CGSize textSizeWithStringInContentWidth(NSString *text, UIFont *font,  CGFloat width);
+CGSize textSizeWithStringInContentHeight(NSString *text, UIFont *font,  CGFloat height);
+void adjustLabelWidth(UILabel *label);
+void adjustLabelWidthWithEdge(UILabel *label, CGFloat edge);
+void adjustLabelHeight(UILabel *label);
+
 @end

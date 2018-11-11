@@ -57,4 +57,39 @@ UIView *NewSeparatorLine(CGRect frame) {
     return lineView;
 }
 
+//文本尺寸
+CGSize textSizeWithStringInContentWidth(NSString *text, UIFont *font,  CGFloat width) {
+    NSMutableParagraphStyle *paragraphStyle= [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = 0;
+    
+    NSStringDrawingOptions drawOptions = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    NSDictionary *attibutes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+    
+    return [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:drawOptions attributes:attibutes context:nil].size;
+}
+
+CGSize textSizeWithStringInContentHeight(NSString *text, UIFont *font, CGFloat height) {
+    NSMutableParagraphStyle *paragraphStyle= [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = 0;
+    
+    NSStringDrawingOptions drawOptions = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    NSDictionary *attibutes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+    
+    return [text boundingRectWithSize:CGSizeMake(MAXFLOAT, height) options:drawOptions attributes:attibutes context:nil].size;
+}
+
+void adjustLabelWidth(UILabel *label) {
+    adjustLabelWidthWithEdge(label, 0.0);
+}
+
+void adjustLabelWidthWithEdge(UILabel *label, CGFloat edge) {
+    label.width = ceil(textSizeWithStringInContentHeight(label.text, label.font, label.height).width) + 2 * edge;//根据苹果官方文档介绍，计算出来的值比实际需要的值略小，故需要对其向上取整，这样子获取的高度才是我们所需要的。
+}
+
+void adjustLabelHeight(UILabel *label) {
+    label.height = ceil(textSizeWithStringInContentWidth(label.text, label.font, label.height).height);
+}
+
 @end

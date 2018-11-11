@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YYCollectionView.h"
 
-@interface YYMoreCell : UIView
+@interface YYMoreCell : UIView<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) UILabel *headerLabel;
 @property (nonatomic, strong) UIButton *moreBtn;
+@property (nonatomic, strong) YYCollectionView *collectionView;
+@property (nonatomic, copy) NSArray *dataList;
 
 @end
