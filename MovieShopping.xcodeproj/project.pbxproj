@@ -138,6 +138,13 @@
 		E4CF710D219861F600002384 /* CinemaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF710B219861F600002384 /* CinemaCell.xib */; };
 		E4CF71102198702000002384 /* FilmDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF710F2198702000002384 /* FilmDetailVC.m */; };
 		E4CF7113219876F200002384 /* FilmInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF7112219876F200002384 /* FilmInfoView.m */; };
+		E4CF711A21987FF300002384 /* FilmScoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF711821987FF300002384 /* FilmScoreCell.m */; };
+		E4CF711B21987FF300002384 /* FilmScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF711921987FF300002384 /* FilmScoreCell.xib */; };
+		E4CF711F2198809000002384 /* YYStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF711E2198809000002384 /* YYStarRatingView.m */; };
+		E4CF712921988A5700002384 /* NSMutableAttributedString+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712221988A5700002384 /* NSMutableAttributedString+Config.m */; };
+		E4CF712A21988A5700002384 /* NSMutableAttributedString+CTFrameRef.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712421988A5700002384 /* NSMutableAttributedString+CTFrameRef.m */; };
+		E4CF712B21988A5700002384 /* TLAttributedLabelUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712621988A5700002384 /* TLAttributedLabelUtils.m */; };
+		E4CF712C21988A5700002384 /* TLDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712821988A5700002384 /* TLDisplayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -401,6 +408,19 @@
 		E4CF710F2198702000002384 /* FilmDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmDetailVC.m; sourceTree = "<group>"; };
 		E4CF7111219876F200002384 /* FilmInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmInfoView.h; sourceTree = "<group>"; };
 		E4CF7112219876F200002384 /* FilmInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmInfoView.m; sourceTree = "<group>"; };
+		E4CF711721987FF300002384 /* FilmScoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmScoreCell.h; sourceTree = "<group>"; };
+		E4CF711821987FF300002384 /* FilmScoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmScoreCell.m; sourceTree = "<group>"; };
+		E4CF711921987FF300002384 /* FilmScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmScoreCell.xib; sourceTree = "<group>"; };
+		E4CF711D2198809000002384 /* YYStarRatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYStarRatingView.h; sourceTree = "<group>"; };
+		E4CF711E2198809000002384 /* YYStarRatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYStarRatingView.m; sourceTree = "<group>"; };
+		E4CF712121988A5700002384 /* NSMutableAttributedString+Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Config.h"; sourceTree = "<group>"; };
+		E4CF712221988A5700002384 /* NSMutableAttributedString+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Config.m"; sourceTree = "<group>"; };
+		E4CF712321988A5700002384 /* NSMutableAttributedString+CTFrameRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CTFrameRef.h"; sourceTree = "<group>"; };
+		E4CF712421988A5700002384 /* NSMutableAttributedString+CTFrameRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CTFrameRef.m"; sourceTree = "<group>"; };
+		E4CF712521988A5700002384 /* TLAttributedLabelUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAttributedLabelUtils.h; sourceTree = "<group>"; };
+		E4CF712621988A5700002384 /* TLAttributedLabelUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAttributedLabelUtils.m; sourceTree = "<group>"; };
+		E4CF712721988A5700002384 /* TLDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDisplayView.h; sourceTree = "<group>"; };
+		E4CF712821988A5700002384 /* TLDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDisplayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,33 +571,22 @@
 		E4735F212196C0EC001BE69E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF711C2198805F00002384 /* Cell */,
 				E4735EEA2196BB1B001BE69E /* YYMovieSeat */,
 				E4735F7E219738B6001BE69E /* UIView+KGViewExtend.h */,
 				E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */,
-				E49A88782197E9A3003EDD10 /* YYMoreCell.h */,
-				E49A88792197E9A3003EDD10 /* YYMoreCell.m */,
-				E49A887B2197FBFF003EDD10 /* MoreHotShowCell.h */,
-				E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */,
-				E4CF70B221982D6900002384 /* MoreSoonShowCell.h */,
-				E4CF70B321982D6900002384 /* MoreSoonShowCell.m */,
 				E49A8880219805C0003EDD10 /* YYCollectionView.h */,
 				E49A8881219805C0003EDD10 /* YYCollectionView.m */,
-				E49A888321980BEE003EDD10 /* YYCollectionCell.h */,
-				E49A888421980BEE003EDD10 /* YYCollectionCell.m */,
 				E49A888621980C7F003EDD10 /* YYLabel.h */,
 				E49A888721980C7F003EDD10 /* YYLabel.m */,
 				E4CF70A921981F9F00002384 /* YYImageView.h */,
 				E4CF70AA21981F9F00002384 /* YYImageView.m */,
 				E4CF70AF21982B9900002384 /* YYSlideSwitchView.h */,
 				E4CF70B021982B9900002384 /* YYSlideSwitchView.m */,
-				E4CF70FE21983B9700002384 /* FilmCell.h */,
-				E4CF70FF21983B9700002384 /* FilmCell.m */,
-				E4CF710021983B9700002384 /* FilmCell.xib */,
-				E4CF7109219861F600002384 /* CinemaCell.h */,
-				E4CF710A219861F600002384 /* CinemaCell.m */,
-				E4CF710B219861F600002384 /* CinemaCell.xib */,
 				E4CF7111219876F200002384 /* FilmInfoView.h */,
 				E4CF7112219876F200002384 /* FilmInfoView.m */,
+				E4CF711D2198809000002384 /* YYStarRatingView.h */,
+				E4CF711E2198809000002384 /* YYStarRatingView.m */,
 				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
@@ -599,6 +608,7 @@
 		E4735F4521972DEE001BE69E /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF712021988A5700002384 /* DisplayMoreText */,
 				E4CF7103219859C100002384 /* JSDropDownMenu */,
 				E4CF70BB21983A6500002384 /* MJRefresh */,
 				E49A88EC219814C5003EDD10 /* FLAnimatedImage */,
@@ -927,6 +937,45 @@
 			path = JSDropDownMenu;
 			sourceTree = "<group>";
 		};
+		E4CF711C2198805F00002384 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E49A88782197E9A3003EDD10 /* YYMoreCell.h */,
+				E49A88792197E9A3003EDD10 /* YYMoreCell.m */,
+				E49A887B2197FBFF003EDD10 /* MoreHotShowCell.h */,
+				E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */,
+				E4CF70B221982D6900002384 /* MoreSoonShowCell.h */,
+				E4CF70B321982D6900002384 /* MoreSoonShowCell.m */,
+				E49A888321980BEE003EDD10 /* YYCollectionCell.h */,
+				E49A888421980BEE003EDD10 /* YYCollectionCell.m */,
+				E4CF70FE21983B9700002384 /* FilmCell.h */,
+				E4CF70FF21983B9700002384 /* FilmCell.m */,
+				E4CF710021983B9700002384 /* FilmCell.xib */,
+				E4CF7109219861F600002384 /* CinemaCell.h */,
+				E4CF710A219861F600002384 /* CinemaCell.m */,
+				E4CF710B219861F600002384 /* CinemaCell.xib */,
+				E4CF711721987FF300002384 /* FilmScoreCell.h */,
+				E4CF711821987FF300002384 /* FilmScoreCell.m */,
+				E4CF711921987FF300002384 /* FilmScoreCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E4CF712021988A5700002384 /* DisplayMoreText */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF712121988A5700002384 /* NSMutableAttributedString+Config.h */,
+				E4CF712221988A5700002384 /* NSMutableAttributedString+Config.m */,
+				E4CF712321988A5700002384 /* NSMutableAttributedString+CTFrameRef.h */,
+				E4CF712421988A5700002384 /* NSMutableAttributedString+CTFrameRef.m */,
+				E4CF712521988A5700002384 /* TLAttributedLabelUtils.h */,
+				E4CF712621988A5700002384 /* TLAttributedLabelUtils.m */,
+				E4CF712721988A5700002384 /* TLDisplayView.h */,
+				E4CF712821988A5700002384 /* TLDisplayView.m */,
+			);
+			path = DisplayMoreText;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1051,6 +1100,7 @@
 				E4735EA22196B854001BE69E /* Main.storyboard in Resources */,
 				E4735F9421973A0E001BE69E /* ad_03.jpg in Resources */,
 				E4735F8D21973A0E001BE69E /* seats 0.plist in Resources */,
+				E4CF711B21987FF300002384 /* FilmScoreCell.xib in Resources */,
 				E4735F9621973A0E001BE69E /* ad_05.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1095,6 +1145,7 @@
 				E4CF70EB21983A6500002384 /* MJRefreshBackFooter.m in Sources */,
 				E49A88E321981234003EDD10 /* UIImageView+WebCache.m in Sources */,
 				E49A88DA21981234003EDD10 /* SDWebImagePrefetcher.m in Sources */,
+				E4CF712A21988A5700002384 /* NSMutableAttributedString+CTFrameRef.m in Sources */,
 				E4CF70F621983A6500002384 /* MJRefreshNormalHeader.m in Sources */,
 				E49A88CA21981234003EDD10 /* NSButton+WebCache.m in Sources */,
 				E49A88D721981234003EDD10 /* SDWebImageGIFCoder.m in Sources */,
@@ -1102,6 +1153,7 @@
 				E4735F782197309E001BE69E /* MBProgressHUD+Add.m in Sources */,
 				E4CF710C219861F600002384 /* CinemaCell.m in Sources */,
 				E4CF70FB21983A6500002384 /* UIScrollView+MJExtension.m in Sources */,
+				E4CF712B21988A5700002384 /* TLAttributedLabelUtils.m in Sources */,
 				E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */,
 				E4735F7021972F22001BE69E /* NSString+MJExtension.m in Sources */,
 				E49A88E021981234003EDD10 /* UIImage+MultiFormat.m in Sources */,
@@ -1116,6 +1168,7 @@
 				E4735F4D21972DEE001BE69E /* CWCarousel.m in Sources */,
 				E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */,
 				E4735F272196CAC3001BE69E /* YYBaseSubViewController.m in Sources */,
+				E4CF711A21987FF300002384 /* FilmScoreCell.m in Sources */,
 				E4CF7113219876F200002384 /* FilmInfoView.m in Sources */,
 				E4CF70EF21983A6500002384 /* MJRefreshAutoGifFooter.m in Sources */,
 				E4735F302196CB5C001BE69E /* MovieCinemaSubVC.m in Sources */,
@@ -1148,6 +1201,7 @@
 				E4735F152196BB1B001BE69E /* YYSeat.m in Sources */,
 				E4CF70ED21983A6500002384 /* MJRefreshFooter.m in Sources */,
 				E49A88D321981234003EDD10 /* SDWebImageCompat.m in Sources */,
+				E4CF712C21988A5700002384 /* TLDisplayView.m in Sources */,
 				E4735F6F21972F22001BE69E /* NSObject+MJProperty.m in Sources */,
 				E4735F4E21972DEE001BE69E /* CWFlowLayout.m in Sources */,
 				E4CF70F521983A6500002384 /* MJRefreshGifHeader.m in Sources */,
@@ -1160,10 +1214,12 @@
 				E49A88E121981234003EDD10 /* UIImage+WebP.m in Sources */,
 				E49A88D221981234003EDD10 /* SDWebImageCodersManager.m in Sources */,
 				E4735F342196CF9A001BE69E /* YYPublic.m in Sources */,
+				E4CF712921988A5700002384 /* NSMutableAttributedString+Config.m in Sources */,
 				E4735F102196BB1B001BE69E /* YYSeatButton.swift in Sources */,
 				E49A88CC21981234003EDD10 /* NSImage+WebCache.m in Sources */,
 				E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */,
 				E4CF710121983B9700002384 /* FilmCell.m in Sources */,
+				E4CF711F2198809000002384 /* YYStarRatingView.m in Sources */,
 				E4CF70F921983A6500002384 /* MJRefreshConst.m in Sources */,
 				E4735F372196CFCD001BE69E /* YYViewPublic.m in Sources */,
 				E4CF70EE21983A6500002384 /* MJRefreshHeader.m in Sources */,

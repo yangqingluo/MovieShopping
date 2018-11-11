@@ -94,7 +94,7 @@ static NSString *cellID = @"cell_hot_show";
     }
     else {
         cell.showImageView.titleLabel.text = @"";
-        cell.showImageView.titleLabel.hidden = NO;
+        cell.showImageView.titleLabel.hidden = YES;
     }
     return cell;
 }
