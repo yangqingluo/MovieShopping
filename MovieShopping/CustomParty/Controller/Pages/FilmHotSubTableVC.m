@@ -55,4 +55,5 @@
     cell.leadingRoleLabel.text = [NSString stringWithFormat:@"主演：%@", dic[@"LeadingRole"]];
     return cell;
 }
+
 @end
