@@ -6,8 +6,8 @@
 //  Copyright © 2018年 yang. All rights reserved.
 //
 
-#import "YYBaseSubViewController.h"
+#import "YYBaseSubTableVC.h"
 
-@interface MovieCinemaSubVC : YYBaseSubViewController
+@interface MovieCinemaSubVC : YYBaseSubTableVC
 
 @end

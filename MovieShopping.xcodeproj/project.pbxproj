@@ -132,6 +132,10 @@
 		E4CF70FD21983A6500002384 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70E921983A6500002384 /* UIView+MJExtension.m */; };
 		E4CF710121983B9700002384 /* FilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF70FF21983B9700002384 /* FilmCell.m */; };
 		E4CF710221983B9700002384 /* FilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF710021983B9700002384 /* FilmCell.xib */; };
+		E4CF7107219859C100002384 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF7104219859C100002384 /* ico_make.png */; };
+		E4CF7108219859C100002384 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF7106219859C100002384 /* JSDropDownMenu.m */; };
+		E4CF710C219861F600002384 /* CinemaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF710A219861F600002384 /* CinemaCell.m */; };
+		E4CF710D219861F600002384 /* CinemaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CF710B219861F600002384 /* CinemaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -385,6 +389,12 @@
 		E4CF70FE21983B9700002384 /* FilmCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmCell.h; sourceTree = "<group>"; };
 		E4CF70FF21983B9700002384 /* FilmCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmCell.m; sourceTree = "<group>"; };
 		E4CF710021983B9700002384 /* FilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCell.xib; sourceTree = "<group>"; };
+		E4CF7104219859C100002384 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		E4CF7105219859C100002384 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
+		E4CF7106219859C100002384 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
+		E4CF7109219861F600002384 /* CinemaCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaCell.h; sourceTree = "<group>"; };
+		E4CF710A219861F600002384 /* CinemaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaCell.m; sourceTree = "<group>"; };
+		E4CF710B219861F600002384 /* CinemaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -557,6 +567,9 @@
 				E4CF70FE21983B9700002384 /* FilmCell.h */,
 				E4CF70FF21983B9700002384 /* FilmCell.m */,
 				E4CF710021983B9700002384 /* FilmCell.xib */,
+				E4CF7109219861F600002384 /* CinemaCell.h */,
+				E4CF710A219861F600002384 /* CinemaCell.m */,
+				E4CF710B219861F600002384 /* CinemaCell.xib */,
 				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
@@ -578,6 +591,7 @@
 		E4735F4521972DEE001BE69E /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF7103219859C100002384 /* JSDropDownMenu */,
 				E4CF70BB21983A6500002384 /* MJRefresh */,
 				E49A88EC219814C5003EDD10 /* FLAnimatedImage */,
 				E49A888921981233003EDD10 /* SDWebImage */,
@@ -893,6 +907,16 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		E4CF7103219859C100002384 /* JSDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF7104219859C100002384 /* ico_make.png */,
+				E4CF7105219859C100002384 /* JSDropDownMenu.h */,
+				E4CF7106219859C100002384 /* JSDropDownMenu.m */,
+			);
+			path = JSDropDownMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1005,9 +1029,11 @@
 				E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */,
 				E4CF70F821983A6500002384 /* MJRefresh.bundle in Resources */,
 				E4735F9321973A0E001BE69E /* ad_02.jpg in Resources */,
+				E4CF710D219861F600002384 /* CinemaCell.xib in Resources */,
 				E4735F9221973A0E001BE69E /* ad_01.jpg in Resources */,
 				E4735EA42196B854001BE69E /* Assets.xcassets in Resources */,
 				E4735F9121973A0E001BE69E /* seats 4.plist in Resources */,
+				E4CF7107219859C100002384 /* ico_make.png in Resources */,
 				E4735F9021973A0E001BE69E /* seats 3.plist in Resources */,
 				E4735F8F21973A0E001BE69E /* seats 2.plist in Resources */,
 				E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */,
@@ -1064,6 +1090,7 @@
 				E49A88D721981234003EDD10 /* SDWebImageGIFCoder.m in Sources */,
 				E4735F6821972F22001BE69E /* MJFoundation.m in Sources */,
 				E4735F782197309E001BE69E /* MBProgressHUD+Add.m in Sources */,
+				E4CF710C219861F600002384 /* CinemaCell.m in Sources */,
 				E4CF70FB21983A6500002384 /* UIScrollView+MJExtension.m in Sources */,
 				E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */,
 				E4735F7021972F22001BE69E /* NSString+MJExtension.m in Sources */,
@@ -1103,6 +1130,7 @@
 				E4CF70AB21981F9F00002384 /* YYImageView.m in Sources */,
 				E4CF70FC21983A6500002384 /* UIScrollView+MJRefresh.m in Sources */,
 				E49A88CD21981234003EDD10 /* SDAnimatedImageRep.m in Sources */,
+				E4CF7108219859C100002384 /* JSDropDownMenu.m in Sources */,
 				E4CF70B421982D6900002384 /* MoreSoonShowCell.m in Sources */,
 				E4735ECE2196B922001BE69E /* SeatViewController.m in Sources */,
 				E4CF70BA2198330200002384 /* FilmSoonSubTableVC.m in Sources */,
