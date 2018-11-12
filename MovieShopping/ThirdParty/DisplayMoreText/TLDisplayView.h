@@ -13,8 +13,8 @@
 @protocol TLDisplayViewDelegate <NSObject>
 
 @required
-- (void)displayView:(TLDisplayView *)label openHeight:(CGFloat)height;
-- (void)displayView:(TLDisplayView *)label closeHeight:(CGFloat)height;
+
+- (void)displayView:(TLDisplayView *)view textHeight:(CGFloat)height;
 
 @end
 

@@ -369,10 +369,12 @@ static NSUInteger const kMaxNumberOfLines = 100000;
             
             self.moreRange = [_currentAttString.string rangeOfString:_attributedCloseString.string];
             CGSize size = [self sizeThatFits:CGSizeMake(self.width, MAXFLOAT)];
-           
+            CGRect frame = self.frame;
+            frame.size = size;
+            self.frame = frame;
             // 代理重新设置高度
-            if ([self.delegate respondsToSelector:@selector(displayView:openHeight:)]) {
-                [self.delegate displayView:self openHeight:size.height];
+            if ([self.delegate respondsToSelector:@selector(displayView:textHeight:)]) {
+                [self.delegate displayView:self textHeight:size.height];
             }
         }
         // 显示 ［点击收起］
@@ -386,10 +388,12 @@ static NSUInteger const kMaxNumberOfLines = 100000;
             self.moreRange = [drawString.string rangeOfString:_attributedOpenString.string];
             
             CGSize size = [self sizeThatFits:CGSizeMake(self.width, MAXFLOAT)];
-
+            CGRect frame = self.frame;
+            frame.size = size;
+            self.frame = frame;
             // 代理重新设置高度
-            if ([self.delegate respondsToSelector:@selector(displayView:closeHeight:)]) {
-                [self.delegate displayView:self closeHeight:size.height];
+            if ([self.delegate respondsToSelector:@selector(displayView:textHeight:)]) {
+                [self.delegate displayView:self textHeight:-size.height];
             }
         }
         

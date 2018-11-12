@@ -43,6 +43,8 @@ static NSString *adCellID = @"adCell";
     [self buildHeader];
     self.tableView.allowsSelection = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+//    [self loadData];
 }
 
 - (void)buildHeader {
@@ -83,26 +85,84 @@ static NSString *adCellID = @"adCell";
     [carousel freshCarousel];
     self.carousel = carousel;
     
-//    [self.headerView addSubview:self.topADView];
+    [self.headerView addSubview:self.topADView];
     self.headerView.height = self.topADView.bottom;
-    [self.view insertSubview:self.headerView atIndex:0];
-    
-    UIView *m_view = [[UIView alloc] initWithFrame:self.headerView.frame];
-    [m_view addSubview:self.topADView];
-    self.tableView.tableHeaderView = m_view;
-    
-    self.headerView.height += YYEdgeMiddle;
+    self.tableView.tableHeaderView = self.headerView;
 }
 
 - (void)cellHeaderAllBtnAction:(UIButton *)button {
     NSLog(@"%ld", (long)button.tag);
 }
 
+#pragma mark - Networking
+- (void)loadData {
+    [self showHudInView:self.view hint:nil];
+    
+    //1.创建队列组
+    dispatch_group_t group = dispatch_group_create();
+    //2.创建队列
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //3.添加请求
+//    dispatch_group_async(group, queue, ^{
+//        dispatch_group_enter(group);
+//        [[YYNetwork getInstance] POST:@"/getFilm/getHotFilmList" parameters:@{@"cityId": @70} headers:nil response:^(id response, NSError *error) {
+//            dispatch_group_leave(group);
+//            if (error) {
+//
+//            }
+//            else {
+//                NSLog(@"%@", [self logDic:response]);
+//            }
+//        }];
+//    });
+    
+    dispatch_group_async(group, queue, ^{
+        dispatch_group_enter(group);
+        [[YYNetwork getInstance] getHTTPPath:@"http://192.168.2.101/movie/detail/154563" response:^(id response, NSError *error) {
+            dispatch_group_leave(group);
+            if (error) {
+                
+            }
+            else {
+                NSLog(@"%@", [self logDic:response]);
+            }
+        }];
+    });
+    
+    //4.队列组所有请求完成回调刷新UI
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [self hideHud];
+        [self.tableView reloadData];
+    });
+}
+
+// log NSSet with UTF8
+// if not ,log will be \Uxxx
+- (NSString *)logDic:(NSDictionary *)dic {
+    if (![dic count]) {
+        return nil;
+    }
+    NSString *tempStr1 =
+    [[dic description] stringByReplacingOccurrencesOfString:@"\\u"
+                                                 withString:@"\\U"];
+    NSString *tempStr2 =
+    [tempStr1 stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+    NSString *tempStr3 =
+    [[@"\"" stringByAppendingString:tempStr2] stringByAppendingString:@"\""];
+    NSData *tempData = [tempStr3 dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *str =
+//    [NSPropertyListSerialization propertyListFromData:tempData
+//                                     mutabilityOption:NSPropertyListImmutable
+//                                               format:NULL
+//                                     errorDescription:NULL];
+    [NSPropertyListSerialization propertyListWithData:tempData options:NSPropertyListImmutable format:NULL error:NULL];
+    return str;
+}
+
 #pragma mark - getter
 - (UIView *)headerView {
     if (!_headerView) {
         _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 0)];
-        _headerView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"ad_01.jpg"].CGImage);
     }
     return _headerView;
 }

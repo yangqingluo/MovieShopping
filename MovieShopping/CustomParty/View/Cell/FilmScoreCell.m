@@ -12,7 +12,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    self.likeBtn.layer.cornerRadius = 5;
+    self.likeBtn.layer.masksToBounds = YES;
+    self.watchedBtn.layer.cornerRadius = 5;
+    self.watchedBtn.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

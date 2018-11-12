@@ -17,6 +17,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *wishLabel;
 @property (weak, nonatomic) IBOutlet UIButton *likeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *watchedBtn;
-@property (strong, nonatomic) TLDisplayView *displayView;
 
 @end

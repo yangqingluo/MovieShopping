@@ -18,12 +18,12 @@
 #import "PerformerListVC.h"
 
 @interface FilmDetailVC ()<TLDisplayViewDelegate> {
-    CGFloat _textHeight;
-    TLDisplayView *_displayView;//电影简介
+    
 }
 
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) FilmInfoView *infoView;
+@property (nonatomic, strong) FilmScoreCell *scoreCell;
 
 @property (nonatomic,strong) NSDictionary *headerInfoDic;
 @property (nonatomic,strong) NSArray *directorsList;//导演列表
@@ -107,7 +107,7 @@
 
 - (void)cellFooterMoreBtnAction:(UIButton *)button {
     switch (button.tag) {
-        case 1: {
+        case 0: {
             PerformerListVC *vc = [[PerformerListVC alloc] initWithStyle:UITableViewStylePlain];
             vc.sourceData = self.sourceData;
             vc.performerList = @[self.directorsList, self.actorsList];
@@ -123,8 +123,7 @@
 #pragma mark - getter
 - (UIView *)headerView {
     if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT + 180)];
-        _headerView.backgroundColor = YYLightRedColor;
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 0)];
         
         NSDictionary *dic = self.sourceData;
         _infoView = [[FilmInfoView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, _headerView.width, 180.0)];
@@ -142,35 +141,58 @@
             _infoView.showImageView.titleLabel.text = @"";
             _infoView.showImageView.titleLabel.hidden = YES;
         }
+        
+        UIView *m_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _infoView.width, _infoView.bottom)];
+        m_view.backgroundColor = YYLightRedColor;
+        [_headerView addSubview:m_view];
         [_headerView addSubview:_infoView];
+        
+        NSString *nibName = NSStringFromClass([FilmScoreCell class]);
+        FilmScoreCell *cell = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
+        
+        cell.scoreLabel.text = dic[@"Remark"];
+        cell.scoreView.value = [dic[@"Remark"] doubleValue] / 2.0;
+        cell.wishLabel = dic[@"Wish"];
+        TLDisplayView *_displayView = [[TLDisplayView alloc] init];
+        _displayView.delegate = self;
+        _displayView.font = [UIFont systemFontOfSize: 14.0];
+        _displayView.backgroundColor = [UIColor clearColor];
+        _displayView.numberOfLines = 3;
+        [_displayView setText:dic[@"Description"]];
+        [_displayView setOpenString:@"展开" closeString:@"收起" font: _displayView.font textColor:YYBlueColor];
+        CGSize size = [_displayView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * YYEdgeBig, MAXFLOAT)];
+        _displayView.frame = CGRectMake(YYEdgeBig, 140, size.width, size.height);
+        [cell.contentView addSubview:_displayView];
+        cell.top = _infoView.bottom;
+        [_headerView addSubview:cell];
+        _headerView.height = cell.bottom + YYEdge;
+        self.scoreCell = cell;
     }
     return _headerView;
 }
 
 #pragma mark - UITableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 3) {
+    if (section == 2) {
         return MIN(3, self.commentModelArray.count);
     }
     return 1;
 }
 
-//// 预测cell的高度
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return 110;
-//}
+// 预测cell的高度
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 110;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.section) {
         case 0:
-            return 210 + MAX(_textHeight, 0);
-        case 1:
             return 200.0;
-        case 2:
+        case 1:
             return 120.0;
         default:
             return UITableViewAutomaticDimension;
@@ -178,16 +200,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        return 0.01f;
-    }
     return [YYCellHeaderView height];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (section == 0) {
-        return 0.01f;
-    }
     return [YYCellFooterView height];
 }
 
@@ -196,13 +212,13 @@
     view.topLine.hidden = NO;
     view.moreBtn.hidden = YES;
     switch (section) {
-        case 1:
+        case 0:
             view.headerLabel.text = @"演职人员";
             return view;
-        case 2:
+        case 1:
             view.headerLabel.text = @"剧照";
             return view;
-        case 3:
+        case 2:
             view.headerLabel.text = @"评论";
             return view;
         default:
@@ -215,13 +231,13 @@
     view.moreBtn.tag = section;
     [view.moreBtn addTarget:self action:@selector(cellFooterMoreBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     switch (section) {
-        case 1:
+        case 0:
             [view.moreBtn setTitle:[NSString stringWithFormat:@"全部%lu位演职人员", (unsigned long)self.actorsList.count] forState:UIControlStateNormal];
             return view;
-        case 2:
+        case 1:
             [view.moreBtn setTitle:[NSString stringWithFormat:@"全部%lu张剧照", (unsigned long)[(NSArray *)self.headerInfoDic[@"photos"] count]] forState:UIControlStateNormal];
             return view;
-        case 3:
+        case 2:
             [view.moreBtn setTitle:[NSString stringWithFormat:@"全部%@条评论", self.commentTotalCount] forState:UIControlStateNormal];
             return view;
         default:
@@ -231,35 +247,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        NSDictionary *dic = self.sourceData;
-        static NSString *cellID = @"cell_Score";
-        FilmScoreCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-        if (!cell) {
-            NSString *nibName = NSStringFromClass([FilmScoreCell class]);
-            [tableView registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:cellID];
-            cell = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
-        }
-        
-        cell.scoreLabel.text = dic[@"Remark"];
-        cell.scoreView.value = [dic[@"Remark"] doubleValue] / 2.0;
-        cell.wishLabel = dic[@"Wish"];
-        if (!_displayView) {
-            _displayView = [[TLDisplayView alloc] init];
-            _displayView.delegate = self;
-            _displayView.font = [UIFont systemFontOfSize: 14.0];
-            _displayView.backgroundColor = [UIColor clearColor];
-            _displayView.numberOfLines = 3;
-            [_displayView setText:dic[@"Description"]];
-            [_displayView setOpenString:@"展开" closeString:@"收起" font: _displayView.font textColor:YYBlueColor];
-            CGSize size = [_displayView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * YYEdgeBig, MAXFLOAT)];
-            _displayView.frame = CGRectMake(YYEdgeBig, 140, size.width, size.height);
-        }
-        [cell.contentView addSubview:_displayView];
-        cell.displayView = _displayView;
-        
-        return cell;
-    }
-    else if (indexPath.section == 1) {
         static NSString *cellID = @"cell_Perfomer";
         FilmPerformerCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if (!cell) {
@@ -272,7 +259,7 @@
         [cell.collectionView reloadData];
         return cell;
     }
-    else if (indexPath.section == 2) {
+    else if (indexPath.section == 1) {
         static NSString *cellID = @"cell_FilmStill";
         FilmStillCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if (!cell) {
@@ -282,7 +269,7 @@
         [cell.collectionView reloadData];
         return cell;
     }
-    else if (indexPath.section == 3) {
+    else if (indexPath.section == 2) {
         static NSString *cellID = @"cell_Comment";
         CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if (!cell) {
@@ -300,16 +287,11 @@
 
 #pragma mark -
 #pragma mark TLDisplayViewDelegate
-- (void)displayView:(TLDisplayView *)label closeHeight:(CGFloat)height {
-    _displayView.height = height;
-    _textHeight = height - 60;
-    [self.tableView reloadData];
-}
-
-- (void)displayView:(TLDisplayView *)label openHeight:(CGFloat)height {
-    _displayView.height = height;
-    _textHeight = height - 60;
-    [self.tableView reloadData];
+- (void)displayView:(TLDisplayView *)displayView textHeight:(CGFloat)height {
+    self.scoreCell.height = displayView.bottom;
+    self.headerView.height = self.scoreCell.bottom + YYEdge;
+    self.tableView.tableHeaderView = nil;
+    self.tableView.tableHeaderView = self.headerView;
 }
 
 //#pragma mark - UIResponder+Router

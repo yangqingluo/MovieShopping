@@ -613,6 +613,29 @@
 			path = "视图控制器";
 			sourceTree = "<group>";
 		};
+		E4551B062199C18C0020DF3F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				E49A8880219805C0003EDD10 /* YYCollectionView.h */,
+				E49A8881219805C0003EDD10 /* YYCollectionView.m */,
+				4A12859F21994C1A00C462A8 /* YYCellHeaderView.h */,
+				4A1285A021994C1A00C462A8 /* YYCellHeaderView.m */,
+				4A56E0602199511600473B59 /* YYCellFooterView.h */,
+				4A56E0612199511600473B59 /* YYCellFooterView.m */,
+				E49A888621980C7F003EDD10 /* YYLabel.h */,
+				E49A888721980C7F003EDD10 /* YYLabel.m */,
+				E4CF70A921981F9F00002384 /* YYImageView.h */,
+				E4CF70AA21981F9F00002384 /* YYImageView.m */,
+				E4CF70AF21982B9900002384 /* YYSlideSwitchView.h */,
+				E4CF70B021982B9900002384 /* YYSlideSwitchView.m */,
+				E4CF7111219876F200002384 /* FilmInfoView.h */,
+				E4CF7112219876F200002384 /* FilmInfoView.m */,
+				E4CF711D2198809000002384 /* YYStarRatingView.h */,
+				E4CF711E2198809000002384 /* YYStarRatingView.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		E4735E902196B854001BE69E = {
 			isa = PBXGroup;
 			children = (
@@ -736,26 +759,11 @@
 		E4735F212196C0EC001BE69E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4551B062199C18C0020DF3F /* Public */,
 				E4CF711C2198805F00002384 /* Cell */,
 				E4735EEA2196BB1B001BE69E /* YYMovieSeat */,
 				E4735F7E219738B6001BE69E /* UIView+KGViewExtend.h */,
 				E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */,
-				E49A8880219805C0003EDD10 /* YYCollectionView.h */,
-				E49A8881219805C0003EDD10 /* YYCollectionView.m */,
-				4A12859F21994C1A00C462A8 /* YYCellHeaderView.h */,
-				4A1285A021994C1A00C462A8 /* YYCellHeaderView.m */,
-				4A56E0602199511600473B59 /* YYCellFooterView.h */,
-				4A56E0612199511600473B59 /* YYCellFooterView.m */,
-				E49A888621980C7F003EDD10 /* YYLabel.h */,
-				E49A888721980C7F003EDD10 /* YYLabel.m */,
-				E4CF70A921981F9F00002384 /* YYImageView.h */,
-				E4CF70AA21981F9F00002384 /* YYImageView.m */,
-				E4CF70AF21982B9900002384 /* YYSlideSwitchView.h */,
-				E4CF70B021982B9900002384 /* YYSlideSwitchView.m */,
-				E4CF7111219876F200002384 /* FilmInfoView.h */,
-				E4CF7112219876F200002384 /* FilmInfoView.m */,
-				E4CF711D2198809000002384 /* YYStarRatingView.h */,
-				E4CF711E2198809000002384 /* YYStarRatingView.m */,
 				E49A887E2197FEF8003EDD10 /* YYButtonExtension.swift */,
 			);
 			path = View;
