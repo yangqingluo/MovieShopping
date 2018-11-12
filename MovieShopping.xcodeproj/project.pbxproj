@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A12856B219907D500C462A8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128561219907D500C462A8 /* AFURLResponseSerialization.m */; };
+		4A12856C219907D500C462A8 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128562219907D500C462A8 /* AFHTTPSessionManager.m */; };
+		4A12856D219907D600C462A8 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128564219907D500C462A8 /* AFURLSessionManager.m */; };
+		4A12856E219907D600C462A8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128565219907D500C462A8 /* AFURLRequestSerialization.m */; };
+		4A12856F219907D600C462A8 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128567219907D500C462A8 /* AFNetworkReachabilityManager.m */; };
+		4A128570219907D600C462A8 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128568219907D500C462A8 /* AFSecurityPolicy.m */; };
+		4A128573219907F900C462A8 /* YYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A128572219907F900C462A8 /* YYNetwork.m */; };
+		4A12858121992A6900C462A8 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12857E21992A6800C462A8 /* CommentCell.m */; };
+		4A12858221992A6900C462A8 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A12857F21992A6800C462A8 /* CommentCell.xib */; };
+		4A12858521992BB500C462A8 /* LikeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12858421992BB500C462A8 /* LikeAnimationView.m */; };
+		4A12859721992C2000C462A8 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A12858721992C2000C462A8 /* DateTools.bundle */; };
+		4A12859821992C2000C462A8 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12858821992C2000C462A8 /* DTTimePeriod.m */; };
+		4A12859921992C2000C462A8 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12858B21992C2000C462A8 /* NSDate+DateTools.m */; };
+		4A12859A21992C2000C462A8 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12858D21992C2000C462A8 /* DTTimePeriodGroup.m */; };
+		4A12859B21992C2000C462A8 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12859121992C2000C462A8 /* DTConstants.m */; };
+		4A12859C21992C2000C462A8 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12859221992C2000C462A8 /* DTError.m */; };
+		4A12859D21992C2000C462A8 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12859321992C2000C462A8 /* DTTimePeriodCollection.m */; };
+		4A12859E21992C2000C462A8 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A12859521992C2000C462A8 /* DTTimePeriodChain.m */; };
+		4A1285A121994C1A00C462A8 /* YYCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1285A021994C1A00C462A8 /* YYCellHeaderView.m */; };
+		4A56E0622199511600473B59 /* YYCellFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A56E0612199511600473B59 /* YYCellFooterView.m */; };
+		4A89A1F821996A8000C0DAFE /* FilmPerformerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A1F721996A8000C0DAFE /* FilmPerformerCell.m */; };
+		4A89A1FB2199759D00C0DAFE /* FilmStillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A1FA2199759D00C0DAFE /* FilmStillCell.m */; };
+		4A89A1FE21997B3B00C0DAFE /* PerformerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A1FD21997B3B00C0DAFE /* PerformerListVC.m */; };
+		4A89A20A2199810900C0DAFE /* GF_LocateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2012199810800C0DAFE /* GF_LocateHeaderView.m */; };
+		4A89A20B2199810900C0DAFE /* GF_CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2042199810800C0DAFE /* GF_CityTableViewCell.m */; };
+		4A89A20C2199810900C0DAFE /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A89A2072199810800C0DAFE /* citydict.plist */; };
+		4A89A20D2199810900C0DAFE /* GF_CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2092199810800C0DAFE /* GF_CityListViewController.m */; };
 		E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9C2196B854001BE69E /* AppDelegate.swift */; };
 		E4735E9F2196B854001BE69E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9E2196B854001BE69E /* ViewController.swift */; };
 		E4735EA22196B854001BE69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4735EA02196B854001BE69E /* Main.storyboard */; };
@@ -165,6 +192,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A12855D219907D500C462A8 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		4A12855E219907D500C462A8 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		4A12855F219907D500C462A8 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		4A128560219907D500C462A8 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		4A128561219907D500C462A8 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		4A128562219907D500C462A8 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		4A128563219907D500C462A8 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		4A128564219907D500C462A8 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		4A128565219907D500C462A8 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		4A128566219907D500C462A8 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		4A128567219907D500C462A8 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		4A128568219907D500C462A8 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		4A128569219907D500C462A8 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		4A12856A219907D500C462A8 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		4A128571219907F900C462A8 /* YYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYNetwork.h; sourceTree = "<group>"; };
+		4A128572219907F900C462A8 /* YYNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNetwork.m; sourceTree = "<group>"; };
+		4A12857E21992A6800C462A8 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		4A12857F21992A6800C462A8 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		4A12858021992A6900C462A8 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		4A12858321992BB500C462A8 /* LikeAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikeAnimationView.h; sourceTree = "<group>"; };
+		4A12858421992BB500C462A8 /* LikeAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeAnimationView.m; sourceTree = "<group>"; };
+		4A12858721992C2000C462A8 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		4A12858821992C2000C462A8 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
+		4A12858921992C2000C462A8 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		4A12858A21992C2000C462A8 /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		4A12858B21992C2000C462A8 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
+		4A12858C21992C2000C462A8 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
+		4A12858D21992C2000C462A8 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		4A12858E21992C2000C462A8 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		4A12858F21992C2000C462A8 /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		4A12859021992C2000C462A8 /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
+		4A12859121992C2000C462A8 /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConstants.m; sourceTree = "<group>"; };
+		4A12859221992C2000C462A8 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		4A12859321992C2000C462A8 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		4A12859421992C2000C462A8 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		4A12859521992C2000C462A8 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
+		4A12859621992C2000C462A8 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		4A12859F21994C1A00C462A8 /* YYCellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCellHeaderView.h; sourceTree = "<group>"; };
+		4A1285A021994C1A00C462A8 /* YYCellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCellHeaderView.m; sourceTree = "<group>"; };
+		4A56E0602199511600473B59 /* YYCellFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCellFooterView.h; sourceTree = "<group>"; };
+		4A56E0612199511600473B59 /* YYCellFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCellFooterView.m; sourceTree = "<group>"; };
+		4A89A1F621996A8000C0DAFE /* FilmPerformerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmPerformerCell.h; sourceTree = "<group>"; };
+		4A89A1F721996A8000C0DAFE /* FilmPerformerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmPerformerCell.m; sourceTree = "<group>"; };
+		4A89A1F92199759D00C0DAFE /* FilmStillCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmStillCell.h; sourceTree = "<group>"; };
+		4A89A1FA2199759D00C0DAFE /* FilmStillCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmStillCell.m; sourceTree = "<group>"; };
+		4A89A1FC21997B3B00C0DAFE /* PerformerListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformerListVC.h; sourceTree = "<group>"; };
+		4A89A1FD21997B3B00C0DAFE /* PerformerListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformerListVC.m; sourceTree = "<group>"; };
+		4A89A2012199810800C0DAFE /* GF_LocateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GF_LocateHeaderView.m; sourceTree = "<group>"; };
+		4A89A2022199810800C0DAFE /* GF_LocateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GF_LocateHeaderView.h; sourceTree = "<group>"; };
+		4A89A2042199810800C0DAFE /* GF_CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GF_CityTableViewCell.m; sourceTree = "<group>"; };
+		4A89A2052199810800C0DAFE /* GF_CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GF_CityTableViewCell.h; sourceTree = "<group>"; };
+		4A89A2072199810800C0DAFE /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		4A89A2082199810800C0DAFE /* GF_CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GF_CityListViewController.h; sourceTree = "<group>"; };
+		4A89A2092199810800C0DAFE /* GF_CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GF_CityListViewController.m; sourceTree = "<group>"; };
 		E4735E992196B854001BE69E /* MovieShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4735E9C2196B854001BE69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4735E9E2196B854001BE69E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -450,6 +531,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A12855C219907D500C462A8 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				4A12855D219907D500C462A8 /* AFSecurityPolicy.h */,
+				4A12855E219907D500C462A8 /* AFNetworkReachabilityManager.h */,
+				4A12855F219907D500C462A8 /* AFURLSessionManager.h */,
+				4A128560219907D500C462A8 /* AFURLRequestSerialization.h */,
+				4A128561219907D500C462A8 /* AFURLResponseSerialization.m */,
+				4A128562219907D500C462A8 /* AFHTTPSessionManager.m */,
+				4A128563219907D500C462A8 /* AFURLResponseSerialization.h */,
+				4A128564219907D500C462A8 /* AFURLSessionManager.m */,
+				4A128565219907D500C462A8 /* AFURLRequestSerialization.m */,
+				4A128566219907D500C462A8 /* AFNetworking.h */,
+				4A128567219907D500C462A8 /* AFNetworkReachabilityManager.m */,
+				4A128568219907D500C462A8 /* AFSecurityPolicy.m */,
+				4A128569219907D500C462A8 /* AFCompatibilityMacros.h */,
+				4A12856A219907D500C462A8 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		4A12858621992C2000C462A8 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				4A12858721992C2000C462A8 /* DateTools.bundle */,
+				4A12858821992C2000C462A8 /* DTTimePeriod.m */,
+				4A12858921992C2000C462A8 /* DTError.h */,
+				4A12858A21992C2000C462A8 /* DTConstants.h */,
+				4A12858B21992C2000C462A8 /* NSDate+DateTools.m */,
+				4A12858C21992C2000C462A8 /* DTTimePeriodChain.h */,
+				4A12858D21992C2000C462A8 /* DTTimePeriodGroup.m */,
+				4A12858E21992C2000C462A8 /* DTTimePeriodCollection.h */,
+				4A12858F21992C2000C462A8 /* DateTools.h */,
+				4A12859021992C2000C462A8 /* DTTimePeriod.h */,
+				4A12859121992C2000C462A8 /* DTConstants.m */,
+				4A12859221992C2000C462A8 /* DTError.m */,
+				4A12859321992C2000C462A8 /* DTTimePeriodCollection.m */,
+				4A12859421992C2000C462A8 /* DTTimePeriodGroup.h */,
+				4A12859521992C2000C462A8 /* DTTimePeriodChain.m */,
+				4A12859621992C2000C462A8 /* NSDate+DateTools.h */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		4A89A1FF2199810800C0DAFE /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				4A89A2002199810800C0DAFE /* 头视图 */,
+				4A89A2032199810800C0DAFE /* 单元格 */,
+				4A89A2062199810800C0DAFE /* 视图控制器 */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		4A89A2002199810800C0DAFE /* 头视图 */ = {
+			isa = PBXGroup;
+			children = (
+				4A89A2022199810800C0DAFE /* GF_LocateHeaderView.h */,
+				4A89A2012199810800C0DAFE /* GF_LocateHeaderView.m */,
+			);
+			path = "头视图";
+			sourceTree = "<group>";
+		};
+		4A89A2032199810800C0DAFE /* 单元格 */ = {
+			isa = PBXGroup;
+			children = (
+				4A89A2052199810800C0DAFE /* GF_CityTableViewCell.h */,
+				4A89A2042199810800C0DAFE /* GF_CityTableViewCell.m */,
+			);
+			path = "单元格";
+			sourceTree = "<group>";
+		};
+		4A89A2062199810800C0DAFE /* 视图控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				4A89A2072199810800C0DAFE /* citydict.plist */,
+				4A89A2082199810800C0DAFE /* GF_CityListViewController.h */,
+				4A89A2092199810800C0DAFE /* GF_CityListViewController.m */,
+			);
+			path = "视图控制器";
+			sourceTree = "<group>";
+		};
 		E4735E902196B854001BE69E = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +722,8 @@
 				E4735F362196CFCD001BE69E /* YYViewPublic.m */,
 				E4735F322196CF9A001BE69E /* YYPublic.h */,
 				E4735F332196CF9A001BE69E /* YYPublic.m */,
+				4A128571219907F900C462A8 /* YYNetwork.h */,
+				4A128572219907F900C462A8 /* YYNetwork.m */,
 				E4CF70AC219824FA00002384 /* UIResponder+Router.h */,
 				E4CF70AD219824FA00002384 /* UIResponder+Router.m */,
 				E4735EF62196BB1B001BE69E /* YYSeat.h */,
@@ -577,6 +742,10 @@
 				E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */,
 				E49A8880219805C0003EDD10 /* YYCollectionView.h */,
 				E49A8881219805C0003EDD10 /* YYCollectionView.m */,
+				4A12859F21994C1A00C462A8 /* YYCellHeaderView.h */,
+				4A1285A021994C1A00C462A8 /* YYCellHeaderView.m */,
+				4A56E0602199511600473B59 /* YYCellFooterView.h */,
+				4A56E0612199511600473B59 /* YYCellFooterView.m */,
 				E49A888621980C7F003EDD10 /* YYLabel.h */,
 				E49A888721980C7F003EDD10 /* YYLabel.m */,
 				E4CF70A921981F9F00002384 /* YYImageView.h */,
@@ -608,6 +777,8 @@
 		E4735F4521972DEE001BE69E /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4A12858621992C2000C462A8 /* DateTools */,
+				4A12855C219907D500C462A8 /* AFNetworking */,
 				E4CF712021988A5700002384 /* DisplayMoreText */,
 				E4CF7103219859C100002384 /* JSDropDownMenu */,
 				E4CF70BB21983A6500002384 /* MJRefresh */,
@@ -636,6 +807,7 @@
 		E4735F4F21972E3A001BE69E /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				4A89A1FF2199810800C0DAFE /* CityList */,
 				E4735ECB2196B922001BE69E /* SeatViewController.h */,
 				E4735ECC2196B922001BE69E /* SeatViewController.m */,
 				E4735F222196C136001BE69E /* MovieController.h */,
@@ -652,6 +824,8 @@
 				E4735F2F2196CB5C001BE69E /* MovieCinemaSubVC.m */,
 				E4CF710E2198702000002384 /* FilmDetailVC.h */,
 				E4CF710F2198702000002384 /* FilmDetailVC.m */,
+				4A89A1FC21997B3B00C0DAFE /* PerformerListVC.h */,
+				4A89A1FD21997B3B00C0DAFE /* PerformerListVC.m */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -957,6 +1131,15 @@
 				E4CF711721987FF300002384 /* FilmScoreCell.h */,
 				E4CF711821987FF300002384 /* FilmScoreCell.m */,
 				E4CF711921987FF300002384 /* FilmScoreCell.xib */,
+				4A89A1F621996A8000C0DAFE /* FilmPerformerCell.h */,
+				4A89A1F721996A8000C0DAFE /* FilmPerformerCell.m */,
+				4A89A1F92199759D00C0DAFE /* FilmStillCell.h */,
+				4A89A1FA2199759D00C0DAFE /* FilmStillCell.m */,
+				4A12858021992A6900C462A8 /* CommentCell.h */,
+				4A12857E21992A6800C462A8 /* CommentCell.m */,
+				4A12857F21992A6800C462A8 /* CommentCell.xib */,
+				4A12858321992BB500C462A8 /* LikeAnimationView.h */,
+				4A12858421992BB500C462A8 /* LikeAnimationView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1089,12 +1272,15 @@
 				E4CF70F821983A6500002384 /* MJRefresh.bundle in Resources */,
 				E4735F9321973A0E001BE69E /* ad_02.jpg in Resources */,
 				E4CF710D219861F600002384 /* CinemaCell.xib in Resources */,
+				4A12858221992A6900C462A8 /* CommentCell.xib in Resources */,
 				E4735F9221973A0E001BE69E /* ad_01.jpg in Resources */,
 				E4735EA42196B854001BE69E /* Assets.xcassets in Resources */,
+				4A12859721992C2000C462A8 /* DateTools.bundle in Resources */,
 				E4735F9121973A0E001BE69E /* seats 4.plist in Resources */,
 				E4CF7107219859C100002384 /* ico_make.png in Resources */,
 				E4735F9021973A0E001BE69E /* seats 3.plist in Resources */,
 				E4735F8F21973A0E001BE69E /* seats 2.plist in Resources */,
+				4A89A20C2199810900C0DAFE /* citydict.plist in Resources */,
 				E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */,
 				E4CF710221983B9700002384 /* FilmCell.xib in Resources */,
 				E4735EA22196B854001BE69E /* Main.storyboard in Resources */,
@@ -1127,11 +1313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CF70B121982B9900002384 /* YYSlideSwitchView.m in Sources */,
+				4A1285A121994C1A00C462A8 /* YYCellHeaderView.m in Sources */,
 				E4735F0E2196BB1B001BE69E /* YYRowIndexView.swift in Sources */,
 				E4CF70B7219832A000002384 /* FilmHotSubTableVC.m in Sources */,
 				E4735E9F2196B854001BE69E /* ViewController.swift in Sources */,
 				E49A88D421981234003EDD10 /* SDWebImageDownloader.m in Sources */,
+				4A12859E21992C2000C462A8 /* DTTimePeriodChain.m in Sources */,
 				E4CF70F721983A6500002384 /* MJRefreshStateHeader.m in Sources */,
+				4A12859C21992C2000C462A8 /* DTError.m in Sources */,
 				E4735F3F2196D0E6001BE69E /* UIImage+Color.m in Sources */,
 				E49A88CF21981234003EDD10 /* SDImageCacheConfig.m in Sources */,
 				E49A88F2219814C5003EDD10 /* FLAnimatedImage.m in Sources */,
@@ -1143,8 +1332,12 @@
 				E4735F0D2196BB1B001BE69E /* YYIndicatorView.swift in Sources */,
 				E4CF70EC21983A6500002384 /* MJRefreshComponent.m in Sources */,
 				E4CF70EB21983A6500002384 /* MJRefreshBackFooter.m in Sources */,
+				4A12858521992BB500C462A8 /* LikeAnimationView.m in Sources */,
+				4A12859B21992C2000C462A8 /* DTConstants.m in Sources */,
+				4A12856D219907D600C462A8 /* AFURLSessionManager.m in Sources */,
 				E49A88E321981234003EDD10 /* UIImageView+WebCache.m in Sources */,
 				E49A88DA21981234003EDD10 /* SDWebImagePrefetcher.m in Sources */,
+				4A12856F219907D600C462A8 /* AFNetworkReachabilityManager.m in Sources */,
 				E4CF712A21988A5700002384 /* NSMutableAttributedString+CTFrameRef.m in Sources */,
 				E4CF70F621983A6500002384 /* MJRefreshNormalHeader.m in Sources */,
 				E49A88CA21981234003EDD10 /* NSButton+WebCache.m in Sources */,
@@ -1153,6 +1346,9 @@
 				E4735F782197309E001BE69E /* MBProgressHUD+Add.m in Sources */,
 				E4CF710C219861F600002384 /* CinemaCell.m in Sources */,
 				E4CF70FB21983A6500002384 /* UIScrollView+MJExtension.m in Sources */,
+				4A89A20D2199810900C0DAFE /* GF_CityListViewController.m in Sources */,
+				4A12859A21992C2000C462A8 /* DTTimePeriodGroup.m in Sources */,
+				4A12859921992C2000C462A8 /* NSDate+DateTools.m in Sources */,
 				E4CF712B21988A5700002384 /* TLAttributedLabelUtils.m in Sources */,
 				E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */,
 				E4735F7021972F22001BE69E /* NSString+MJExtension.m in Sources */,
@@ -1160,18 +1356,24 @@
 				E49A88E221981234003EDD10 /* UIImageView+HighlightedWebCache.m in Sources */,
 				E49A88DB21981234003EDD10 /* SDWebImageTransition.m in Sources */,
 				E49A88DF21981234003EDD10 /* UIImage+GIF.m in Sources */,
+				4A12858121992A6900C462A8 /* CommentCell.m in Sources */,
 				E4CF70FD21983A6500002384 /* UIView+MJExtension.m in Sources */,
 				E49A88D521981234003EDD10 /* SDWebImageDownloaderOperation.m in Sources */,
 				E4735F442196D281001BE69E /* YYNavigationController.m in Sources */,
 				E4735F6A21972F22001BE69E /* MJPropertyKey.m in Sources */,
 				E4735F7A2197309E001BE69E /* UIViewController+HUD.m in Sources */,
+				4A12856C219907D500C462A8 /* AFHTTPSessionManager.m in Sources */,
+				4A89A1FB2199759D00C0DAFE /* FilmStillCell.m in Sources */,
 				E4735F4D21972DEE001BE69E /* CWCarousel.m in Sources */,
 				E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */,
 				E4735F272196CAC3001BE69E /* YYBaseSubViewController.m in Sources */,
 				E4CF711A21987FF300002384 /* FilmScoreCell.m in Sources */,
 				E4CF7113219876F200002384 /* FilmInfoView.m in Sources */,
 				E4CF70EF21983A6500002384 /* MJRefreshAutoGifFooter.m in Sources */,
+				4A12859821992C2000C462A8 /* DTTimePeriod.m in Sources */,
+				4A89A20B2199810900C0DAFE /* GF_CityTableViewCell.m in Sources */,
 				E4735F302196CB5C001BE69E /* MovieCinemaSubVC.m in Sources */,
+				4A89A1F821996A8000C0DAFE /* FilmPerformerCell.m in Sources */,
 				E4735F6D21972F22001BE69E /* NSObject+MJCoding.m in Sources */,
 				E4CF70F121983A6500002384 /* MJRefreshAutoStateFooter.m in Sources */,
 				E4735F6C21972F22001BE69E /* NSObject+MJClass.m in Sources */,
@@ -1185,6 +1387,7 @@
 				E4735F412196D0E6001BE69E /* UIImage+SubImage.m in Sources */,
 				E4CF70F021983A6500002384 /* MJRefreshAutoNormalFooter.m in Sources */,
 				E49A88E521981234003EDD10 /* UIView+WebCacheOperation.m in Sources */,
+				4A56E0622199511600473B59 /* YYCellFooterView.m in Sources */,
 				E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */,
 				E49A88C821981234003EDD10 /* FLAnimatedImageView+WebCache.m in Sources */,
 				E49A88CE21981234003EDD10 /* SDImageCache.m in Sources */,
@@ -1193,11 +1396,14 @@
 				E49A888521980BEE003EDD10 /* YYCollectionCell.m in Sources */,
 				E4CF70AB21981F9F00002384 /* YYImageView.m in Sources */,
 				E4CF70FC21983A6500002384 /* UIScrollView+MJRefresh.m in Sources */,
+				4A12859D21992C2000C462A8 /* DTTimePeriodCollection.m in Sources */,
 				E49A88CD21981234003EDD10 /* SDAnimatedImageRep.m in Sources */,
 				E4CF7108219859C100002384 /* JSDropDownMenu.m in Sources */,
 				E4CF70B421982D6900002384 /* MoreSoonShowCell.m in Sources */,
 				E4735ECE2196B922001BE69E /* SeatViewController.m in Sources */,
 				E4CF70BA2198330200002384 /* FilmSoonSubTableVC.m in Sources */,
+				4A89A1FE21997B3B00C0DAFE /* PerformerListVC.m in Sources */,
+				4A128573219907F900C462A8 /* YYNetwork.m in Sources */,
 				E4735F152196BB1B001BE69E /* YYSeat.m in Sources */,
 				E4CF70ED21983A6500002384 /* MJRefreshFooter.m in Sources */,
 				E49A88D321981234003EDD10 /* SDWebImageCompat.m in Sources */,
@@ -1211,11 +1417,14 @@
 				E4CF71102198702000002384 /* FilmDetailVC.m in Sources */,
 				E4CF70F321983A6500002384 /* MJRefreshBackNormalFooter.m in Sources */,
 				E49A88D921981234003EDD10 /* SDWebImageManager.m in Sources */,
+				4A12856E219907D600C462A8 /* AFURLRequestSerialization.m in Sources */,
 				E49A88E121981234003EDD10 /* UIImage+WebP.m in Sources */,
 				E49A88D221981234003EDD10 /* SDWebImageCodersManager.m in Sources */,
 				E4735F342196CF9A001BE69E /* YYPublic.m in Sources */,
+				4A128570219907D600C462A8 /* AFSecurityPolicy.m in Sources */,
 				E4CF712921988A5700002384 /* NSMutableAttributedString+Config.m in Sources */,
 				E4735F102196BB1B001BE69E /* YYSeatButton.swift in Sources */,
+				4A89A20A2199810900C0DAFE /* GF_LocateHeaderView.m in Sources */,
 				E49A88CC21981234003EDD10 /* NSImage+WebCache.m in Sources */,
 				E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */,
 				E4CF710121983B9700002384 /* FilmCell.m in Sources */,
@@ -1235,6 +1444,7 @@
 				E4735F792197309E001BE69E /* MBProgressHUD.m in Sources */,
 				E4735F2A2196CAE2001BE69E /* MovieHomeSubVC.m in Sources */,
 				E49A88D621981234003EDD10 /* SDWebImageFrame.m in Sources */,
+				4A12856B219907D500C462A8 /* AFURLResponseSerialization.m in Sources */,
 				E4CF70F421983A6500002384 /* MJRefreshBackStateFooter.m in Sources */,
 				E49A8882219805C0003EDD10 /* YYCollectionView.m in Sources */,
 				E4735F402196D0E6001BE69E /* UIImage+Rotate.m in Sources */,

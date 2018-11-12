@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "YYViewPublic.h"
+#import "UIViewController+HUD.h"
+#import "YYNetwork.h"
 
 @interface YYBaseViewController : UIViewController
 

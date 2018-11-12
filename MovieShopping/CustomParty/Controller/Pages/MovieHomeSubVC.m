@@ -21,8 +21,8 @@ static NSString *adCellID = @"adCell";
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) CWCarousel *carousel;
 @property (nonatomic, strong) UIView *topADView;
-@property (nonatomic, strong) MoreHotShowCell *hotShowView;
-@property (nonatomic, strong) MoreSoonShowCell *soonShowView;
+@property (nonatomic, strong) NSArray *hotArray;
+@property (nonatomic, strong) NSArray *soonArray;
 
 @end
 
@@ -41,6 +41,8 @@ static NSString *adCellID = @"adCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self buildHeader];
+    self.tableView.allowsSelection = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)buildHeader {
@@ -81,31 +83,19 @@ static NSString *adCellID = @"adCell";
     [carousel freshCarousel];
     self.carousel = carousel;
     
-    [self.headerView addSubview:self.topADView];
+//    [self.headerView addSubview:self.topADView];
+    self.headerView.height = self.topADView.bottom;
+    [self.view insertSubview:self.headerView atIndex:0];
     
-    [self buildHotShows];
-    [self buildSoonShows];
+    UIView *m_view = [[UIView alloc] initWithFrame:self.headerView.frame];
+    [m_view addSubview:self.topADView];
+    self.tableView.tableHeaderView = m_view;
     
-    self.headerView.height = self.soonShowView.bottom;
-    self.tableView.tableHeaderView = self.headerView;
+    self.headerView.height += YYEdgeMiddle;
 }
 
-- (void)buildHotShows {
-    NSArray *m_array = [filmString mj_JSONObject][@"movieList"];
-    
-    self.hotShowView = [MoreHotShowCell new];
-    self.hotShowView.dataList = m_array;
-    self.hotShowView.top = self.topADView.bottom;
-    [self.headerView addSubview:self.hotShowView];
-}
-
-- (void)buildSoonShows {
-    NSArray *m_array = [filmString mj_JSONObject][@"movieList"];
-    
-    self.soonShowView = [MoreSoonShowCell new];
-    self.soonShowView.dataList = m_array;
-    self.soonShowView.top = self.hotShowView.bottom;
-    [self.headerView addSubview:self.soonShowView];
+- (void)cellHeaderAllBtnAction:(UIButton *)button {
+    NSLog(@"%ld", (long)button.tag);
 }
 
 #pragma mark - getter
@@ -122,6 +112,20 @@ static NSString *adCellID = @"adCell";
         _topADView = [[UIView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, CGRectGetWidth(self.view.frame), 160)];
     }
     return _topADView;
+}
+
+- (NSArray *)hotArray {
+    if (!_hotArray) {
+        _hotArray = [filmString mj_JSONObject][@"movieList"];
+    }
+    return _hotArray;
+}
+
+- (NSArray *)soonArray {
+    if (!_soonArray) {
+        _soonArray = [filmString mj_JSONObject][@"movieList"];
+    }
+    return _soonArray;
 }
 
 #pragma mark -CWCarouselDatasource, CWCarouselDelegate
@@ -150,17 +154,82 @@ static NSString *adCellID = @"adCell";
     return cell;
 }
 
+#pragma mark - UITableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 230.0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return [YYCellHeaderView height];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    YYCellHeaderView *view = [YYCellHeaderView new];
+    view.moreBtn.tag = section;
+    [view.moreBtn addTarget:self action:@selector(cellHeaderAllBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    switch (section) {
+        case 0: {
+            UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+            CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+            maskLayer.frame = view.bounds;
+            maskLayer.path = maskPath.CGPath;
+            view.layer.mask = maskLayer;
+            view.headerLabel.text = @"正在热映";
+            return view;
+        }
+        case 1:
+            view.topLine.hidden = NO;
+            view.headerLabel.text = @"即将上映";
+            return view;
+        default:
+            return nil;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        static NSString *cellID = @"cell_hot";
+        MoreHotShowCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (!cell) {
+            cell = [[MoreHotShowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        }
+        cell.dataList = self.hotArray;
+        return cell;
+    }
+    else if (indexPath.section == 1) {
+        static NSString *cellID = @"cell_soon";
+        MoreSoonShowCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (!cell) {
+            cell = [[MoreSoonShowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        }
+        cell.dataList = self.soonArray;
+        return cell;
+    }
+    return [UITableViewCell new];
+}
 #pragma mark - UIResponder+Router
-- (void)routerEventWithName:(NSString *)eventName userInfo:(NSObject *)userInfo {
-    if ([eventName isEqualToString:Event_HotShowSellButtonClicked]) {
+- (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo {
+    if ([eventName isEqualToString:Event_HotShowCellButtonClicked]) {
         NSInteger index = [(NSNumber *)userInfo integerValue];
         NSLog(@"%ld", (long)index);
     }
-    else if ([eventName isEqualToString:Event_HotShowSellSelected]) {
+    else if ([eventName isEqualToString:Event_MoreCellItemSelected]) {
         NSIndexPath *indexPath = (NSIndexPath *)userInfo;
-        NSLog(@"cellSelected: %ld", (long)indexPath.row);
         FilmDetailVC *vc = [FilmDetailVC new];
-        vc.sourceData = self.hotShowView.dataList[indexPath.row];
+        if ([fromObject isKindOfClass:[MoreHotShowCell class]]) {
+            vc.sourceData = self.hotArray[indexPath.row];
+        }
+        else {
+            vc.sourceData = self.soonArray[indexPath.row];
+        }
         [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
     }
 }

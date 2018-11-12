@@ -40,7 +40,7 @@ static NSString *cellID = @"cell_hot_show";
 }
 
 - (void)sellBtnAction:(UIButton *)button {
-    [self routerEventWithName:Event_HotShowSellButtonClicked userInfo:@(button.tag)];
+    [self routerEventWithName:Event_HotShowCellButtonClicked userInfo:@(button.tag)];
 }
 
 @end
@@ -49,26 +49,10 @@ static NSString *cellID = @"cell_hot_show";
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    self.headerLabel.text = @"正在热映";
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = self.bounds;
-    maskLayer.path = maskPath.CGPath;
-    self.layer.mask = maskLayer;
-    
     [self.collectionView registerClass:[HotShowCollectionCell class] forCellWithReuseIdentifier:cellID];
 }
 
 #pragma mark <UICollectionViewDataSource>
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.dataList.count;
-}
-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(100, collectionView.height);
 }
@@ -97,10 +81,6 @@ static NSString *cellID = @"cell_hot_show";
         cell.showImageView.titleLabel.hidden = YES;
     }
     return cell;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [self routerEventWithName:Event_HotShowSellSelected userInfo:indexPath];
 }
 
 @end

@@ -9,6 +9,8 @@
 #import "FilmHotSubTableVC.h"
 #import "FilmCell.h"
 #import "UIImageView+WebCache.h"
+#import "FilmDetailVC.h"
+#import "YYPublic.h"
 
 @implementation FilmHotSubTableVC
 
@@ -54,6 +56,13 @@
     cell.directorLabel.text = [NSString stringWithFormat:@"导演：%@", dic[@"Director"]];
     cell.leadingRoleLabel.text = [NSString stringWithFormat:@"主演：%@", dic[@"LeadingRole"]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FilmDetailVC *vc = [FilmDetailVC new];
+    vc.sourceData = self.dataList[indexPath.row];
+    [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
 }
 
 @end

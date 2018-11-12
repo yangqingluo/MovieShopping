@@ -45,6 +45,15 @@
     }
 }
 
+- (void)bringTableViewUnderNavigation:(BOOL)under {
+    if (under) {
+        self.tableView.frame = CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, self.view.width, self.view.height - (YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT));
+    }
+    else {
+        self.tableView.frame = self.view.bounds;
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

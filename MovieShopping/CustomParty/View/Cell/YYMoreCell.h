@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "YYCollectionView.h"
+#import "YYCellHeaderView.h"
 
-@interface YYMoreCell : UIView<UICollectionViewDataSource, UICollectionViewDelegate>
+#define Event_MoreCellItemSelected @"MoreCellItemSelected"
 
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UILabel *headerLabel;
-@property (nonatomic, strong) UIButton *moreBtn;
+@interface YYMoreCell : UITableViewCell<UICollectionViewDataSource, UICollectionViewDelegate>
+
 @property (nonatomic, strong) YYCollectionView *collectionView;
 @property (nonatomic, copy) NSArray *dataList;
 

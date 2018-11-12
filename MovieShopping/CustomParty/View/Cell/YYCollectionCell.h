@@ -14,5 +14,6 @@
 
 @property (nonatomic, strong) YYImageView *showImageView;
 @property (nonatomic, strong) YYLabel *showLabel;
+@property (nonatomic, strong) YYLabel *subLabel;
 
 @end

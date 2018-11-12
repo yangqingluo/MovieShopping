@@ -10,7 +10,11 @@
 @implementation UIResponder (Router)
 
 - (void)routerEventWithName:(NSString *)eventName userInfo:(NSObject *)userInfo{
-    [[self nextResponder] routerEventWithName:eventName userInfo:userInfo];
+    [self routerEventWithName:eventName from:nil userInfo:userInfo];
+}
+
+- (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo {
+    [[self nextResponder] routerEventWithName:eventName from:fromObject userInfo:userInfo];
 }
 
 @end

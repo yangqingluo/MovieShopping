@@ -11,6 +11,7 @@
 @interface YYBaseSubTableVC : YYBaseViewController<UITableViewDelegate, UITableViewDataSource>
 
 - (instancetype)initWithStyle:(UITableViewStyle)style;
+- (void)bringTableViewUnderNavigation:(BOOL)under;
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataList;

@@ -38,11 +38,11 @@
 #define YYLightWhiteColor           RGBA(0xe0, 0xe0, 0xe0, 1.0)
 #define YYSilverColor               RGBA(0xc0, 0xc0, 0xc0, 1.0)
 
-#define YYButtonTitleFontSizeSmall  12.0
-#define YYButtonTitleFontSize       14.0
-#define YYLabelFontSizeSmall        12.0
-#define YYLabelFontSize             14.0
-#define YYLabelFontSizeMiddle       16.0
+#define YYButtonTitleFontSizeSmall  11.0
+#define YYButtonTitleFontSize       13.0
+#define YYLabelFontSizeSmall        11.0
+#define YYLabelFontSize             13.0
+#define YYLabelFontSizeMiddle       15.0
 
 #define YYEdgeSmall                   5.0
 #define YYEdge                        10.0
@@ -51,5 +51,6 @@
 #define YYEdgeHuge                    30.0
 
 #define YYPlaceholderImageName      @"sd_placeholder"
+#define kLocationCityName [[NSUserDefaults standardUserDefaults] objectForKey:@"locationCity"]
 
 #endif /* YYDefine_h */

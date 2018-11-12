@@ -9,6 +9,8 @@
 #import "FilmSoonSubTableVC.h"
 #import "FilmCell.h"
 #import "UIImageView+WebCache.h"
+#import "FilmDetailVC.h"
+#import "YYPublic.h"
 
 @interface FilmSoonSubTableVC ()
 
@@ -83,6 +85,13 @@
     NSDictionary *dic = self.dataList[section];
     _headerLabel.text = [NSString stringWithFormat:@"%@上映", dic[@"OpenDay"]];
     return _headerView;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FilmDetailVC *vc = [FilmDetailVC new];
+    vc.sourceData = self.dataList[indexPath.section];
+    [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
 }
 
 @end

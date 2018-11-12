@@ -8,8 +8,6 @@
 
 #import "YYMoreCell.h"
 
-#define Event_SoonShowSellSelected @"Event_SoonShowSellSelected"
-
 @interface MoreSoonShowCell : YYMoreCell
 
 @end

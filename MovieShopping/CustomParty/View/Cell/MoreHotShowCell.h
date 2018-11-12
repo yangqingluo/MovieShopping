@@ -8,8 +8,7 @@
 
 #import "YYMoreCell.h"
 
-#define Event_HotShowSellSelected @"Event_HotShowSellSelected"
-#define Event_HotShowSellButtonClicked @"Event_HotShowSellButtonClicked"
+#define Event_HotShowCellButtonClicked @"Event_HotShowSellButtonClicked"
 
 @interface MoreHotShowCell : YYMoreCell
 

@@ -17,5 +17,6 @@
  *
  */
 - (void)routerEventWithName:(NSString *)eventName userInfo:(NSObject *)userInfo;
+- (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo;
 
 @end
