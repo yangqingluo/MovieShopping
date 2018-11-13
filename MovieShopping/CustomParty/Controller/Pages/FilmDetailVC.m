@@ -16,6 +16,7 @@
 #import "YYCellHeaderView.h"
 #import "YYCellFooterView.h"
 #import "PerformerListVC.h"
+#import "FilmSelectCinemaVC.h"
 
 @interface FilmDetailVC ()<TLDisplayViewDelegate> {
     
@@ -24,6 +25,7 @@
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) FilmInfoView *infoView;
 @property (nonatomic, strong) FilmScoreCell *scoreCell;
+@property (nonatomic, strong) UIView *footerView;
 
 @property (nonatomic,strong) NSDictionary *headerInfoDic;
 @property (nonatomic,strong) NSArray *directorsList;//导演列表
@@ -42,6 +44,7 @@
     self.tableView.allowsSelection = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableHeaderView = self.headerView;
+    self.tableView.tableFooterView = self.footerView;
     [self loadData];
 }
 
@@ -120,6 +123,11 @@
     }
 }
 
+- (void)footerBuyBtnAction {
+    FilmSelectCinemaVC *vc = [FilmSelectCinemaVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - getter
 - (UIView *)headerView {
     if (!_headerView) {
@@ -169,6 +177,19 @@
         self.scoreCell = cell;
     }
     return _headerView;
+}
+
+- (UIView *)footerView {
+    if (!_footerView) {
+        _footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 50)];
+        UIButton *buyBtn = [[UIButton alloc] initWithFrame:_footerView.bounds];
+        buyBtn.backgroundColor = YYRedColor;
+        [buyBtn setTitle:@"特惠购票" forState:UIControlStateNormal];
+        [buyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_footerView addSubview:buyBtn];
+        [buyBtn addTarget:self action:@selector(footerBuyBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _footerView;
 }
 
 #pragma mark - UITableView

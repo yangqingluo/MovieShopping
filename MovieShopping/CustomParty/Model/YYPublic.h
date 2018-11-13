@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "YYNavigationController.h"
+#import "YYType.h"
 
 @interface YYPublic : NSObject
 
 + (YYPublic *)getInstance;
 
 @property (nonatomic, weak) YYNavigationController *mainNav;
+@property (nonatomic, strong) YYResponse *apiData_16;
+
+YYResponse *APIData(NSNumber *number);
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "YYPublic.h"
+#import "MJExtension.h"
 
 @implementation YYPublic
 
@@ -28,6 +29,14 @@ __strong static YYPublic  *_singleManger = nil;
         
     }
     return self;
+}
+
+#pragma mark - getter
+
+YYResponse *APIData(NSNumber *number) {
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"api_%@.txt", number] ofType:nil];
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    return [YYResponse mj_objectWithKeyValues:dic];
 }
 
 @end

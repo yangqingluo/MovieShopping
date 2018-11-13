@@ -9,6 +9,8 @@
 #import "MovieCinemaSubVC.h"
 #import "JSDropDownMenu.h"
 #import "CinemaCell.h"
+#import "CinemaSelectFilmVC.h"
+#import "YYPublic.h"
 
 @interface MovieCinemaSubVC ()<JSDropDownMenuDataSource, JSDropDownMenuDelegate> {
     
@@ -148,6 +150,13 @@
     cell.priceLabel.text = [NSString stringWithFormat:@"%@元", dic[@"Price"]];
 //    cell.distanceLabel.text = dic[@""];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    CinemaSelectFilmVC *vc = [CinemaSelectFilmVC new];
+//    vc.sourceData = self.dataList[indexPath.row];
+    [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
 }
 
 @end

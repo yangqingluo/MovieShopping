@@ -44,7 +44,7 @@ static NSString *adCellID = @"adCell";
     self.tableView.allowsSelection = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-//    [self loadData];
+    [self loadData];
 }
 
 - (void)buildHeader {
@@ -118,15 +118,18 @@ static NSString *adCellID = @"adCell";
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] getHTTPPath:@"http://192.168.2.101/movie/detail/154563" response:^(id response, NSError *error) {
-            dispatch_group_leave(group);
-            if (error) {
-                
-            }
-            else {
-                NSLog(@"%@", [self logDic:response]);
-            }
-        }];
+//        [[YYNetwork getInstance] getHTTPPath:@"http://192.168.2.101/movie/detail/154563" response:^(id response, NSError *error) {
+//            dispatch_group_leave(group);
+//            if (error) {
+//
+//            }
+//            else {
+//                NSLog(@"%@", [self logDic:response]);
+//            }
+//        }];
+        
+        YYResponse *data = APIData(@16);
+        dispatch_group_leave(group);
     });
     
     //4.队列组所有请求完成回调刷新UI
