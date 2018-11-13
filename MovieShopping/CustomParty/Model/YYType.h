@@ -15,13 +15,13 @@
 @interface YYData: NSObject
 
 @property (nonatomic, strong) NSArray *items;
-@property (nonatomic, copy) NSNumber *total;
+@property (nonatomic, assign) NSInteger total;
 
 @end
 
 @interface YYResponse : NSObject
 
-@property (nonatomic, copy) NSNumber *code;
+@property (nonatomic, assign) NSInteger code;
 @property (nonatomic, copy) NSString *msg;
 @property (nonatomic, strong) YYData *data;
 

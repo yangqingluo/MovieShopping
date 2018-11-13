@@ -103,8 +103,8 @@ static NSString *adCellID = @"adCell";
     //2.创建队列
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     //3.添加请求
-//    dispatch_group_async(group, queue, ^{
-//        dispatch_group_enter(group);
+    dispatch_group_async(group, queue, ^{
+        dispatch_group_enter(group);
 //        [[YYNetwork getInstance] POST:@"/getFilm/getHotFilmList" parameters:@{@"cityId": @70} headers:nil response:^(id response, NSError *error) {
 //            dispatch_group_leave(group);
 //            if (error) {
@@ -114,7 +114,12 @@ static NSString *adCellID = @"adCell";
 //                NSLog(@"%@", [self logDic:response]);
 //            }
 //        }];
-//    });
+        YYResponse *response = APIData(@17);
+        if (response.code == HTTP_SUCCESS) {
+            self.soonArray = response.data.items;
+        }
+        dispatch_group_leave(group);
+    });
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
@@ -128,7 +133,10 @@ static NSString *adCellID = @"adCell";
 //            }
 //        }];
         
-        YYResponse *data = APIData(@16);
+        YYResponse *response = APIData(@16);
+        if (response.code == HTTP_SUCCESS) {
+            self.hotArray = response.data.items;
+        }
         dispatch_group_leave(group);
     });
     
@@ -175,20 +183,6 @@ static NSString *adCellID = @"adCell";
         _topADView = [[UIView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, CGRectGetWidth(self.view.frame), 160)];
     }
     return _topADView;
-}
-
-- (NSArray *)hotArray {
-    if (!_hotArray) {
-        _hotArray = [filmString mj_JSONObject][@"movieList"];
-    }
-    return _hotArray;
-}
-
-- (NSArray *)soonArray {
-    if (!_soonArray) {
-        _soonArray = [filmString mj_JSONObject][@"movieList"];
-    }
-    return _soonArray;
 }
 
 #pragma mark -CWCarouselDatasource, CWCarouselDelegate

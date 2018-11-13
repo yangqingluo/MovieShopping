@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
+- (void)adjustTitleLabelSize;
+
 @end

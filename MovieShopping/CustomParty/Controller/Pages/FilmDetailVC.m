@@ -143,7 +143,7 @@
         if (dic[@"ShowMark"] && [(NSString *)dic[@"ShowMark"] length]) {
             _infoView.showImageView.titleLabel.text = dic[@"ShowMark"];
             _infoView.showImageView.titleLabel.hidden = NO;
-            adjustLabelWidthWithEdge(_infoView.showImageView.titleLabel, 1.0);
+            [_infoView.showImageView adjustTitleLabelSize];
         }
         else {
             _infoView.showImageView.titleLabel.text = @"";

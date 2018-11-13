@@ -23,7 +23,7 @@
         _showImageView.titleLabel.backgroundColor = [UIColor whiteColor];
         _showImageView.titleLabel.textColor = YYTextColor;
         _showImageView.titleLabel.font = [UIFont systemFontOfSize: 10.0];
-        _showImageView.titleLabel.textAlignment = NSTextAlignmentCenter;
+//        _showImageView.titleLabel.textAlignment = NSTextAlignmentCenter;
         _showImageView.titleLabel.layer.cornerRadius = 2.0;
         _showImageView.titleLabel.layer.masksToBounds = YES;
         [self.contentView addSubview:_showImageView];

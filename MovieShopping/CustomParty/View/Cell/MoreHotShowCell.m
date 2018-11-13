@@ -60,10 +60,10 @@ static NSString *cellID = @"cell_hot_show";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     HotShowCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     NSDictionary *dic = self.dataList[indexPath.row];
-    [cell.showImageView sd_setImageWithURL:dic[@"BackgroundPicture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
-    cell.showLabel.text = dic[@"ShowName"];
+    [cell.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
+    cell.showLabel.text = dic[@"show_name"];
     cell.buyBtn.tag = indexPath.row;
-    if (dic[@"BuyPre"]) {
+    if ([dic[@"market"] isEqualToString:@"presell"]) {
         [cell.buyBtn setTitle:@"预售" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYBlueColor;
     }
@@ -71,10 +71,10 @@ static NSString *cellID = @"cell_hot_show";
         [cell.buyBtn setTitle:@"购票" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYRedColor;
     }
-    if (dic[@"ShowMark"] && [(NSString *)dic[@"ShowMark"] length]) {
-        cell.showImageView.titleLabel.text = dic[@"ShowMark"];
+    if (dic[@"show_version_list"] && [(NSString *)dic[@"show_version_list"] length]) {
+        cell.showImageView.titleLabel.text = dic[@"show_version_list"];
         cell.showImageView.titleLabel.hidden = NO;
-        adjustLabelWidthWithEdge(cell.showImageView.titleLabel, 1.0);
+        [cell.showImageView adjustTitleLabelSize];
     }
     else {
         cell.showImageView.titleLabel.text = @"";

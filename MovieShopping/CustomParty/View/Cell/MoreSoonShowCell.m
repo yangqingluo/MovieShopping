@@ -29,13 +29,13 @@ static NSString *cellID = @"cell_soon_show";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
    YYCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     NSDictionary *dic = self.dataList[indexPath.row];
-    [cell.showImageView sd_setImageWithURL:dic[@"BackgroundPicture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
-    cell.showLabel.text = dic[@"ShowName"];
-    cell.subLabel.text = [NSString stringWithFormat:@"%@上映", dic[@"OpenDay"]];
-    if (dic[@"ShowMark"] && [(NSString *)dic[@"ShowMark"] length]) {
-        cell.showImageView.titleLabel.text = dic[@"ShowMark"];
+    [cell.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
+    cell.showLabel.text = dic[@"show_name"];
+    cell.subLabel.text = [NSString stringWithFormat:@"%@上映", dic[@"open_time"]];
+    if (dic[@"show_version_list"] && [(NSString *)dic[@"show_version_list"] length]) {
+        cell.showImageView.titleLabel.text = dic[@"show_version_list"];
         cell.showImageView.titleLabel.hidden = NO;
-        adjustLabelWidthWithEdge(cell.showImageView.titleLabel, 1.0);
+        [cell.showImageView adjustTitleLabelSize];
     }
     else {
         cell.showImageView.titleLabel.text = @"";

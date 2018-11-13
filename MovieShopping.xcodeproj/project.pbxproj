@@ -94,6 +94,7 @@
 		E4735F9421973A0E001BE69E /* ad_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8A21973A0E001BE69E /* ad_03.jpg */; };
 		E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8B21973A0E001BE69E /* ad_04.jpg */; };
 		E4735F9621973A0E001BE69E /* ad_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8C21973A0E001BE69E /* ad_05.jpg */; };
+		E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AF8219AF7690004AC05 /* api_17.txt */; };
 		E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */; };
 		E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A88792197E9A3003EDD10 /* YYMoreCell.m */; };
 		E49A887D2197FBFF003EDD10 /* MoreHotShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */; };
@@ -355,6 +356,7 @@
 		E4735F8A21973A0E001BE69E /* ad_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_03.jpg; sourceTree = "<group>"; };
 		E4735F8B21973A0E001BE69E /* ad_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_04.jpg; sourceTree = "<group>"; };
 		E4735F8C21973A0E001BE69E /* ad_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_05.jpg; sourceTree = "<group>"; };
+		E4895AF8219AF7690004AC05 /* api_17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_17.txt; sourceTree = "<group>"; };
 		E49A887521973C00003EDD10 /* YYBaseSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseSubTableVC.h; sourceTree = "<group>"; };
 		E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseSubTableVC.m; sourceTree = "<group>"; };
 		E49A88782197E9A3003EDD10 /* YYMoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMoreCell.h; sourceTree = "<group>"; };
@@ -590,6 +592,7 @@
 			isa = PBXGroup;
 			children = (
 				4A74F2EA219ADA60002B3477 /* api_16.txt */,
+				E4895AF8219AF7690004AC05 /* api_17.txt */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -1301,6 +1304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */,
 				E4735EA72196B854001BE69E /* LaunchScreen.storyboard in Resources */,
 				E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */,
 				E4CF70F821983A6500002384 /* MJRefresh.bundle in Resources */,
@@ -1666,6 +1670,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1683,6 +1688,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MovieShopping/MovieShopping-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

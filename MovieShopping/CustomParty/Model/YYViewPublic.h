@@ -27,8 +27,10 @@ UIView *NewSeparatorLine(CGRect frame);
 //文本尺寸
 CGSize textSizeWithStringInContentWidth(NSString *text, UIFont *font,  CGFloat width);
 CGSize textSizeWithStringInContentHeight(NSString *text, UIFont *font,  CGFloat height);
+CGSize textSizeWithStringInContentSize(NSString *text, UIFont *font, CGSize size);
 void adjustLabelWidth(UILabel *label);
 void adjustLabelWidthWithEdge(UILabel *label, CGFloat edge);
 void adjustLabelHeight(UILabel *label);
+void adjustLabelSizeWithEdge(UILabel *label, CGSize size, CGFloat edge);
 
 @end

@@ -88,6 +88,8 @@
  */
 #define API_SEATS_SHOW(showId,showDate) [NSString stringWithFormat:@"https://m.maoyan.com/show/seats?showId=%@&showDate=%@",showId,showDate]
 
+#define HTTP_SUCCESS 200
+
 #import <Foundation/Foundation.h>
 
 typedef void(^ResponseBlock)(id response, NSError *error);

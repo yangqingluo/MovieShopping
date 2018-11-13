@@ -1,0 +1,79 @@
+{
+    "code": 200,
+    "msg": null,
+    "data": {
+        "items": [{
+            "market": "presell",
+            "country": "美国",
+            "background_picture": "https://gw.alicdn.com/tfscom/i1/TB16CXuakfb_uJkHFrdXXX2IVXa_.jpg",
+            "director": "大卫·叶茨",
+            "open_day": "2018-11-16 00:00:00",
+            "show_name": "神奇动物：格林德沃之罪",
+            "leading_role": "埃迪·雷德梅恩,凯瑟琳·沃特森,约翰尼·德普,裘德·洛,埃兹拉·米勒,丹·福勒,艾莉森·苏朵儿",
+            "open_time": "2018-11-16",
+            "id": 215401,
+            "show_version_list": "[IMAX3D, 中国巨幕3D, 3D]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆",
+            "background_picture": "https://gw.alicdn.com/tfscom/i2/TB1ILzUXsbpK1RjSZFyXXX_qFXa_.jpg",
+            "director": "饶晓志",
+            "open_day": "2018-11-16 00:00:00",
+            "show_name": "无名之辈",
+            "leading_role": "陈建斌,任素汐,潘斌龙,章宇,马吟吟",
+            "open_time": "2018-11-16",
+            "id": 226415,
+            "show_version_list": "[其他]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆,中国台湾",
+            "director": "苏文圣",
+            "open_day": "2018-11-16 00:00:00",
+            "show_name": "有五个姐姐的我就注定要单身了啊！",
+            "leading_role": "蔡凡熙,项婕如,谢金燕,张立昂,刘奕儿,张墨锡,高隽雅,张垚,朱轩洋",
+            "open_time": "2018-11-16",
+            "id": 1236903,
+            "show_version_list": "[2D]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆",
+            "director": "宁海强",
+            "open_day": "2018-11-23 00:00:00",
+            "show_name": "中国蓝盔",
+            "leading_role": "王韬,聂远,徐洪浩",
+            "open_time": "2018-11-23",
+            "id": 1282557,
+            "show_version_list": "[]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆",
+            "director": "李宝坤",
+            "open_day": "2018-11-24 00:00:00",
+            "show_name": "超时空大冒险",
+            "open_time": "2018-11-24",
+            "id": 1288499,
+            "show_version_list": "[2D]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆",
+            "director": "柳珂",
+            "open_day": "2018-11-16 00:00:00",
+            "show_name": "梦境之源",
+            "leading_role": "陈志朋,颜丹晨,李彧,方中信,安琥,李若玹",
+            "open_time": "2018-11-16",
+            "id": 1290045,
+            "show_version_list": "[]"
+        }, {
+            "market": "presell",
+            "country": "中国大陆",
+            "director": "张中亮",
+            "open_day": "2018-11-15 00:00:00",
+            "show_name": "那些名字那些年",
+            "leading_role": "盛一伦,郑湫泓,卿雯,王禹,黎俊言",
+            "open_time": "2018-11-15",
+            "id": 1292968,
+            "show_version_list": "[2D]"
+        }],
+        "total": 0
+    }
+}

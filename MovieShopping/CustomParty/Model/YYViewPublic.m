@@ -59,17 +59,14 @@ UIView *NewSeparatorLine(CGRect frame) {
 
 //文本尺寸
 CGSize textSizeWithStringInContentWidth(NSString *text, UIFont *font,  CGFloat width) {
-    NSMutableParagraphStyle *paragraphStyle= [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
-    paragraphStyle.alignment = 0;
-    
-    NSStringDrawingOptions drawOptions = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
-    NSDictionary *attibutes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
-    
-    return [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:drawOptions attributes:attibutes context:nil].size;
+    return textSizeWithStringInContentSize(text, font, CGSizeMake(width, MAXFLOAT));
 }
 
 CGSize textSizeWithStringInContentHeight(NSString *text, UIFont *font, CGFloat height) {
+    return textSizeWithStringInContentSize(text, font, CGSizeMake(MAXFLOAT, height));
+}
+
+CGSize textSizeWithStringInContentSize(NSString *text, UIFont *font, CGSize size) {
     NSMutableParagraphStyle *paragraphStyle= [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
     paragraphStyle.alignment = 0;
@@ -77,7 +74,7 @@ CGSize textSizeWithStringInContentHeight(NSString *text, UIFont *font, CGFloat h
     NSStringDrawingOptions drawOptions = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
     NSDictionary *attibutes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
     
-    return [text boundingRectWithSize:CGSizeMake(MAXFLOAT, height) options:drawOptions attributes:attibutes context:nil].size;
+    return [text boundingRectWithSize:size options:drawOptions attributes:attibutes context:nil].size;
 }
 
 void adjustLabelWidth(UILabel *label) {
@@ -90,6 +87,12 @@ void adjustLabelWidthWithEdge(UILabel *label, CGFloat edge) {
 
 void adjustLabelHeight(UILabel *label) {
     label.height = ceil(textSizeWithStringInContentWidth(label.text, label.font, label.height).height);
+}
+
+void adjustLabelSizeWithEdge(UILabel *label, CGSize size, CGFloat edge) {
+    CGSize m_size = textSizeWithStringInContentSize(label.text, label.font, size);
+    label.width = ceil(m_size.width) + 2 * edge;
+    label.height = ceil(m_size.height);
 }
 
 @end
