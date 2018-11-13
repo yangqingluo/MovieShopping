@@ -97,6 +97,12 @@
 		E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AF8219AF7690004AC05 /* api_17.txt */; };
 		E4895AFB219B11680004AC05 /* city.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFA219B11660004AC05 /* city.txt */; };
 		E4895AFD219B129C0004AC05 /* api_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFC219B129C0004AC05 /* api_9.txt */; };
+		E4895B01219B18E80004AC05 /* api_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFE219B18E70004AC05 /* api_10.txt */; };
+		E4895B02219B18E80004AC05 /* api_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFF219B18E70004AC05 /* api_12.txt */; };
+		E4895B03219B18E80004AC05 /* api_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895B00219B18E80004AC05 /* api_11.txt */; };
+		E4895B0A219B1A7F0004AC05 /* YYMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */; };
+		E4895B11219B20B30004AC05 /* CinemaForFilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */; };
+		E4895B12219B20B30004AC05 /* CinemaForFilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */; };
 		E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */; };
 		E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A88792197E9A3003EDD10 /* YYMoreCell.m */; };
 		E49A887D2197FBFF003EDD10 /* MoreHotShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */; };
@@ -361,6 +367,14 @@
 		E4895AF8219AF7690004AC05 /* api_17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_17.txt; sourceTree = "<group>"; };
 		E4895AFA219B11660004AC05 /* city.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city.txt; sourceTree = "<group>"; };
 		E4895AFC219B129C0004AC05 /* api_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_9.txt; sourceTree = "<group>"; };
+		E4895AFE219B18E70004AC05 /* api_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_10.txt; sourceTree = "<group>"; };
+		E4895AFF219B18E70004AC05 /* api_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_12.txt; sourceTree = "<group>"; };
+		E4895B00219B18E80004AC05 /* api_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_11.txt; sourceTree = "<group>"; };
+		E4895B07219B1A7E0004AC05 /* YYMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMovieBrowser.h; sourceTree = "<group>"; };
+		E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMovieBrowser.m; sourceTree = "<group>"; };
+		E4895B0E219B20B30004AC05 /* CinemaForFilmCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaForFilmCell.h; sourceTree = "<group>"; };
+		E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaForFilmCell.m; sourceTree = "<group>"; };
+		E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaForFilmCell.xib; sourceTree = "<group>"; };
 		E49A887521973C00003EDD10 /* YYBaseSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseSubTableVC.h; sourceTree = "<group>"; };
 		E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseSubTableVC.m; sourceTree = "<group>"; };
 		E49A88782197E9A3003EDD10 /* YYMoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMoreCell.h; sourceTree = "<group>"; };
@@ -597,6 +611,9 @@
 			children = (
 				E4895AFA219B11660004AC05 /* city.txt */,
 				E4895AFC219B129C0004AC05 /* api_9.txt */,
+				E4895AFE219B18E70004AC05 /* api_10.txt */,
+				E4895B00219B18E80004AC05 /* api_11.txt */,
+				E4895AFF219B18E70004AC05 /* api_12.txt */,
 				4A74F2EA219ADA60002B3477 /* api_16.txt */,
 				E4895AF8219AF7690004AC05 /* api_17.txt */,
 			);
@@ -660,6 +677,8 @@
 				E4CF7112219876F200002384 /* FilmInfoView.m */,
 				E4CF711D2198809000002384 /* YYStarRatingView.h */,
 				E4CF711E2198809000002384 /* YYStarRatingView.m */,
+				E4895B07219B1A7E0004AC05 /* YYMovieBrowser.h */,
+				E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -1181,6 +1200,9 @@
 				4A12858021992A6900C462A8 /* CommentCell.h */,
 				4A12857E21992A6800C462A8 /* CommentCell.m */,
 				4A12857F21992A6800C462A8 /* CommentCell.xib */,
+				E4895B0E219B20B30004AC05 /* CinemaForFilmCell.h */,
+				E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */,
+				E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */,
 				4A12858321992BB500C462A8 /* LikeAnimationView.h */,
 				4A12858421992BB500C462A8 /* LikeAnimationView.m */,
 			);
@@ -1312,12 +1334,14 @@
 			files = (
 				E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */,
 				E4735EA72196B854001BE69E /* LaunchScreen.storyboard in Resources */,
+				E4895B02219B18E80004AC05 /* api_12.txt in Resources */,
 				E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */,
 				E4CF70F821983A6500002384 /* MJRefresh.bundle in Resources */,
 				E4735F9321973A0E001BE69E /* ad_02.jpg in Resources */,
 				E4CF710D219861F600002384 /* CinemaCell.xib in Resources */,
 				4A12858221992A6900C462A8 /* CommentCell.xib in Resources */,
 				E4895AFB219B11680004AC05 /* city.txt in Resources */,
+				E4895B12219B20B30004AC05 /* CinemaForFilmCell.xib in Resources */,
 				4A74F2EB219ADA60002B3477 /* api_16.txt in Resources */,
 				E4735F9221973A0E001BE69E /* ad_01.jpg in Resources */,
 				E4735EA42196B854001BE69E /* Assets.xcassets in Resources */,
@@ -1328,6 +1352,8 @@
 				E4735F9021973A0E001BE69E /* seats 3.plist in Resources */,
 				E4735F8F21973A0E001BE69E /* seats 2.plist in Resources */,
 				4A89A20C2199810900C0DAFE /* citydict.plist in Resources */,
+				E4895B03219B18E80004AC05 /* api_11.txt in Resources */,
+				E4895B01219B18E80004AC05 /* api_10.txt in Resources */,
 				E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */,
 				E4CF710221983B9700002384 /* FilmCell.xib in Resources */,
 				E4735EA22196B854001BE69E /* Main.storyboard in Resources */,
@@ -1478,6 +1504,7 @@
 				E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */,
 				E4CF710121983B9700002384 /* FilmCell.m in Sources */,
 				E4CF711F2198809000002384 /* YYStarRatingView.m in Sources */,
+				E4895B11219B20B30004AC05 /* CinemaForFilmCell.m in Sources */,
 				E4CF70F921983A6500002384 /* MJRefreshConst.m in Sources */,
 				E4735F372196CFCD001BE69E /* YYViewPublic.m in Sources */,
 				E4CF70EE21983A6500002384 /* MJRefreshHeader.m in Sources */,
@@ -1496,6 +1523,7 @@
 				E49A88D621981234003EDD10 /* SDWebImageFrame.m in Sources */,
 				4A12856B219907D500C462A8 /* AFURLResponseSerialization.m in Sources */,
 				E4CF70F421983A6500002384 /* MJRefreshBackStateFooter.m in Sources */,
+				E4895B0A219B1A7F0004AC05 /* YYMovieBrowser.m in Sources */,
 				E49A8882219805C0003EDD10 /* YYCollectionView.m in Sources */,
 				E4735F402196D0E6001BE69E /* UIImage+Rotate.m in Sources */,
 				E4735F242196C136001BE69E /* MovieController.m in Sources */,

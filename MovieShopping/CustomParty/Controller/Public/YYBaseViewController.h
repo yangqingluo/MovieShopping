@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYViewPublic.h"
-#import "UIViewController+HUD.h"
-#import "YYNetwork.h"
+#import "YYPublic.h"
 
 @interface YYBaseViewController : UIViewController
+
+@property (nonatomic, copy) NSDictionary *sourceData;
 
 - (void)backBtnAction;
 

@@ -1,0 +1,35 @@
+{
+	"code": 200,
+	"msg": "success",
+	"data": {
+		"items": [{
+			"show_time": "2018-11-12 20:10:00",
+			"show_version": "英语 3D",
+			"section_id": null,
+			"show_date": "2018-11-12",
+			"price": 49.0,
+			"hall_name": "5号厅-泸州商业银行厅",
+			"id": 588364614,
+			"close_time": "2018-11-12 21:57:00"
+		}, {
+			"show_time": "2018-11-12 20:30:00",
+			"show_version": "英语 3D",
+			"section_id": null,
+			"show_date": "2018-11-12",
+			"price": 49.0,
+			"hall_name": "6号厅",
+			"id": 588364616,
+			"close_time": "2018-11-12 22:17:00"
+		}, {
+			"show_time": "2018-11-12 21:05:00",
+			"show_version": "英语 3D",
+			"section_id": null,
+			"show_date": "2018-11-12",
+			"price": 49.0,
+			"hall_name": "1号厅",
+			"id": 588364599,
+			"close_time": "2018-11-12 22:52:00"
+		}],
+		"total": 3
+	}
+}

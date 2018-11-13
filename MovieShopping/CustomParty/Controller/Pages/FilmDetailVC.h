@@ -10,6 +10,4 @@
 
 @interface FilmDetailVC : YYBaseSubTableVC
 
-@property (nonatomic, copy) NSDictionary *sourceData;
-
 @end

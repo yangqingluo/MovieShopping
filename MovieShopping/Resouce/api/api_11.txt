@@ -1,0 +1,14 @@
+{
+	"code": 200,
+	"msg": "success",
+	"data": {
+		"items": [{
+			"show_date": "2018-11-12"
+		}, {
+			"show_date": "2018-11-13"
+		}, {
+			"show_date": "2018-11-14"
+		}],
+		"total": 3
+	}
+}

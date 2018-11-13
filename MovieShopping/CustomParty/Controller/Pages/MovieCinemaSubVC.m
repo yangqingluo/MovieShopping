@@ -46,7 +46,7 @@
     
     self.tableView.frame = CGRectMake(0, menu.bottom, self.view.width, self.view.height - menu.bottom);
     [self updateTableViewHeader];
-    [self becomeListed];
+    [self beginRefreshing];
 }
 
 #pragma mark - Networking
@@ -58,6 +58,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             YYResponse *response = APIData(@9);
             if (response.code == HTTP_SUCCESS) {
+                [self.dataList removeAllObjects];
                 [self.dataList addObjectsFromArray:response.data.items];
             }
             [self endRefreshing];
@@ -171,7 +172,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CinemaSelectFilmVC *vc = [CinemaSelectFilmVC new];
-//    vc.sourceData = self.dataList[indexPath.row];
+    vc.sourceData = self.dataList[indexPath.row];
     [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
 }
 

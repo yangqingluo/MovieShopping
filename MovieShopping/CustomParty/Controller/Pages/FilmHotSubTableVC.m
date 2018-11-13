@@ -31,6 +31,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             YYResponse *response = APIData(@16);
             if (response.code == HTTP_SUCCESS) {
+                [self.dataList removeAllObjects];
                 [self.dataList addObjectsFromArray:response.data.items];
             }
             [self endRefreshing];

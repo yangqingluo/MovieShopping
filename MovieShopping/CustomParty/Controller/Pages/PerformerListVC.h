@@ -10,7 +10,6 @@
 
 @interface PerformerListVC : YYBaseSubTableVC
 
-@property (nonatomic, copy) NSDictionary *sourceData;
 @property (nonatomic, copy) NSArray *performerList;
 
 @end

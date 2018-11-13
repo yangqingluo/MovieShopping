@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "YYNavigationController.h"
+#import "YYViewPublic.h"
+#import "UIViewController+HUD.h"
+#import "YYNetwork.h"
 #import "YYType.h"
 
 @interface YYPublic : NSObject
