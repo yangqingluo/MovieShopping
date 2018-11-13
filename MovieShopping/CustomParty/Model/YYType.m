@@ -10,6 +10,15 @@
 
 @implementation YYType
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"ID": @"id"};
+}
+
+@end
+
+@implementation YYCity
+
+
 @end
 
 @implementation YYData

@@ -12,6 +12,7 @@
 #import "MovieCinemaSubVC.h"
 #import "UIImage+Color.h"
 #import "GF_CityListViewController.h"
+#import "YYPublic.h"
 
 @interface MovieController ()
 
@@ -30,7 +31,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationItem.leftBarButtonItems = @[self.navigationItem.leftBarButtonItem, [[UIBarButtonItem alloc] initWithTitle:@"成都" style:UIBarButtonItemStylePlain target:self action:@selector(cityBtnAction)]];
+    self.navigationItem.leftBarButtonItems = @[self.navigationItem.leftBarButtonItem, [[UIBarButtonItem alloc] initWithTitle:[YYPublic getInstance].city.region_name style:UIBarButtonItemStylePlain target:self action:@selector(cityBtnAction)]];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_search"] style:UIBarButtonItemStylePlain target:self action:@selector(searchBtnAction)];
     
     UISegmentedControl *segment = [[UISegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 160, 30)];

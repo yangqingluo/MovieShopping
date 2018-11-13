@@ -1,0 +1,6 @@
+{
+    "id": 70,
+    "pin_yin": "chengdu",
+    "city_code": "70",
+    "region_name": "成都"
+}

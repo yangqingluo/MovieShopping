@@ -32,6 +32,14 @@ __strong static YYPublic  *_singleManger = nil;
 }
 
 #pragma mark - getter
+- (YYCity *)city {
+    if (!_city) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"txt"];
+        NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        _city = [YYCity mj_objectWithKeyValues:[jsonString mj_keyValues]];
+    }
+    return _city;
+}
 
 YYResponse *APIData(NSNumber *number) {
     NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"api_%@.txt", number] ofType:nil];

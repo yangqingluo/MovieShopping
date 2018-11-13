@@ -10,6 +10,16 @@
 
 @interface YYType : NSObject
 
+@property (nonatomic, copy) NSString *ID;
+
+@end
+
+@interface YYCity: YYType
+
+@property (nonatomic, copy) NSString *city_code;//城市编码
+@property (nonatomic, copy) NSString *pin_yin;//拼音
+@property (nonatomic, copy) NSString *region_name;//城市名
+
 @end
 
 @interface YYData: NSObject
@@ -21,8 +31,8 @@
 
 @interface YYResponse : NSObject
 
-@property (nonatomic, assign) NSInteger code;
 @property (nonatomic, copy) NSString *msg;
+@property (nonatomic, assign) NSInteger code;
 @property (nonatomic, strong) YYData *data;
 
 @end

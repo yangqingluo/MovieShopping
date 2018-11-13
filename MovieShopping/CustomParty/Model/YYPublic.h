@@ -15,7 +15,7 @@
 + (YYPublic *)getInstance;
 
 @property (nonatomic, weak) YYNavigationController *mainNav;
-@property (nonatomic, strong) YYResponse *apiData_16;
+@property (nonatomic, strong) YYCity *city;
 
 YYResponse *APIData(NSNumber *number);
 

@@ -45,9 +45,25 @@
     [self.view addSubview:menu];
     
     self.tableView.frame = CGRectMake(0, menu.bottom, self.view.width, self.view.height - menu.bottom);
-    self.tableView.tableHeaderView = self.headerView;
-    
-    [self.dataList addObjectsFromArray:[cinemaString mj_JSONObject][@"Cinemas"]];
+    [self updateTableViewHeader];
+    [self becomeListed];
+}
+
+#pragma mark - Networking
+- (void)pullBaseListData:(BOOL)isReset {
+    [self showHudInView:self.view hint:nil];
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:0.5f];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            YYResponse *response = APIData(@9);
+            if (response.code == HTTP_SUCCESS) {
+                [self.dataList addObjectsFromArray:response.data.items];
+            }
+            [self endRefreshing];
+            [self updateSubviews];
+        });
+    });
 }
 
 #pragma mark - getter
@@ -145,10 +161,10 @@
     }
     cell.backgroundColor = [UIColor clearColor];
     NSDictionary *dic = self.dataList[indexPath.row];
-    cell.nameLabel.text = dic[@"CinemaName"];
-    cell.addressLabel.text = dic[@"Address"];
-    cell.priceLabel.text = [NSString stringWithFormat:@"%@元", dic[@"Price"]];
-//    cell.distanceLabel.text = dic[@""];
+    cell.nameLabel.text = dic[@"cinema_name"];
+    cell.addressLabel.text = dic[@"address"];
+    cell.priceLabel.text = [NSString stringWithFormat:@"%@元", dic[@"price"] ? dic[@"price"] : @""];
+    cell.distanceLabel.text = [NSString stringWithFormat:@"%@km", dic[@"distance"] ? dic[@"distance"] : @""];
     return cell;
 }
 
