@@ -43,8 +43,6 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_share"] style:UIBarButtonItemStylePlain target:self action:@selector(shareBtnAction)];
     self.tableView.allowsSelection = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.tableHeaderView = self.headerView;
-    self.tableView.tableFooterView = self.footerView;
     [self loadData];
 }
 
@@ -104,6 +102,8 @@
     //4.队列组所有请求完成回调刷新UI
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         [self hideHud];
+        self.tableView.tableHeaderView = self.headerView;
+        self.tableView.tableFooterView = self.footerView;
         [self.tableView reloadData];
     });
 }
@@ -135,13 +135,13 @@
         
         NSDictionary *dic = self.sourceData;
         _infoView = [[FilmInfoView alloc] initWithFrame:CGRectMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT, _headerView.width, 180.0)];
-        [_infoView.showImageView sd_setImageWithURL:dic[@"BackgroundPicture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
-        _infoView.nameLabel.text = dic[@"ShowName"];
-        _infoView.typeLabel.text = dic[@"Type"];
-        _infoView.durationLabel.text = [NSString stringWithFormat:@"%@/%@分钟", dic[@"Country"], dic[@"Duration"]];
-        _infoView.dateLabel.text = [NSString stringWithFormat:@"%@ 在 %@上映", dic[@"OpenDay"], dic[@"Country"]];
-        if (dic[@"ShowMark"] && [(NSString *)dic[@"ShowMark"] length]) {
-            _infoView.showImageView.titleLabel.text = dic[@"ShowMark"];
+        [_infoView.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
+        _infoView.nameLabel.text = dic[@"show_name"];
+        _infoView.typeLabel.text = dic[@"show_version_list"];
+        _infoView.durationLabel.text = [NSString stringWithFormat:@"%@/%@分钟", dic[@"country"], dic[@"duration"]];
+        _infoView.dateLabel.text = [NSString stringWithFormat:@"%@ 在 %@上映", dic[@"open_day"], dic[@"country"]];
+        if (dic[@"show_version_list"] && [(NSString *)dic[@"show_version_list"] length]) {
+            _infoView.showImageView.titleLabel.text = dic[@"show_version_list"];
             _infoView.showImageView.titleLabel.hidden = NO;
             [_infoView.showImageView adjustTitleLabelSize];
         }
@@ -158,15 +158,15 @@
         NSString *nibName = NSStringFromClass([FilmScoreCell class]);
         FilmScoreCell *cell = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
         
-        cell.scoreLabel.text = dic[@"Remark"];
-        cell.scoreView.value = [dic[@"Remark"] doubleValue] / 2.0;
-        cell.wishLabel = dic[@"Wish"];
+        cell.scoreLabel.text = dic[@"remark"];
+        cell.scoreView.value = [dic[@"remark"] doubleValue] / 2.0;
+        cell.wishLabel = dic[@"wish"];
         TLDisplayView *_displayView = [[TLDisplayView alloc] init];
         _displayView.delegate = self;
         _displayView.font = [UIFont systemFontOfSize: 14.0];
         _displayView.backgroundColor = [UIColor clearColor];
         _displayView.numberOfLines = 3;
-        [_displayView setText:dic[@"Description"]];
+        [_displayView setText:self.headerInfoDic[@"dra"]];
         [_displayView setOpenString:@"展开" closeString:@"收起" font: _displayView.font textColor:YYBlueColor];
         CGSize size = [_displayView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 2 * YYEdgeBig, MAXFLOAT)];
         _displayView.frame = CGRectMake(YYEdgeBig, 140, size.width, size.height);

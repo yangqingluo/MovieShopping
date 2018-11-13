@@ -54,9 +54,68 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadFirstPageData {
+    [self pullBaseListData:YES];
+}
+
+- (void)loadMoreData {
+    [self pullBaseListData:NO];
+}
+
+- (void)pullBaseListData:(BOOL)isReset {
+    
+}
+
+- (void)updateTableViewHeader {
+    typeof(self) __weak weakself = self;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakself loadFirstPageData];
+    }];
+}
+
+- (void)updateTableViewFooter {
+    typeof(self) __weak weakself = self;
+    if (!self.tableView.mj_footer) {
+        self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            [weakself loadMoreData];
+        }];
+    }
+}
+
+- (void)beginRefreshing {
+    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)endRefreshing {
+    //记录刷新时间
+    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:self.dateKey];
+    [self hideHud];
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
+}
+
+- (void)updateSubviews {
+    [self.tableView reloadData];
+}
+
+#define YYRefreshTime               24 * 60 * 60//自动刷新间隔时间
+- (void)becomeListed {
+    NSDate *lastRefreshTime = [[NSUserDefaults standardUserDefaults] objectForKey:self.dateKey];
+    if (!self.dataList.count || !lastRefreshTime || [lastRefreshTime timeIntervalSinceNow] < -YYRefreshTime) {
+        [self beginRefreshing];
+    }
+}
+
+- (void)becomeUnListed {
+    
+}
+
+#pragma mark - getter
+- (NSString *)dateKey{
+    if (!_dateKey) {
+        _dateKey = [NSString stringWithFormat:@"%@_dateKey_%d", [self class], (int)self.indextag];
+    }
+    return _dateKey;
 }
 
 #pragma mark - getter

@@ -80,7 +80,7 @@
 
 - (void)slideSwitchView:(YYSlideSwitchView *)view didselectTab:(NSUInteger)number {
     NSDictionary *dic = self.viewArray[number];
-    YYBaseViewController *listVC = dic[@"VC"];
+    YYBaseSubTableVC *listVC = dic[@"VC"];
     if ([listVC respondsToSelector:@selector(becomeListed)]) {
         [listVC performSelector:@selector(becomeListed)];
     }
@@ -90,7 +90,7 @@
 
 - (void)slideSwitchView:(YYSlideSwitchView *)view didunselectTab:(NSUInteger)number {
     NSDictionary *dic = self.viewArray[number];
-    YYBaseViewController *listVC = dic[@"VC"];
+    YYBaseSubTableVC *listVC = dic[@"VC"];
     if ([listVC respondsToSelector:@selector(becomeUnListed)]) {
         [listVC performSelector:@selector(becomeUnListed)];
     }

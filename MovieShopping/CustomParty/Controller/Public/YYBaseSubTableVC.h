@@ -7,6 +7,7 @@
 //
 
 #import "YYBaseViewController.h"
+#import "MJRefresh.h"
 
 @interface YYBaseSubTableVC : YYBaseViewController<UITableViewDelegate, UITableViewDataSource>
 
@@ -15,5 +16,19 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataList;
+@property (nonatomic, strong) NSString *dateKey;
+@property (nonatomic, assign) NSInteger indextag;
+
+- (void)updateTableViewHeader;
+- (void)updateTableViewFooter;
+- (void)beginRefreshing;
+- (void)endRefreshing;
+- (void)updateSubviews;
+- (void)loadFirstPageData;
+- (void)loadMoreData;
+- (void)pullBaseListData:(BOOL)isReset;
+
+- (void)becomeListed;
+- (void)becomeUnListed;
 
 @end

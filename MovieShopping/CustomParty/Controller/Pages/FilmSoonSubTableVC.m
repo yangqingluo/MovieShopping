@@ -22,9 +22,24 @@
     [super viewDidLoad];
     self.view.backgroundColor = YYLightWhiteColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    NSArray *m_array = [filmString mj_JSONObject][@"movieList"];
-    [self.dataList addObjectsFromArray:m_array];
+    [self updateTableViewHeader];
+}
+
+#pragma mark - Networking
+- (void)pullBaseListData:(BOOL)isReset {
+    [self showHudInView:self.view hint:nil];
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        [NSThread sleepForTimeInterval:1.0f];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            YYResponse *response = APIData(@17);
+            if (response.code == HTTP_SUCCESS) {
+                [self.dataList addObjectsFromArray:response.data.items];
+            }
+            [self endRefreshing];
+            [self updateSubviews];
+        });
+    });
 }
 
 #pragma mark - UITableView
@@ -49,9 +64,9 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
     }
     NSDictionary *dic = self.dataList[indexPath.section];
-    [cell.showImageView sd_setImageWithURL:dic[@"BackgroundPicture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
-    cell.nameLabel.text = dic[@"ShowName"];
-    if (dic[@"BuyPre"]) {
+    [cell.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
+    cell.nameLabel.text = dic[@"show_name"];
+    if ([dic[@"market"] isEqualToString:@"presell"]) {
         [cell.buyBtn setTitle:@"预售" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYBlueColor;
     }
@@ -59,9 +74,9 @@
         [cell.buyBtn setTitle:@"购票" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYRedColor;
     }
-    cell.scoreLabel.text = dic[@"Remark"];
-    cell.directorLabel.text = [NSString stringWithFormat:@"导演：%@", dic[@"Director"]];
-    cell.leadingRoleLabel.text = [NSString stringWithFormat:@"主演：%@", dic[@"LeadingRole"]];
+    cell.scoreLabel.text = dic[@"remark"];
+    cell.directorLabel.text = [NSString stringWithFormat:@"导演：%@", dic[@"director"]];
+    cell.leadingRoleLabel.text = [NSString stringWithFormat:@"主演：%@", dic[@"leading_role"]];
     return cell;
 }
 
@@ -83,7 +98,7 @@
     [_headerView addSubview:_headerLabel];
     
     NSDictionary *dic = self.dataList[section];
-    _headerLabel.text = [NSString stringWithFormat:@"%@上映", dic[@"OpenDay"]];
+    _headerLabel.text = [NSString stringWithFormat:@"%@上映", dic[@"open_time"]];
     return _headerView;
 }
 
