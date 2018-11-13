@@ -132,12 +132,10 @@
     
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 32;
 }
-- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView* bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 32)];
     bgView.backgroundColor = UIColorFromRGB(0xf0f0f0);
     
@@ -149,10 +147,10 @@
     return bgView;
 }
 //显示表格右边索引集合
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-{
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     return _keys;
 }
+
 //选中索引回调方法
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
     MBProgressHUD *hub = [[MBProgressHUD alloc] initWithView:self.view];
@@ -162,9 +160,10 @@
     hub.minShowTime = 0.5;
     [self.view addSubview:hub];
     [hub showAnimated:YES];
-    
+    [hub hideAnimated:YES afterDelay:0.5];
     return index;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray* cityArray = _cities[_keys[indexPath.section]];

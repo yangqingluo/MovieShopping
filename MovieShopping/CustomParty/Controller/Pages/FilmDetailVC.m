@@ -54,7 +54,7 @@
 
 - (void)loadData {
     [self showHudInView:self.view hint:nil];
-    
+    NSString *filmId = @"42964";
     //1.创建队列组
     dispatch_group_t group = dispatch_group_create();
     //2.创建队列
@@ -62,7 +62,7 @@
     //3.添加请求
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_DETAIL(self.sourceData[@"Id"]) response:^(id response, NSError *error) {
+        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_DETAIL(filmId) response:^(id response, NSError *error) {
             dispatch_group_leave(group);
             if (error) {
                 
@@ -75,7 +75,7 @@
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_PERFORMER(self.sourceData[@"Id"]) response:^(id response, NSError *error) {
+        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_PERFORMER(filmId) response:^(id response, NSError *error) {
             dispatch_group_leave(group);
             if (error) {
                 
@@ -89,7 +89,7 @@
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_COMMENT_SHOT(self.sourceData[@"Id"], @"0", @"1", @"0") response:^(id response, NSError *error) {
+        [[YYNetwork getInstance] getHTTPPath:API_MOVIE_COMMENT_SHOT(filmId, @"0", @"1", @"0") response:^(id response, NSError *error) {
             dispatch_group_leave(group);
             if (error) {
                 
