@@ -17,11 +17,9 @@
 
 @property (nonatomic, assign, readwrite) id<YYMovieBrowserDelegate> delegate;
 @property (nonatomic, assign, readonly)  NSInteger currentIndex;
-@property (nonatomic, strong, readwrite) NSMutableArray *movies;
 
 - (instancetype)initWithFrame:(CGRect)frame movies:(NSArray *)movies;
 - (instancetype)initWithFrame:(CGRect)frame movies:(NSArray *)movies currentIndex:(NSInteger)index;
 - (void)setCurrentMovieIndex:(NSInteger)index;
-- (void)updateMovies:(NSArray *)movies;
 
 @end

@@ -103,6 +103,12 @@
 		E4895B0A219B1A7F0004AC05 /* YYMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */; };
 		E4895B11219B20B30004AC05 /* CinemaForFilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */; };
 		E4895B12219B20B30004AC05 /* CinemaForFilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */; };
+		E4895B1E219B29C30004AC05 /* SGHelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B15219B29C30004AC05 /* SGHelperTool.m */; };
+		E4895B1F219B29C30004AC05 /* SGPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B17219B29C30004AC05 /* SGPageContentView.m */; };
+		E4895B20219B29C30004AC05 /* SGPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B19219B29C30004AC05 /* SGPageTitleView.m */; };
+		E4895B21219B29C30004AC05 /* UIView+SGFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B1D219B29C30004AC05 /* UIView+SGFrame.m */; };
+		E4895B28219B34140004AC05 /* FilmSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B26219B34140004AC05 /* FilmSectionCell.m */; };
+		E4895B29219B34140004AC05 /* FilmSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4895B27219B34140004AC05 /* FilmSectionCell.xib */; };
 		E49A887721973C00003EDD10 /* YYBaseSubTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */; };
 		E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A88792197E9A3003EDD10 /* YYMoreCell.m */; };
 		E49A887D2197FBFF003EDD10 /* MoreHotShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E49A887C2197FBFF003EDD10 /* MoreHotShowCell.m */; };
@@ -375,6 +381,19 @@
 		E4895B0E219B20B30004AC05 /* CinemaForFilmCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaForFilmCell.h; sourceTree = "<group>"; };
 		E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaForFilmCell.m; sourceTree = "<group>"; };
 		E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaForFilmCell.xib; sourceTree = "<group>"; };
+		E4895B14219B29C30004AC05 /* SGHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHelperTool.h; sourceTree = "<group>"; };
+		E4895B15219B29C30004AC05 /* SGHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHelperTool.m; sourceTree = "<group>"; };
+		E4895B16219B29C30004AC05 /* SGPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageContentView.h; sourceTree = "<group>"; };
+		E4895B17219B29C30004AC05 /* SGPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageContentView.m; sourceTree = "<group>"; };
+		E4895B18219B29C30004AC05 /* SGPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleView.h; sourceTree = "<group>"; };
+		E4895B19219B29C30004AC05 /* SGPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageTitleView.m; sourceTree = "<group>"; };
+		E4895B1A219B29C30004AC05 /* SGPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageView.h; sourceTree = "<group>"; };
+		E4895B1B219B29C30004AC05 /* SGPageViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageViewHelper.h; sourceTree = "<group>"; };
+		E4895B1C219B29C30004AC05 /* UIView+SGFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SGFrame.h"; sourceTree = "<group>"; };
+		E4895B1D219B29C30004AC05 /* UIView+SGFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGFrame.m"; sourceTree = "<group>"; };
+		E4895B25219B34140004AC05 /* FilmSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmSectionCell.h; sourceTree = "<group>"; };
+		E4895B26219B34140004AC05 /* FilmSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmSectionCell.m; sourceTree = "<group>"; };
+		E4895B27219B34140004AC05 /* FilmSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmSectionCell.xib; sourceTree = "<group>"; };
 		E49A887521973C00003EDD10 /* YYBaseSubTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseSubTableVC.h; sourceTree = "<group>"; };
 		E49A887621973C00003EDD10 /* YYBaseSubTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseSubTableVC.m; sourceTree = "<group>"; };
 		E49A88782197E9A3003EDD10 /* YYMoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMoreCell.h; sourceTree = "<group>"; };
@@ -835,6 +854,7 @@
 		E4735F4521972DEE001BE69E /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				E4895B13219B29C30004AC05 /* SGPageView */,
 				4A12858621992C2000C462A8 /* DateTools */,
 				4A12855C219907D500C462A8 /* AFNetworking */,
 				E4CF712021988A5700002384 /* DisplayMoreText */,
@@ -970,6 +990,23 @@
 				E4735F8C21973A0E001BE69E /* ad_05.jpg */,
 			);
 			path = ad;
+			sourceTree = "<group>";
+		};
+		E4895B13219B29C30004AC05 /* SGPageView */ = {
+			isa = PBXGroup;
+			children = (
+				E4895B14219B29C30004AC05 /* SGHelperTool.h */,
+				E4895B15219B29C30004AC05 /* SGHelperTool.m */,
+				E4895B16219B29C30004AC05 /* SGPageContentView.h */,
+				E4895B17219B29C30004AC05 /* SGPageContentView.m */,
+				E4895B18219B29C30004AC05 /* SGPageTitleView.h */,
+				E4895B19219B29C30004AC05 /* SGPageTitleView.m */,
+				E4895B1A219B29C30004AC05 /* SGPageView.h */,
+				E4895B1B219B29C30004AC05 /* SGPageViewHelper.h */,
+				E4895B1C219B29C30004AC05 /* UIView+SGFrame.h */,
+				E4895B1D219B29C30004AC05 /* UIView+SGFrame.m */,
+			);
+			path = SGPageView;
 			sourceTree = "<group>";
 		};
 		E49A888921981233003EDD10 /* SDWebImage */ = {
@@ -1203,6 +1240,9 @@
 				E4895B0E219B20B30004AC05 /* CinemaForFilmCell.h */,
 				E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */,
 				E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */,
+				E4895B25219B34140004AC05 /* FilmSectionCell.h */,
+				E4895B26219B34140004AC05 /* FilmSectionCell.m */,
+				E4895B27219B34140004AC05 /* FilmSectionCell.xib */,
 				4A12858321992BB500C462A8 /* LikeAnimationView.h */,
 				4A12858421992BB500C462A8 /* LikeAnimationView.m */,
 			);
@@ -1333,6 +1373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */,
+				E4895B29219B34140004AC05 /* FilmSectionCell.xib in Resources */,
 				E4735EA72196B854001BE69E /* LaunchScreen.storyboard in Resources */,
 				E4895B02219B18E80004AC05 /* api_12.txt in Resources */,
 				E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */,
@@ -1455,9 +1496,11 @@
 				E4735F0A2196BB1B001BE69E /* JSONParse.swift in Sources */,
 				E49A88C921981234003EDD10 /* MKAnnotationView+WebCache.m in Sources */,
 				E4735F0B2196BB1B001BE69E /* YYCenterLineView.swift in Sources */,
+				E4895B21219B29C30004AC05 /* UIView+SGFrame.m in Sources */,
 				E49A88D821981234003EDD10 /* SDWebImageImageIOCoder.m in Sources */,
 				4A74F2DE219AD501002B3477 /* FilmSelectCinemaVC.m in Sources */,
 				E49A88D021981234003EDD10 /* SDWebImageCoder.m in Sources */,
+				E4895B1E219B29C30004AC05 /* SGHelperTool.m in Sources */,
 				E4735F412196D0E6001BE69E /* UIImage+SubImage.m in Sources */,
 				E4CF70F021983A6500002384 /* MJRefreshAutoNormalFooter.m in Sources */,
 				E49A88E521981234003EDD10 /* UIView+WebCacheOperation.m in Sources */,
@@ -1486,6 +1529,7 @@
 				4A74F2E7219AD85F002B3477 /* YYType.m in Sources */,
 				E4735F4E21972DEE001BE69E /* CWFlowLayout.m in Sources */,
 				E4CF70F521983A6500002384 /* MJRefreshGifHeader.m in Sources */,
+				E4895B1F219B29C30004AC05 /* SGPageContentView.m in Sources */,
 				E4735F0C2196BB1B001BE69E /* YYHallNameView.swift in Sources */,
 				E4CF70EA21983A6500002384 /* MJRefreshAutoFooter.m in Sources */,
 				E4CF70F221983A6500002384 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1503,6 +1547,7 @@
 				E49A88CC21981234003EDD10 /* NSImage+WebCache.m in Sources */,
 				E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */,
 				E4CF710121983B9700002384 /* FilmCell.m in Sources */,
+				E4895B20219B29C30004AC05 /* SGPageTitleView.m in Sources */,
 				E4CF711F2198809000002384 /* YYStarRatingView.m in Sources */,
 				E4895B11219B20B30004AC05 /* CinemaForFilmCell.m in Sources */,
 				E4CF70F921983A6500002384 /* MJRefreshConst.m in Sources */,
@@ -1530,6 +1575,7 @@
 				E49A88DC21981234003EDD10 /* SDWebImageWebPCoder.m in Sources */,
 				E4735F6E21972F22001BE69E /* NSObject+MJKeyValue.m in Sources */,
 				E49A88D121981234003EDD10 /* SDWebImageCoderHelper.m in Sources */,
+				E4895B28219B34140004AC05 /* FilmSectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

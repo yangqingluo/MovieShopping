@@ -13,6 +13,7 @@
 @interface YYMovieBrowser () <UIScrollViewDelegate>
 
 @property (nonatomic, assign, readwrite) NSInteger      currentIndex;
+@property (nonatomic, strong, readwrite) NSMutableArray *movies;
 @property (nonatomic, strong, readwrite) NSMutableArray *items;
 @property (nonatomic, assign, readwrite) CGPoint        scrollViewContentOffset;
 @property (nonatomic, strong, readwrite) UIScrollView   *scrollView;

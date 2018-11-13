@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YYMovieBrowser.h"
 
-@interface CinemaForFilmCell : UITableViewCell<YYMovieBrowserDelegate>
+@interface CinemaForFilmCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;

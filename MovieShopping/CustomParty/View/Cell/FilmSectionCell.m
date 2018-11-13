@@ -1,14 +1,14 @@
 //
-//  CinemaForFilmCell.m
+//  FilmSectionCell.m
 //  MovieShopping
 //
-//  Created by 7kers on 2018/11/13.
+//  Created by 7kers on 2018/11/14.
 //  Copyright © 2018年 yang. All rights reserved.
 //
 
-#import "CinemaForFilmCell.h"
+#import "FilmSectionCell.h"
 
-@implementation CinemaForFilmCell
+@implementation FilmSectionCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
