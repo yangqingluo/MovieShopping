@@ -13,6 +13,7 @@
 #import "MoreSoonShowCell.h"
 #import "YYPublic.h"
 #import "FilmDetailVC.h"
+#import "FilmSelectCinemaVC.h"
 
 static NSString *adCellID = @"adCell";
 
@@ -276,7 +277,9 @@ static NSString *adCellID = @"adCell";
 - (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo {
     if ([eventName isEqualToString:Event_HotShowCellButtonClicked]) {
         NSInteger index = [(NSNumber *)userInfo integerValue];
-        NSLog(@"%ld", (long)index);
+        FilmSelectCinemaVC *vc = [FilmSelectCinemaVC new];
+        vc.sourceData = self.hotArray[index];
+        [[YYPublic getInstance].mainNav pushViewController:vc animated:YES];
     }
     else if ([eventName isEqualToString:Event_MoreCellItemSelected]) {
         NSIndexPath *indexPath = (NSIndexPath *)userInfo;

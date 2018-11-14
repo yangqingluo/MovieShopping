@@ -12,7 +12,6 @@
 #import "MovieCinemaSubVC.h"
 #import "UIImage+Color.h"
 #import "GF_CityListViewController.h"
-#import "YYPublic.h"
 
 @interface MovieController ()
 
@@ -52,11 +51,8 @@
 
 - (void)cityBtnAction {
     GF_CityListViewController *cityListVC = [GF_CityListViewController new];
-    
     [cityListVC changeCityName:^(NSString *cityName) {
-        
 //        sender.title = cityName;
-//
 //        [self getMovieDatas:cityName];
     }];    
     [self.navigationController pushViewController:cityListVC animated:YES];

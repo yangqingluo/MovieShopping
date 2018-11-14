@@ -19,11 +19,10 @@
     
     NSInteger _currentData1Index;
     NSInteger _currentData2Index;
-
-    JSDropDownMenu *menu;
 }
 
 @property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) JSDropDownMenu *menu;
 
 @end
 
@@ -33,18 +32,19 @@
     [super viewDidLoad];
     
     _data1 = @[@"不限区域", @"成华区", @"青羊区", @"锦江区", @"武侯区", @"金牛区", @"高新区", @"天府新区", @"双流区"];
-    _data2 = @[@"智能排序", @"离我最近", @"评价最高", @"人气最高"];
+    _data2 = @[@"距离最近", @"价格最低"];
     
-    menu = [[JSDropDownMenu alloc] initWithOrigin:CGPointMake(0, YY_STATUS_BAR_HEIGHT + YY_NAVIGATION_BAR_HEIGHT) andHeight: 30];
-    menu.indicatorColor = [UIColor colorWithRed:175.0f/255.0f green:175.0f/255.0f blue:175.0f/255.0f alpha:1.0];
-    menu.separatorColor = [UIColor colorWithRed:210.0f/255.0f green:210.0f/255.0f blue:210.0f/255.0f alpha:1.0];
-    menu.textColor = [UIColor colorWithRed:83.f/255.0f green:83.f/255.0f blue:83.f/255.0f alpha:1.0f];
-    menu.dataSource = self;
-    menu.delegate = self;
-    menu.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:menu];
+    _menu = [[JSDropDownMenu alloc] initWithOrigin:CGPointMake(0, YY_TOP_HEIGHT) andHeight: 40];
+    _menu.indicatorColor = YYDeepGrayColor;
+    _menu.separatorColor = YYSeparatorColor;
+    _menu.textColor = YYTextColor;
+    _menu.dataSource = self;
+    _menu.delegate = self;
+    _menu.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_menu];
     
-    self.tableView.frame = CGRectMake(0, menu.bottom, self.view.width, self.view.height - menu.bottom);
+    self.tableView.frame = CGRectMake(0, _menu.bottom, self.view.width, self.view.height - _menu.bottom);
+    self.tableView.tableHeaderView = self.headerView;
     [self updateTableViewHeader];
     [self beginRefreshing];
 }
@@ -71,7 +71,7 @@
 - (UIView *)headerView {
     if (!_headerView) {
         CGFloat width = CGRectGetWidth(self.view.frame);
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, width * 0.5)];
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 0.4 * width)];
         _headerView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"ad_01.jpg"].CGImage);
     }
     return _headerView;

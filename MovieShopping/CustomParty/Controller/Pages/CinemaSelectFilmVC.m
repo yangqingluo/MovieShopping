@@ -12,7 +12,7 @@
 #import "FilmSectionCell.h"
 
 @interface CinemaSelectFilmVC ()<YYMovieBrowserDelegate, SGPageTitleViewDelegate> {
-    NSInteger fileIndex;
+    NSInteger filmIndex;
 }
 
 @property (nonatomic, copy) NSArray *filmList;
@@ -153,7 +153,7 @@
 }
 
 - (void)movieBrowser:(YYMovieBrowser *)browser didChangeItemAtIndex:(NSInteger)index {
-    fileIndex = index;
+    filmIndex = index;
     NSDictionary *dic = self.filmList[index];
     self.infoCell.filmNameLabel.text = dic[@"show_name"];
     self.infoCell.filmInfoLabel.text = [NSString stringWithFormat:@"%@分钟|%@|%@", dic[@"duration"], @"剧情", dic[@"leading_role"]];
@@ -172,7 +172,7 @@
 - (void)SGPageTitleView:(SGPageTitleView *)SGPageTitleView selectedIndex:(NSInteger)selectedIndex {
     self.sectionList = @[];
     [self.tableView reloadData];
-    [self loadSectionListForFilm:self.filmList[fileIndex] date:self.dateList[selectedIndex]];
+    [self loadSectionListForFilm:self.filmList[filmIndex] date:self.dateList[selectedIndex]];
 }
 
 @end

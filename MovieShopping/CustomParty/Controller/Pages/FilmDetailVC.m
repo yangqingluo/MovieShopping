@@ -125,6 +125,7 @@
 
 - (void)footerBuyBtnAction {
     FilmSelectCinemaVC *vc = [FilmSelectCinemaVC new];
+    vc.sourceData = self.sourceData;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

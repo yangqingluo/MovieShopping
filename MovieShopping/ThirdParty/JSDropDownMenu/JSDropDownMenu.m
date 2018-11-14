@@ -194,6 +194,16 @@
 
 @implementation JSDropDownMenu
 
+- (void)reloadData {
+    if (_leftTableView) {
+        [_leftTableView removeFromSuperview];
+    }
+    if (_rightTableView) {
+        [_rightTableView removeFromSuperview];
+    }
+    self.dataSource = self.dataSource;
+}
+
 #pragma mark - getter
 - (UIColor *)indicatorColor {
     if (!_indicatorColor) {

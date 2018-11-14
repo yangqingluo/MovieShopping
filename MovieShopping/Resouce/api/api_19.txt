@@ -1,0 +1,89 @@
+{
+	"code": 200,
+	"msg": null,
+	"data": {
+		"items": [{
+			"play_desc_list": [{
+				"show_time": "20:30",
+				"show_version": "日语 2D",
+				"price": 23.0
+			}],
+			"cinema_name": "邛崃市星河电影城",
+			"address": "邛崃市市府街22号",
+			"min_price": 23.0,
+			"distance": 11296.08,
+			"latitude": "30.414196",
+			"id": 33699,
+			"longitude": "103.462205"
+		}, {
+			"play_desc_list": [{
+				"show_time": "21:35",
+				"show_version": "日语 2D",
+				"price": 24.0
+			}],
+			"cinema_name": "太平洋影城（瑞云欣广场店）",
+			"address": "邛崃市临邛镇司马大道425-31(瑞云·欣广场三楼）",
+			"min_price": 24.0,
+			"distance": 11296.32,
+			"latitude": "30.4014389925",
+			"id": 19505,
+			"longitude": "103.4629649573"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:50",
+				"show_version": "日语 2D",
+				"price": 23.0
+			}, {
+				"show_time": "22:50",
+				"show_version": "日语 2D",
+				"price": 23.0
+			}],
+			"cinema_name": "太平洋激光影城（鼎盛店）",
+			"address": "邛崃市文君街道朱水碾街265号3楼4-12号",
+			"min_price": 23.0,
+			"distance": 11296.46,
+			"latitude": "30.399589",
+			"id": 39178,
+			"longitude": "103.464103"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:05",
+				"show_version": "日语 2D",
+				"price": 29.5
+			}, {
+				"show_time": "21:05",
+				"show_version": "日语 2D",
+				"price": 29.5
+			}, {
+				"show_time": "22:10",
+				"show_version": "日语 2D",
+				"price": 29.5
+			}],
+			"cinema_name": "成都UME影城（大邑）",
+			"address": "大邑县圣桦城商业街B8栋（新妇幼保健院斜对面）",
+			"min_price": 29.5,
+			"distance": 11298.8,
+			"latitude": "30.567141",
+			"id": 38751,
+			"longitude": "103.512379"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:40",
+				"show_version": "原版 2D",
+				"price": 33.0
+			}, {
+				"show_time": "21:35",
+				"show_version": "原版 2D",
+				"price": 33.0
+			}],
+			"cinema_name": "西岭国际影城",
+			"address": "大邑县桃源大道2号",
+			"min_price": 33.0,
+			"distance": 11299.08,
+			"latitude": "30.571676",
+			"id": 29469,
+			"longitude": "103.515992"
+		}],
+		"total": 129
+	}
+}
