@@ -10,6 +10,7 @@
 #import "CinemaForFilmCell.h"
 #import "SGPageView.h"
 #import "FilmSectionCell.h"
+#import "SeatViewController.h"
 
 @interface CinemaSelectFilmVC ()<YYMovieBrowserDelegate, SGPageTitleViewDelegate> {
     NSInteger filmIndex;
@@ -56,6 +57,10 @@
         self.dateView = [[SGPageTitleView alloc] initWithFrame:CGRectMake(0, self.infoCell.bottom, self.view.width, self.headerView.height - self.infoCell.bottom) delegate:self titleNames:m_array];
         [self.headerView addSubview:self.dateView];
     }
+}
+
+- (void)cellBuyBtnAction:(UIButton *)button {
+    
 }
 
 #pragma mark - Networking
@@ -144,7 +149,15 @@
     cell.versionLabel.text = dic[@"show_version"];
     cell.hallLabel.text = dic[@"hall_name"];
     cell.priceLabel.text = [NSString stringWithFormat:@"%@元", dic[@"price"] ? dic[@"price"] : @""];
+    cell.buyBtn.tag = indexPath.row;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SeatViewController *vc = [SeatViewController new];
+    vc.sourceData = self.filmList[filmIndex];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - YYMovieBrowserDelegate

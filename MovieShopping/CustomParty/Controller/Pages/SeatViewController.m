@@ -28,13 +28,8 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    UILabel *maoyanLabel = [[UILabel alloc]init];
-    maoyanLabel.text = @"选座位";
-    [maoyanLabel sizeToFit];
-    maoyanLabel.font = [UIFont systemFontOfSize: 20];
+    self.title = self.sourceData[@"show_name"];
     
-    self.navigationItem.titleView = maoyanLabel;
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.modalPresentationCapturesStatusBarAppearance = NO;

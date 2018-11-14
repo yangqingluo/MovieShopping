@@ -12,6 +12,7 @@
 #import "JSDropDownMenu.h"
 #import "CinemaCell.h"
 #import "CinemaSectionCell.h"
+#import "SeatViewController.h"
 
 @interface FilmSelectCinemaVC ()<SGPageTitleViewDelegate,JSDropDownMenuDataSource, JSDropDownMenuDelegate> {
     NSInteger _currentData1Index;
@@ -276,6 +277,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+}
+
+#pragma mark - UIResponder+Router
+- (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo {
+    if ([eventName isEqualToString:Event_MoreCellItemSelected]) {
+        NSIndexPath *indexPath = (NSIndexPath *)userInfo;
+        SeatViewController *vc = [SeatViewController new];
+        vc.sourceData = self.sourceData;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

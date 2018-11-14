@@ -273,6 +273,7 @@ static NSString *adCellID = @"adCell";
     }
     return [UITableViewCell new];
 }
+
 #pragma mark - UIResponder+Router
 - (void)routerEventWithName:(NSString *)eventName from:(id)fromObject userInfo:(NSObject *)userInfo {
     if ([eventName isEqualToString:Event_HotShowCellButtonClicked]) {

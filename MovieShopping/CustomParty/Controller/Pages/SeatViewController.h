@@ -6,8 +6,8 @@
 //  Copyright © 2018年 7kers. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YYBaseViewController.h"
 
-@interface SeatViewController : UIViewController
+@interface SeatViewController : YYBaseViewController
 
 @end
