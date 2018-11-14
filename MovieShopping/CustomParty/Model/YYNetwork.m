@@ -37,7 +37,7 @@ __strong static YYNetwork  *_singleManger = nil;
     return _manager;
 }
 
-#define API_URL @"http://192.168.2.101"
+#define API_URL @"http://192.168.2.102"
 NSString *urlStringWithPath(NSString *path) {
 //    NSString *charactersToEscape = @"?!@#$^&%*+,:;='\"`<>()[]{}/\\| ";
 //    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
@@ -54,7 +54,7 @@ NSString *urlStringWithPath(NSString *path) {
     }];
 }
 
-- (void)POST:(NSString *)path parameters:(NSDictionary *)parms headers:(NSDictionary *)headers  response:(ResponseBlock)response {
+- (void)POST:(NSString *)path parameters:(NSDictionary *)parms headers:(NSDictionary *)headers response:(ResponseBlock)response {
     [self.manager POST:urlStringWithPath(path) parameters:parms headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         response(responseObject, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

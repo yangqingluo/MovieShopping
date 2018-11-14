@@ -98,7 +98,7 @@ static NSString *adCellID = @"adCell";
 #pragma mark - Networking
 - (void)loadData {
     [self showHudInView:self.view hint:nil];
-    
+    __weak typeof(self) weakSelf = self;
     //1.创建队列组
     dispatch_group_t group = dispatch_group_create();
     //2.创建队列
@@ -106,39 +106,36 @@ static NSString *adCellID = @"adCell";
     //3.添加请求
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-//        [[YYNetwork getInstance] POST:@"/getFilm/getHotFilmList" parameters:@{@"cityId": @70} headers:nil response:^(id response, NSError *error) {
-//            dispatch_group_leave(group);
-//            if (error) {
-//
-//            }
-//            else {
-//                NSLog(@"%@", [self logDic:response]);
-//            }
-//        }];
-        YYResponse *response = APIData(@17);
-        if (response.code == HTTP_SUCCESS) {
-            self.soonArray = response.data.items;
-        }
-        dispatch_group_leave(group);
+        [[YYNetwork getInstance] POST:@"/getFilm/getHotFilmList" parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            dispatch_group_leave(group);
+            if (error) {
+
+            }
+            else {
+//                YYResponse *result = APIData(@16);
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    weakSelf.hotArray = result.data.items;
+                }
+            }
+        }];
     });
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-//        [[YYNetwork getInstance] getHTTPPath:@"http://192.168.2.101/movie/detail/154563" response:^(id response, NSError *error) {
-//            dispatch_group_leave(group);
-//            if (error) {
-//
-//            }
-//            else {
-//                NSLog(@"%@", [self logDic:response]);
-//            }
-//        }];
-        
-        YYResponse *response = APIData(@16);
-        if (response.code == HTTP_SUCCESS) {
-            self.hotArray = response.data.items;
-        }
-        dispatch_group_leave(group);
+        [[YYNetwork getInstance] POST:@"/getFilm/getSoonFilmList" parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            dispatch_group_leave(group);
+            if (error) {
+                
+            }
+            else {
+//                YYResponse *result = APIData(@17);
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    weakSelf.soonArray = result.data.items;
+                }
+            }
+        }];
     });
     
     //4.队列组所有请求完成回调刷新UI

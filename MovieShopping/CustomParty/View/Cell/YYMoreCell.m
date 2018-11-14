@@ -20,6 +20,12 @@
     [self.contentView addSubview:self.collectionView];
 }
 
+#pragma mark - setter
+- (void)setDataList:(NSArray *)dataList {
+    _dataList = dataList;
+    [self.collectionView reloadData];
+}
+
 #pragma mark - getter
 - (YYCollectionView *)collectionView{
     if (!_collectionView) {

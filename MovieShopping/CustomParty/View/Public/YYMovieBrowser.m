@@ -1,5 +1,6 @@
 #import "YYMovieBrowser.h"
 #import "UIImageView+WebCache.h"
+#import "YYDefine.h"
 
 #define kBaseTag 100
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -103,7 +104,7 @@
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kItemWidth, kItemHeight)];
         imageView.backgroundColor = [UIColor purpleColor];
         imageView.layer.borderWidth = 1.0;
-        [imageView sd_setImageWithURL:[NSURL URLWithString:movie[@"poster"]]];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:movie[@"poster"]] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
         imageView.userInteractionEnabled = YES;
         imageView.tag = i + kBaseTag;
         [itemView addSubview:imageView];
