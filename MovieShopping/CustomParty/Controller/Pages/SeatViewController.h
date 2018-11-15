@@ -10,4 +10,8 @@
 
 @interface SeatViewController : YYBaseViewController
 
+@property (nonatomic, copy) NSDictionary *filmData;
+@property (nonatomic, copy) NSDictionary *scheduleData;
+@property (nonatomic, copy) NSDictionary *dateData;
+
 @end

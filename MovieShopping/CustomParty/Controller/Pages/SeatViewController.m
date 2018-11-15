@@ -14,6 +14,9 @@
 
 @interface SeatViewController ()
 
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UIView *footerView;
+
 /**按钮数组*/
 @property (nonatomic, copy) NSArray *selecetedSeats;
 
@@ -27,25 +30,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.sourceData[@"show_name"];
-    
-    [self showHudInView:self.view hint:nil];
-    __weak typeof(self) weakSelf = self;
-    
-    //模拟延迟加载
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self hideHud];
-        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
-        //模拟网络加载数据
-        NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
-        
-        NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
-        weakSelf.seatsModelArray = seatsModelArray;
-        
-        //数据回来初始化选座模块
-        [weakSelf initSelectionView:seatsModelArray];
-        [weakSelf setupSureBtn];
-    });
+    self.title = self.sourceData[@"cinema_name"];
+    [self.view addSubview:self.headerView];
+//    [self showHudInView:self.view hint:nil];
+//    __weak typeof(self) weakSelf = self;
+//    //模拟延迟加载
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self hideHud];
+//        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
+//        //模拟网络加载数据
+//        NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
+//
+//        NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
+//        weakSelf.seatsModelArray = seatsModelArray;
+//
+//        //数据回来初始化选座模块
+//        [weakSelf initSelectionView:seatsModelArray];
+//        [weakSelf setupSureBtn];
+//    });
     
 }
 //创建选座模块
@@ -94,10 +96,33 @@
         [self showMessage:@"选座成功"];
     }
 }
+
 -(void)showMessage:(NSString *)message{
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
     [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:controller animated:YES completion:nil];
+}
+
+#pragma mark - getter
+- (UIView *)headerView {
+    if (!_headerView) {
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, YY_TOP_HEIGHT, self.view.width, 50)];
+        
+        UILabel *_nameLabel = NewLabel(CGRectMake(YYEdgeMiddle, 10, _headerView.width, 20), [UIColor blackColor], [UIFont systemFontOfSize:YYLabelFontSizeMiddle], NSTextAlignmentLeft);
+        [_headerView addSubview:_nameLabel];
+        
+        UILabel *_infoLabel = NewLabel(CGRectMake(_nameLabel.left, _nameLabel.bottom + YYEdgeSmall, _headerView.width, 20), [UIColor darkGrayColor], [UIFont systemFontOfSize:YYLabelFontSize], NSTextAlignmentLeft);
+        [_headerView addSubview:_infoLabel];
+        
+        _nameLabel.text = self.filmData[@"show_name"];
+        if (self.dateData) {
+            _infoLabel.text = [NSString stringWithFormat:@"%@ %@ %@", self.dateData[@"show_date"], self.scheduleData[@"show_time"], self.scheduleData[@"show_version"]];
+        }
+        else {
+            _infoLabel.text = [NSString stringWithFormat:@"%@ %@", self.scheduleData[@"show_time"], self.scheduleData[@"show_version"]];
+        }
+    }
+    return _headerView;
 }
 
 @end

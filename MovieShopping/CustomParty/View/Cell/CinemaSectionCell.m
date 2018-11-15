@@ -9,6 +9,7 @@
 #import "CinemaSectionCell.h"
 #import "YYLabel.h"
 #import "YYPublic.h"
+#import "UIResponder+Router.h"
 
 static NSString *cellID = @"cell_section";
 
@@ -72,8 +73,8 @@ static NSString *cellID = @"cell_section";
     return cell;
 }
 
-//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-//    return UIEdgeInsetsMake(YYEdgeSmall, YYEdgeMiddle, YYEdgeSmall, 0);
-//}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self routerEventWithName:Event_MoreCellItemSelected from:self userInfo:[NSIndexPath indexPathForRow:indexPath.row inSection:self.tag]];
+}
 
 @end

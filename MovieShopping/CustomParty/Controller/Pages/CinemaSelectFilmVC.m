@@ -171,7 +171,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     SeatViewController *vc = [SeatViewController new];
-    vc.sourceData = self.filmList[filmIndex];
+    vc.sourceData = self.sourceData;
+    vc.filmData = self.filmList[filmIndex];
+    vc.scheduleData = self.scheduleList[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

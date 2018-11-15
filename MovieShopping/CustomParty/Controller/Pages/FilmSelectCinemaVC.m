@@ -17,6 +17,7 @@
 @interface FilmSelectCinemaVC ()<SGPageTitleViewDelegate,JSDropDownMenuDataSource, JSDropDownMenuDelegate> {
     NSInteger _currentData1Index;
     NSInteger _currentData2Index;
+    NSInteger dateIndex;
 }
 
 @property (nonatomic, strong) UIView *headerView;
@@ -220,6 +221,7 @@
 
 #pragma mark - SGPageTitleViewDelegate
 - (void)SGPageTitleView:(SGPageTitleView *)SGPageTitleView selectedIndex:(NSInteger)selectedIndex {
+    dateIndex = selectedIndex;
     [self.dataList removeAllObjects];
     [self.tableView reloadData];
     [self pullBaseListData:YES];
@@ -279,6 +281,7 @@
         }
         NSDictionary *dic = self.dataList[indexPath.section];
         cell.dataList = dic[@"play_desc_list"];
+        cell.tag = indexPath.row;
         return cell;
     }
     
@@ -295,7 +298,10 @@
     if ([eventName isEqualToString:Event_MoreCellItemSelected]) {
         NSIndexPath *indexPath = (NSIndexPath *)userInfo;
         SeatViewController *vc = [SeatViewController new];
-        vc.sourceData = self.sourceData;
+        vc.sourceData = self.dataList[indexPath.section];
+        vc.filmData = self.sourceData;
+        vc.scheduleData = vc.sourceData[@"play_desc_list"][indexPath.row];
+        vc.dateData = self.dateList[dateIndex];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
