@@ -112,11 +112,10 @@
             else {
                 YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
                 if (result.code == HTTP_SUCCESS) {
-                    [weakSelf.dataList removeAllObjects];
-                    [weakSelf.dataList addObjectsFromArray:result.data.items];
+                    weakSelf.dateList = result.data.items;
                 }
                 [weakSelf endRefreshing];
-                [weakSelf updateSubviews];
+                [weakSelf updateDateView];
             }
         }];
     });
