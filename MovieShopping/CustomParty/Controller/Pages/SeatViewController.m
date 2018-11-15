@@ -26,39 +26,30 @@
 @implementation SeatViewController
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     self.title = self.sourceData[@"show_name"];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars = NO;
-    self.modalPresentationCapturesStatusBarAppearance = NO;
-    MBProgressHUD *HUD = [[MBProgressHUD alloc]initWithView:self.view];
-    
-    HUD.tintColor = [UIColor blackColor];
-    [self.view addSubview:HUD];
-    [HUD showAnimated:YES];
+    [self showHudInView:self.view hint:nil];
     __weak typeof(self) weakSelf = self;
     
     //模拟延迟加载
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self hideHud];
         NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
         //模拟网络加载数据
         NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
-
+        
         NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
-        [HUD hideAnimated:YES];
         weakSelf.seatsModelArray = seatsModelArray;
-
+        
         //数据回来初始化选座模块
         [weakSelf initSelectionView:seatsModelArray];
         [weakSelf setupSureBtn];
-//        KC20Hf3dfsf
     });
     
 }
 //创建选座模块
-- (void)initSelectionView:(NSMutableArray *)seatsModelArray {
+- (void)initSelectionView:(NSArray *)seatsModelArray {
     __weak typeof(self) weakSelf = self;
     YYSeatSelectionView *selectionView = [[YYSeatSelectionView alloc] initWithFrame:CGRectMake(0, 100,[UIScreen mainScreen].bounds.size.width, 400) seatsArray:seatsModelArray     hallName:@"七号杜比全景声4K厅"
     actionBlock:^(NSArray *selecetedSeats, NSDictionary *allAvailableSeats, NSString *errorStr) {

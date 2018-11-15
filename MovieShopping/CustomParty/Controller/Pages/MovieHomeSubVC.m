@@ -106,13 +106,12 @@ static NSString *adCellID = @"adCell";
     //3.添加请求
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] POST:@"/getFilm/getHotFilmList" parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+        [[YYNetwork getInstance] POST:@16 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
             dispatch_group_leave(group);
             if (error) {
 
             }
             else {
-//                YYResponse *result = APIData(@16);
                 YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
                 if (result.code == HTTP_SUCCESS) {
                     weakSelf.hotArray = result.data.items;
@@ -123,13 +122,12 @@ static NSString *adCellID = @"adCell";
     
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
-        [[YYNetwork getInstance] POST:@"/getFilm/getSoonFilmList" parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+        [[YYNetwork getInstance] POST:@17 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
             dispatch_group_leave(group);
             if (error) {
-                
+
             }
             else {
-//                YYResponse *result = APIData(@17);
                 YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
                 if (result.code == HTTP_SUCCESS) {
                     weakSelf.soonArray = result.data.items;
@@ -143,29 +141,6 @@ static NSString *adCellID = @"adCell";
         [self hideHud];
         [self.tableView reloadData];
     });
-}
-
-// log NSSet with UTF8
-// if not ,log will be \Uxxx
-- (NSString *)logDic:(NSDictionary *)dic {
-    if (![dic count]) {
-        return nil;
-    }
-    NSString *tempStr1 =
-    [[dic description] stringByReplacingOccurrencesOfString:@"\\u"
-                                                 withString:@"\\U"];
-    NSString *tempStr2 =
-    [tempStr1 stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
-    NSString *tempStr3 =
-    [[@"\"" stringByAppendingString:tempStr2] stringByAppendingString:@"\""];
-    NSData *tempData = [tempStr3 dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *str =
-//    [NSPropertyListSerialization propertyListFromData:tempData
-//                                     mutabilityOption:NSPropertyListImmutable
-//                                               format:NULL
-//                                     errorDescription:NULL];
-    [NSPropertyListSerialization propertyListWithData:tempData options:NSPropertyListImmutable format:NULL error:NULL];
-    return str;
 }
 
 #pragma mark - getter

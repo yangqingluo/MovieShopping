@@ -99,6 +99,7 @@ typedef void(^ResponseBlock)(id response, NSError *error);
 + (YYNetwork *)getInstance;
 
 - (void)getHTTPPath:(NSString *)apiPath response:(ResponseBlock)response;
-- (void)POST:(NSString *)path parameters:(NSDictionary *)parms headers:(NSDictionary *)headers  response:(ResponseBlock)response;
+- (void)GET:(NSNumber *)apiNumer parameters:(NSDictionary *)parms headers:(NSDictionary *)headers response:(ResponseBlock)response;
+- (void)POST:(NSNumber *)apiNumer parameters:(NSDictionary *)parms headers:(NSDictionary *)headers response:(ResponseBlock)response;
 
 @end

@@ -29,17 +29,30 @@
 - (void)pullBaseListData:(BOOL)isReset {
     [self showHudInView:self.view hint:nil];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(queue, ^{
-        [NSThread sleepForTimeInterval:0.5f];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            YYResponse *response = APIData(@17);
-            if (response.code == HTTP_SUCCESS) {
-                [self.dataList removeAllObjects];
-                [self.dataList addObjectsFromArray:response.data.items];
+        [[YYNetwork getInstance] POST:@17 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            if (error) {
+                
             }
-            [self endRefreshing];
-            [self updateSubviews];
-        });
+            else {
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    if (isReset) {
+                        [weakSelf.dataList removeAllObjects];
+                    }
+                    [weakSelf.dataList addObjectsFromArray:result.data.items];
+                    if (result.data.total > self.dataList.count) {
+                        [self updateTableViewFooter];
+                    }
+                    else {
+                        self.tableView.mj_footer = nil;
+                    }
+                }
+                [weakSelf endRefreshing];
+                [weakSelf updateSubviews];
+            }
+        }];
     });
 }
 
@@ -67,7 +80,7 @@
     NSDictionary *dic = self.dataList[indexPath.section];
     [cell.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
     cell.nameLabel.text = dic[@"show_name"];
-    if ([dic[@"market"] isEqualToString:@"presell"]) {
+    if ([dic[@"market"] isEqualToString:@"2"]) {
         [cell.buyBtn setTitle:@"预售" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYBlueColor;
     }

@@ -62,7 +62,7 @@
 			"address": "高新区盛治街838号C栋3楼",
 			"cinema_name": "橙天国际影城（成都Upark公园店）",
 			"distance": 2.32,
-			"price": 33.0,
+			"price": 30.0,
 			"latitude": "30.554224",
 			"id": 55601,
 			"longitude": "104.039012"
@@ -83,6 +83,6 @@
 			"id": 19824,
 			"longitude": "104.0456313319"
 		}],
-		"total": 160
+		"total": 159
 	}
 }

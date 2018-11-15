@@ -41,14 +41,4 @@ __strong static YYPublic  *_singleManger = nil;
     return _city;
 }
 
-YYResponse *APIData(NSNumber *number) {
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"api_%@.txt", number] ofType:nil];
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
-    if (!dic) {
-        NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-        dic = [jsonString mj_keyValues];
-    }
-    return [YYResponse mj_objectWithKeyValues:dic];
-}
-
 @end

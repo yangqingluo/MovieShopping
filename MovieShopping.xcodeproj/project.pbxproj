@@ -30,9 +30,6 @@
 		4A74F2DE219AD501002B3477 /* FilmSelectCinemaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F2DD219AD501002B3477 /* FilmSelectCinemaVC.m */; };
 		4A74F2E1219AD526002B3477 /* CinemaSelectFilmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F2E0219AD526002B3477 /* CinemaSelectFilmVC.m */; };
 		4A74F2E7219AD85F002B3477 /* YYType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F2E6219AD85F002B3477 /* YYType.m */; };
-		4A74F2EB219ADA60002B3477 /* api_16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A74F2EA219ADA60002B3477 /* api_16.txt */; };
-		4A74F2F1219BB20A002B3477 /* api_18.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A74F2F0219BB209002B3477 /* api_18.txt */; };
-		4A74F2F3219BB276002B3477 /* api_19.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A74F2F2219BB276002B3477 /* api_19.txt */; };
 		4A74F2F6219BBFDA002B3477 /* CinemaSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F2F5219BBFDA002B3477 /* CinemaSectionCell.m */; };
 		4A89A1F821996A8000C0DAFE /* FilmPerformerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A1F721996A8000C0DAFE /* FilmPerformerCell.m */; };
 		4A89A1FB2199759D00C0DAFE /* FilmStillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A1FA2199759D00C0DAFE /* FilmStillCell.m */; };
@@ -42,6 +39,30 @@
 		4A89A20C2199810900C0DAFE /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A89A2072199810800C0DAFE /* citydict.plist */; };
 		4A89A20D2199810900C0DAFE /* GF_CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2092199810800C0DAFE /* GF_CityListViewController.m */; };
 		E45F09EF219D987300B295B4 /* YYViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E45F09ED219D987300B295B4 /* YYViewController+HUD.m */; };
+		E45F0A08219D9EC700B295B4 /* api_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F0219D9EC400B295B4 /* api_3.txt */; };
+		E45F0A09219D9EC700B295B4 /* api_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F1219D9EC400B295B4 /* api_9.txt */; };
+		E45F0A0A219D9EC700B295B4 /* api_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F2219D9EC400B295B4 /* api_2.txt */; };
+		E45F0A0B219D9EC700B295B4 /* api_18.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F3219D9EC400B295B4 /* api_18.txt */; };
+		E45F0A0C219D9EC700B295B4 /* api_19.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F4219D9EC400B295B4 /* api_19.txt */; };
+		E45F0A0D219D9EC700B295B4 /* api_13.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F5219D9EC500B295B4 /* api_13.txt */; };
+		E45F0A0E219D9EC700B295B4 /* api_21.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F6219D9EC500B295B4 /* api_21.txt */; };
+		E45F0A0F219D9EC700B295B4 /* api_22.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F7219D9EC500B295B4 /* api_22.txt */; };
+		E45F0A10219D9EC700B295B4 /* api_23.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F8219D9EC500B295B4 /* api_23.txt */; };
+		E45F0A11219D9EC700B295B4 /* api_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F9219D9EC500B295B4 /* api_11.txt */; };
+		E45F0A12219D9EC700B295B4 /* api_15.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FA219D9EC500B295B4 /* api_15.txt */; };
+		E45F0A13219D9EC700B295B4 /* api_20.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FB219D9EC500B295B4 /* api_20.txt */; };
+		E45F0A14219D9EC700B295B4 /* api_14.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FC219D9EC500B295B4 /* api_14.txt */; };
+		E45F0A15219D9EC700B295B4 /* api_8.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FD219D9EC600B295B4 /* api_8.txt */; };
+		E45F0A16219D9EC700B295B4 /* api_24.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FE219D9EC600B295B4 /* api_24.txt */; };
+		E45F0A17219D9EC700B295B4 /* api_7.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09FF219D9EC600B295B4 /* api_7.txt */; };
+		E45F0A18219D9EC700B295B4 /* api_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A00219D9EC600B295B4 /* api_5.txt */; };
+		E45F0A19219D9EC700B295B4 /* api_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A01219D9EC600B295B4 /* api_10.txt */; };
+		E45F0A1A219D9EC700B295B4 /* api_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A02219D9EC600B295B4 /* api_4.txt */; };
+		E45F0A1B219D9EC700B295B4 /* api_16.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A03219D9EC600B295B4 /* api_16.txt */; };
+		E45F0A1C219D9EC700B295B4 /* api_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A04219D9EC600B295B4 /* api_12.txt */; };
+		E45F0A1D219D9EC700B295B4 /* api_17.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A05219D9EC700B295B4 /* api_17.txt */; };
+		E45F0A1E219D9EC700B295B4 /* api_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A06219D9EC700B295B4 /* api_1.txt */; };
+		E45F0A1F219D9EC700B295B4 /* api_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F0A07219D9EC700B295B4 /* api_6.txt */; };
 		E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9C2196B854001BE69E /* AppDelegate.swift */; };
 		E4735E9F2196B854001BE69E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9E2196B854001BE69E /* ViewController.swift */; };
 		E4735EA22196B854001BE69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4735EA02196B854001BE69E /* Main.storyboard */; };
@@ -97,12 +118,7 @@
 		E4735F9421973A0E001BE69E /* ad_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8A21973A0E001BE69E /* ad_03.jpg */; };
 		E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8B21973A0E001BE69E /* ad_04.jpg */; };
 		E4735F9621973A0E001BE69E /* ad_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8C21973A0E001BE69E /* ad_05.jpg */; };
-		E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AF8219AF7690004AC05 /* api_17.txt */; };
 		E4895AFB219B11680004AC05 /* city.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFA219B11660004AC05 /* city.txt */; };
-		E4895AFD219B129C0004AC05 /* api_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFC219B129C0004AC05 /* api_9.txt */; };
-		E4895B01219B18E80004AC05 /* api_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFE219B18E70004AC05 /* api_10.txt */; };
-		E4895B02219B18E80004AC05 /* api_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895AFF219B18E70004AC05 /* api_12.txt */; };
-		E4895B03219B18E80004AC05 /* api_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4895B00219B18E80004AC05 /* api_11.txt */; };
 		E4895B0A219B1A7F0004AC05 /* YYMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */; };
 		E4895B11219B20B30004AC05 /* CinemaForFilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4895B0F219B20B30004AC05 /* CinemaForFilmCell.m */; };
 		E4895B12219B20B30004AC05 /* CinemaForFilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4895B10219B20B30004AC05 /* CinemaForFilmCell.xib */; };
@@ -261,9 +277,6 @@
 		4A74F2E0219AD526002B3477 /* CinemaSelectFilmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaSelectFilmVC.m; sourceTree = "<group>"; };
 		4A74F2E5219AD85F002B3477 /* YYType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYType.h; sourceTree = "<group>"; };
 		4A74F2E6219AD85F002B3477 /* YYType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYType.m; sourceTree = "<group>"; };
-		4A74F2EA219ADA60002B3477 /* api_16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_16.txt; sourceTree = "<group>"; };
-		4A74F2F0219BB209002B3477 /* api_18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_18.txt; sourceTree = "<group>"; };
-		4A74F2F2219BB276002B3477 /* api_19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_19.txt; sourceTree = "<group>"; };
 		4A74F2F4219BBFDA002B3477 /* CinemaSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaSectionCell.h; sourceTree = "<group>"; };
 		4A74F2F5219BBFDA002B3477 /* CinemaSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinemaSectionCell.m; sourceTree = "<group>"; };
 		4A89A1F621996A8000C0DAFE /* FilmPerformerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmPerformerCell.h; sourceTree = "<group>"; };
@@ -281,6 +294,30 @@
 		4A89A2092199810800C0DAFE /* GF_CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GF_CityListViewController.m; sourceTree = "<group>"; };
 		E45F09ED219D987300B295B4 /* YYViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYViewController+HUD.m"; sourceTree = "<group>"; };
 		E45F09EE219D987300B295B4 /* YYViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYViewController+HUD.h"; sourceTree = "<group>"; };
+		E45F09F0219D9EC400B295B4 /* api_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_3.txt; sourceTree = "<group>"; };
+		E45F09F1219D9EC400B295B4 /* api_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_9.txt; sourceTree = "<group>"; };
+		E45F09F2219D9EC400B295B4 /* api_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_2.txt; sourceTree = "<group>"; };
+		E45F09F3219D9EC400B295B4 /* api_18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_18.txt; sourceTree = "<group>"; };
+		E45F09F4219D9EC400B295B4 /* api_19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_19.txt; sourceTree = "<group>"; };
+		E45F09F5219D9EC500B295B4 /* api_13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_13.txt; sourceTree = "<group>"; };
+		E45F09F6219D9EC500B295B4 /* api_21.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_21.txt; sourceTree = "<group>"; };
+		E45F09F7219D9EC500B295B4 /* api_22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_22.txt; sourceTree = "<group>"; };
+		E45F09F8219D9EC500B295B4 /* api_23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_23.txt; sourceTree = "<group>"; };
+		E45F09F9219D9EC500B295B4 /* api_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_11.txt; sourceTree = "<group>"; };
+		E45F09FA219D9EC500B295B4 /* api_15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_15.txt; sourceTree = "<group>"; };
+		E45F09FB219D9EC500B295B4 /* api_20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_20.txt; sourceTree = "<group>"; };
+		E45F09FC219D9EC500B295B4 /* api_14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_14.txt; sourceTree = "<group>"; };
+		E45F09FD219D9EC600B295B4 /* api_8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_8.txt; sourceTree = "<group>"; };
+		E45F09FE219D9EC600B295B4 /* api_24.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_24.txt; sourceTree = "<group>"; };
+		E45F09FF219D9EC600B295B4 /* api_7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_7.txt; sourceTree = "<group>"; };
+		E45F0A00219D9EC600B295B4 /* api_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_5.txt; sourceTree = "<group>"; };
+		E45F0A01219D9EC600B295B4 /* api_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_10.txt; sourceTree = "<group>"; };
+		E45F0A02219D9EC600B295B4 /* api_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_4.txt; sourceTree = "<group>"; };
+		E45F0A03219D9EC600B295B4 /* api_16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_16.txt; sourceTree = "<group>"; };
+		E45F0A04219D9EC600B295B4 /* api_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_12.txt; sourceTree = "<group>"; };
+		E45F0A05219D9EC700B295B4 /* api_17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_17.txt; sourceTree = "<group>"; };
+		E45F0A06219D9EC700B295B4 /* api_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_1.txt; sourceTree = "<group>"; };
+		E45F0A07219D9EC700B295B4 /* api_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_6.txt; sourceTree = "<group>"; };
 		E4735E992196B854001BE69E /* MovieShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4735E9C2196B854001BE69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4735E9E2196B854001BE69E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -377,12 +414,7 @@
 		E4735F8A21973A0E001BE69E /* ad_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_03.jpg; sourceTree = "<group>"; };
 		E4735F8B21973A0E001BE69E /* ad_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_04.jpg; sourceTree = "<group>"; };
 		E4735F8C21973A0E001BE69E /* ad_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_05.jpg; sourceTree = "<group>"; };
-		E4895AF8219AF7690004AC05 /* api_17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_17.txt; sourceTree = "<group>"; };
 		E4895AFA219B11660004AC05 /* city.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city.txt; sourceTree = "<group>"; };
-		E4895AFC219B129C0004AC05 /* api_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_9.txt; sourceTree = "<group>"; };
-		E4895AFE219B18E70004AC05 /* api_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_10.txt; sourceTree = "<group>"; };
-		E4895AFF219B18E70004AC05 /* api_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_12.txt; sourceTree = "<group>"; };
-		E4895B00219B18E80004AC05 /* api_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_11.txt; sourceTree = "<group>"; };
 		E4895B07219B1A7E0004AC05 /* YYMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMovieBrowser.h; sourceTree = "<group>"; };
 		E4895B08219B1A7E0004AC05 /* YYMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMovieBrowser.m; sourceTree = "<group>"; };
 		E4895B0E219B20B30004AC05 /* CinemaForFilmCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinemaForFilmCell.h; sourceTree = "<group>"; };
@@ -635,15 +667,31 @@
 		4A74F2E2219AD7FE002B3477 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				E45F0A06219D9EC700B295B4 /* api_1.txt */,
+				E45F09F2219D9EC400B295B4 /* api_2.txt */,
+				E45F09F0219D9EC400B295B4 /* api_3.txt */,
+				E45F0A02219D9EC600B295B4 /* api_4.txt */,
+				E45F0A00219D9EC600B295B4 /* api_5.txt */,
+				E45F0A07219D9EC700B295B4 /* api_6.txt */,
+				E45F09FF219D9EC600B295B4 /* api_7.txt */,
+				E45F09FD219D9EC600B295B4 /* api_8.txt */,
+				E45F09F1219D9EC400B295B4 /* api_9.txt */,
+				E45F0A01219D9EC600B295B4 /* api_10.txt */,
+				E45F09F9219D9EC500B295B4 /* api_11.txt */,
+				E45F0A04219D9EC600B295B4 /* api_12.txt */,
+				E45F09F5219D9EC500B295B4 /* api_13.txt */,
+				E45F09FC219D9EC500B295B4 /* api_14.txt */,
+				E45F09FA219D9EC500B295B4 /* api_15.txt */,
+				E45F0A03219D9EC600B295B4 /* api_16.txt */,
+				E45F0A05219D9EC700B295B4 /* api_17.txt */,
+				E45F09F3219D9EC400B295B4 /* api_18.txt */,
+				E45F09F4219D9EC400B295B4 /* api_19.txt */,
+				E45F09FB219D9EC500B295B4 /* api_20.txt */,
+				E45F09F6219D9EC500B295B4 /* api_21.txt */,
+				E45F09F7219D9EC500B295B4 /* api_22.txt */,
+				E45F09F8219D9EC500B295B4 /* api_23.txt */,
+				E45F09FE219D9EC600B295B4 /* api_24.txt */,
 				E4895AFA219B11660004AC05 /* city.txt */,
-				E4895AFC219B129C0004AC05 /* api_9.txt */,
-				E4895AFE219B18E70004AC05 /* api_10.txt */,
-				E4895B00219B18E80004AC05 /* api_11.txt */,
-				E4895AFF219B18E70004AC05 /* api_12.txt */,
-				4A74F2EA219ADA60002B3477 /* api_16.txt */,
-				E4895AF8219AF7690004AC05 /* api_17.txt */,
-				4A74F2F0219BB209002B3477 /* api_18.txt */,
-				4A74F2F2219BB276002B3477 /* api_19.txt */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -1383,38 +1431,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4895AF9219AF76A0004AC05 /* api_17.txt in Resources */,
 				E4895B29219B34140004AC05 /* FilmSectionCell.xib in Resources */,
+				E45F0A0E219D9EC700B295B4 /* api_21.txt in Resources */,
 				E4735EA72196B854001BE69E /* LaunchScreen.storyboard in Resources */,
-				E4895B02219B18E80004AC05 /* api_12.txt in Resources */,
 				E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */,
 				E4CF70F821983A6500002384 /* MJRefresh.bundle in Resources */,
 				E4735F9321973A0E001BE69E /* ad_02.jpg in Resources */,
 				E4CF710D219861F600002384 /* CinemaCell.xib in Resources */,
 				4A12858221992A6900C462A8 /* CommentCell.xib in Resources */,
+				E45F0A14219D9EC700B295B4 /* api_14.txt in Resources */,
 				E4895AFB219B11680004AC05 /* city.txt in Resources */,
+				E45F0A11219D9EC700B295B4 /* api_11.txt in Resources */,
 				E4895B12219B20B30004AC05 /* CinemaForFilmCell.xib in Resources */,
-				4A74F2EB219ADA60002B3477 /* api_16.txt in Resources */,
 				E4735F9221973A0E001BE69E /* ad_01.jpg in Resources */,
 				E4735EA42196B854001BE69E /* Assets.xcassets in Resources */,
-				4A74F2F1219BB20A002B3477 /* api_18.txt in Resources */,
+				E45F0A08219D9EC700B295B4 /* api_3.txt in Resources */,
+				E45F0A18219D9EC700B295B4 /* api_5.txt in Resources */,
 				4A12859721992C2000C462A8 /* DateTools.bundle in Resources */,
+				E45F0A15219D9EC700B295B4 /* api_8.txt in Resources */,
 				E4735F9121973A0E001BE69E /* seats 4.plist in Resources */,
 				E4CF7107219859C100002384 /* ico_make.png in Resources */,
-				E4895AFD219B129C0004AC05 /* api_9.txt in Resources */,
+				E45F0A09219D9EC700B295B4 /* api_9.txt in Resources */,
+				E45F0A0C219D9EC700B295B4 /* api_19.txt in Resources */,
+				E45F0A1F219D9EC700B295B4 /* api_6.txt in Resources */,
 				E4735F9021973A0E001BE69E /* seats 3.plist in Resources */,
+				E45F0A1D219D9EC700B295B4 /* api_17.txt in Resources */,
 				E4735F8F21973A0E001BE69E /* seats 2.plist in Resources */,
+				E45F0A1A219D9EC700B295B4 /* api_4.txt in Resources */,
+				E45F0A17219D9EC700B295B4 /* api_7.txt in Resources */,
+				E45F0A0D219D9EC700B295B4 /* api_13.txt in Resources */,
+				E45F0A0F219D9EC700B295B4 /* api_22.txt in Resources */,
+				E45F0A1B219D9EC700B295B4 /* api_16.txt in Resources */,
+				E45F0A1C219D9EC700B295B4 /* api_12.txt in Resources */,
+				E45F0A16219D9EC700B295B4 /* api_24.txt in Resources */,
 				4A89A20C2199810900C0DAFE /* citydict.plist in Resources */,
-				E4895B03219B18E80004AC05 /* api_11.txt in Resources */,
-				E4895B01219B18E80004AC05 /* api_10.txt in Resources */,
+				E45F0A10219D9EC700B295B4 /* api_23.txt in Resources */,
 				E4735F9521973A0E001BE69E /* ad_04.jpg in Resources */,
 				E4CF710221983B9700002384 /* FilmCell.xib in Resources */,
 				E4735EA22196B854001BE69E /* Main.storyboard in Resources */,
-				4A74F2F3219BB276002B3477 /* api_19.txt in Resources */,
+				E45F0A0A219D9EC700B295B4 /* api_2.txt in Resources */,
+				E45F0A19219D9EC700B295B4 /* api_10.txt in Resources */,
+				E45F0A12219D9EC700B295B4 /* api_15.txt in Resources */,
 				E4735F9421973A0E001BE69E /* ad_03.jpg in Resources */,
+				E45F0A1E219D9EC700B295B4 /* api_1.txt in Resources */,
 				E4735F8D21973A0E001BE69E /* seats 0.plist in Resources */,
 				E4CF711B21987FF300002384 /* FilmScoreCell.xib in Resources */,
+				E45F0A0B219D9EC700B295B4 /* api_18.txt in Resources */,
 				E4735F9621973A0E001BE69E /* ad_05.jpg in Resources */,
+				E45F0A13219D9EC700B295B4 /* api_20.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

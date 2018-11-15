@@ -18,7 +18,7 @@
 
 @property (nonatomic, copy) NSArray *filmList;
 @property (nonatomic, copy) NSArray *dateList;
-@property (nonatomic, copy) NSArray *sectionList;
+@property (nonatomic, copy) NSArray *scheduleList;
 @property (nonatomic, strong) CinemaForFilmCell *infoCell;
 @property (nonatomic, strong) SGPageTitleView *dateView;
 @property (nonatomic, strong) UIView *headerView;
@@ -67,46 +67,61 @@
 - (void)pullBaseListData:(BOOL)isReset {
     [self showHudInView:self.view hint:nil];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(queue, ^{
-        [NSThread sleepForTimeInterval:0.5f];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            YYResponse *response = APIData(@10);
-            if (response.code == HTTP_SUCCESS) {
-                self.filmList = response.data.items;
+        [[YYNetwork getInstance] POST:@10 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            if (error) {
+                
             }
-            [self endRefreshing];
-            [self updateBrowsers];
-        });
+            else {
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    self.filmList = result.data.items;
+                }
+                [weakSelf endRefreshing];
+                [weakSelf updateBrowsers];
+            }
+        }];
     });
 }
 
 - (void)loadDateListForFilm:(NSDictionary *)dic {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(queue, ^{
-        [NSThread sleepForTimeInterval:0.5f];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            YYResponse *response = APIData(@11);
-            if (response.code == HTTP_SUCCESS) {
-                self.dateList = response.data.items;
+        [[YYNetwork getInstance] POST:@11 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            if (error) {
+                
             }
-            [self endRefreshing];
-            [self updateDateView];
-        });
+            else {
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    self.dateList = result.data.items;
+                }
+                [weakSelf endRefreshing];
+                [weakSelf updateDateView];
+            }
+        }];
     });
 }
 
 - (void)loadSectionListForFilm:(NSDictionary *)film date:(NSDictionary *)date {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(queue, ^{
-        [NSThread sleepForTimeInterval:0.5f];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            YYResponse *response = APIData(@12);
-            if (response.code == HTTP_SUCCESS) {
-                self.sectionList = response.data.items;
+        [[YYNetwork getInstance] POST:@12 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+            if (error) {
+                
             }
-            [self endRefreshing];
-            [self updateSubviews];
-        });
+            else {
+                YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+                if (result.code == HTTP_SUCCESS) {
+                    self.scheduleList = result.data.items;
+                }
+                [weakSelf endRefreshing];
+                [weakSelf updateSubviews];
+            }
+        }];
     });
 }
 
@@ -128,7 +143,7 @@
 
 #pragma mark - UITableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.sectionList.count;
+    return self.scheduleList.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -143,7 +158,7 @@
         [tableView registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:ID];
         cell = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
     }
-    NSDictionary *dic = self.sectionList[indexPath.row];
+    NSDictionary *dic = self.scheduleList[indexPath.row];
     cell.startTimeLabel.text = [dic[@"show_time"] substringFromIndex:11];
     cell.endTimeLabel.text = [NSString stringWithFormat:@"%@散场", [dic[@"close_time"] substringFromIndex:11]];
     cell.versionLabel.text = dic[@"show_version"];
@@ -183,7 +198,7 @@
 
 #pragma mark - SGPageTitleViewDelegate
 - (void)SGPageTitleView:(SGPageTitleView *)SGPageTitleView selectedIndex:(NSInteger)selectedIndex {
-    self.sectionList = @[];
+    self.scheduleList = @[];
     [self.tableView reloadData];
     [self loadSectionListForFilm:self.filmList[filmIndex] date:self.dateList[selectedIndex]];
 }

@@ -1,150 +1,146 @@
 {
-    code = 200;
-    data =     {
-        items =         (
-                        {
-                country = "中国大陆";
-                id = 1292456;
-                market = presell;
-                "open_day" = "2018-12-31 00:00:00";
-                "open_time" = 2018;
-                "show_name" = "2018德国电影展";
-                "show_version_list" = "[其他]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i4/TB1ERNXnIfpK1RjSZFOXXa6nFXa_.jpg";
-                country = "中国大陆";
-                director = "吕柯憬";
-                id = 209573;
-                "leading_role" = "郑伊健,于荣光,谢天华,贾青,林晓峰";
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                remark = "6.9";
-                "show_name" = "三国杀·幻";
-                "show_version_list" = "[2D]";
-            },
-                        {
-                country = "中国大陆";
-                director = "薛玉峥";
-                id = 1291578;
-                "leading_role" = "朱祎,马正阳,魏茹晨,赵欣,贺文潇";
-                market = sell;
-                "open_day" = "2018-11-10 00:00:00";
-                "open_time" = "2018-11-10";
-                "show_name" = "两个俏公主";
-                "show_version_list" = "[]";
-            },
-                        {
-                country = "中国大陆";
-                director = "宁海强";
-                id = 1282557;
-                "leading_role" = "王韬,聂远,徐洪浩";
-                market = presell;
-                "open_day" = "2018-11-23 00:00:00";
-                "open_time" = "2018-11-23";
-                "show_name" = "中国蓝盔";
-                "show_version_list" = "[]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i4/TB1Ye_XlrrpK1RjSZTEXXcWAVXa_.jpg";
-                country = "中国大陆";
-                director = "岩井俊二";
-                id = 282395;
-                "leading_role" = "周迅,秦昊,杜江,张子枫";
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                remark = "8.2";
-                "show_name" = "你好，之华";
-                "show_version_list" = "[2D]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i3/TB1XviHjQvoK1RjSZFDXXXY3pXa_.jpg";
-                country = "中国大陆,中国香港";
-                director = "叶伟民";
-                id = 525719;
-                "leading_role" = "甄子丹,黄圣依,王宝强,任达华,喻亢,江疏影";
-                market = sell;
-                "open_day" = "2018-11-02 00:00:00";
-                "open_time" = "2018-11-02";
-                remark = "5.4";
-                "show_name" = "冰封侠：时空行者";
-                "show_version_list" = "[3D, 2D]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i1/TB1gs0EqDXYBeNkHFrdXXciuVXa_.jpg";
-                country = "中国大陆";
-                director = "刘镇伟";
-                id = 226711;
-                "leading_role" = "赵文卓,安志杰,陈国坤";
-                market = sell;
-                "open_day" = "2018-10-26 00:00:00";
-                "open_time" = "2018-10-26";
-                remark = "7.4";
-                "show_name" = "功夫联盟";
-                "show_version_list" = "[其他]";
-            },
-                        {
-                country = "中国大陆";
-                director = "杨汉钊";
-                id = 1271503;
-                "leading_role" = "李仰";
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                "show_name" = "勇者闯魔城";
-                "show_version_list" = "[2D]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i4/TB1WG.ghVzqK1RjSZSgXXcpAVXa_.jpg";
-                country = "日本";
-                director = "立川让";
-                id = 232973;
-                "leading_role" = "高山南,山口胜平,山崎和佳奈,小山力也,林原惠美";
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                remark = "8.6";
-                "show_name" = "名侦探柯南：零的执行人";
-                "show_version_list" = "[中国巨幕2D, 2D]";
-            },
-                        {
-                "background_picture" = "https://gw.alicdn.com/tfscom/i3/TB1Tw_7g9zqK1RjSZFLXXcn2XXa_.jpg";
-                country = "印度";
-                director = "西达尔特·马尔霍特拉";
-                id = 1279492;
-                "leading_role" = "拉妮·玛克赫吉,内拉吉·卡比,萨钦,Shivkumar Subramaniam,苏普丽雅·皮尔加卡尔,侯赛因·达拉尔";
-                market = sell;
-                "open_day" = "2018-10-12 00:00:00";
-                "open_time" = "2018-10-12";
-                remark = "9.1";
-                "show_name" = "嗝嗝老师";
-                "show_version_list" = "[2D]";
-            },
-                        {
-                country = "中国大陆";
-                director = "宋占涛";
-                id = 818787;
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                "show_name" = "地层深处";
-                "show_version_list" = "[2D]";
-            },
-                        {
-                country = "中国大陆";
-                director = "高朋, 刘鼎业";
-                id = 521252;
-                "leading_role" = "秦语,曾淇,赵艺,曹晏豪,刘颖颖";
-                market = sell;
-                "open_day" = "2018-11-09 00:00:00";
-                "open_time" = "2018-11-09";
-                "show_name" = "开学悸";
-                "show_version_list" = "[2D]";
-            }
-        );
-        total = 45;
-    };
-    msg = "<null>";
+	"code": 200,
+	"msg": null,
+	"data": {
+		"items": [{
+			"market": "1",
+			"country": "美国",
+			"background_picture": "https://gw.alicdn.com/tfscom/i2/TB11ZOYikvoK1RjSZFDXXXY3pXa_.jpg",
+			"director": "鲁本·弗雷斯彻",
+			"open_day": "2018-11-09 00:00:00",
+			"show_name": "毒液：致命守护者",
+			"leading_role": "汤姆·哈迪,米歇尔·威廉姆斯,里兹·阿迈德",
+			"open_time": "2018-11-09",
+			"remark": "9.1",
+			"id": 154563,
+			"show_version_list": "[IMAX3D, 中国巨幕3D, 3D]"
+		}, {
+			"market": "1",
+			"country": "中国大陆",
+			"background_picture": "https://gw.alicdn.com/tfscom/i4/TB1Ye_XlrrpK1RjSZTEXXcWAVXa_.jpg",
+			"director": "岩井俊二",
+			"open_day": "2018-11-09 00:00:00",
+			"show_name": "你好，之华",
+			"leading_role": "周迅,秦昊,杜江,张子枫",
+			"open_time": "2018-11-09",
+			"remark": "8.2",
+			"id": 282395,
+			"show_version_list": "[2D]"
+		}, {
+			"market": "1",
+			"country": "日本",
+			"background_picture": "https://gw.alicdn.com/tfscom/i4/TB1WG.ghVzqK1RjSZSgXXcpAVXa_.jpg",
+			"director": "立川让",
+			"open_day": "2018-11-09 00:00:00",
+			"show_name": "名侦探柯南：零的执行人",
+			"leading_role": "高山南,山口胜平,山崎和佳奈,小山力也,林原惠美",
+			"open_time": "2018-11-09",
+			"remark": "8.6",
+			"id": 232973,
+			"show_version_list": "[中国巨幕2D, 2D]"
+		}, {
+			"market": "2",
+			"country": "美国",
+			"background_picture": "https://gw.alicdn.com/tfscom/i1/TB16CXuakfb_uJkHFrdXXX2IVXa_.jpg",
+			"director": "大卫·叶茨",
+			"open_day": "2018-11-16 00:00:00",
+			"show_name": "神奇动物：格林德沃之罪",
+			"leading_role": "埃迪·雷德梅恩,凯瑟琳·沃特森,约翰尼·德普,裘德·洛,埃兹拉·米勒,丹·福勒,艾莉森·苏朵儿",
+			"open_time": "2018-11-16",
+			"id": 215401,
+			"show_version_list": "[IMAX3D, 中国巨幕3D, 3D]"
+		}, {
+			"market": "1",
+			"country": "美国",
+			"director": "罗伯·科恩",
+			"open_day": "2018-11-02 00:00:00",
+			"show_name": "飓风奇劫",
+			"leading_role": "托比·凯贝尔,玛姬·格蕾斯,瑞恩·柯万腾",
+			"open_time": "2018-11-02",
+			"remark": "8.2",
+			"id": 887456,
+			"show_version_list": "[中国巨幕2D, 2D]"
+		}, {
+			"market": "1",
+			"country": "美国",
+			"background_picture": "https://gw.alicdn.com/tfscom/i3/TB1H98EhirpK1RjSZFhXXXSdXXa_.jpg",
+			"director": "拉斯·霍尔斯道姆, 乔·庄斯顿",
+			"open_day": "2018-11-02 00:00:00",
+			"show_name": "胡桃夹子和四个王国",
+			"leading_role": "麦肯吉·弗依,摩根·弗里曼,凯拉·奈特莉,海伦·米伦",
+			"open_time": "2018-11-02",
+			"remark": "7.7",
+			"id": 355665,
+			"show_version_list": "[中国巨幕3D, 3D]"
+		}, {
+			"market": "1",
+			"country": "英国",
+			"background_picture": "https://gw.alicdn.com/tfscom/i4/TB1XEnVQFXXXXX6XpXXXXXXXXXX_.jpg",
+			"director": "罗杰·斯波蒂斯伍德",
+			"open_day": "2018-11-02 00:00:00",
+			"show_name": "流浪猫鲍勃",
+			"leading_role": "卢克·崔德威,安东尼·海德,露塔·格德米纳斯,琼安·弗洛加特,阿卡巴尔·库尔塔,罗茜·伊德",
+			"open_time": "2018-11-02",
+			"remark": "8.7",
+			"id": 216134,
+			"show_version_list": "[2D]"
+		}, {
+			"market": "1",
+			"country": "中国大陆",
+			"director": "施雅雅",
+			"open_day": "2018-11-10 00:00:00",
+			"show_name": "恐龙王",
+			"leading_role": "王衡,吕佩玉,孙晔,穆雪婷,徐思琦",
+			"open_time": "2018-11-10",
+			"remark": "8.7",
+			"id": 1288985,
+			"show_version_list": "[3D, 2D]"
+		}, {
+			"market": "1",
+			"country": "英国",
+			"background_picture": "https://gw.alicdn.com/tfscom/i3/TB1dQMxkFYqK1RjSZLeXXbXppXa_.jpg",
+			"director": "曼迪·弗莱切",
+			"open_day": "2018-11-09 00:00:00",
+			"show_name": "我的冤家是条狗",
+			"leading_role": "比蒂·埃德蒙森,艾德·斯克林,珍妮弗·桑德斯",
+			"open_time": "2018-11-09",
+			"remark": "8.6",
+			"id": 1291497,
+			"show_version_list": "[2D]"
+		}, {
+			"market": "1",
+			"country": "中国大陆,中国香港",
+			"background_picture": "https://gw.alicdn.com/tfscom/i3/TB1DQe7tbZnBKNjSZFGXXbt3FXa_.jpg",
+			"director": "庄文强",
+			"open_day": "2018-09-30 00:00:00",
+			"show_name": "无双",
+			"leading_role": "周润发,郭富城,张静初,冯文娟,廖启智,周家怡,王耀庆,方中信",
+			"open_time": "2018-09-30",
+			"remark": "8.9",
+			"id": 525339,
+			"show_version_list": "[IMAX2D, 中国巨幕2D, 4D, 2D]"
+		}, {
+			"market": "1",
+			"country": "中国大陆",
+			"background_picture": "https://gw.alicdn.com/tfscom/i4/TB1ERNXnIfpK1RjSZFOXXa6nFXa_.jpg",
+			"director": "吕柯憬",
+			"open_day": "2018-11-09 00:00:00",
+			"show_name": "三国杀·幻",
+			"leading_role": "郑伊健,于荣光,谢天华,贾青,林晓峰",
+			"open_time": "2018-11-09",
+			"id": 209573,
+			"show_version_list": "[2D]"
+		}, {
+			"market": "1",
+			"country": "中国大陆",
+			"director": "薛玉峥",
+			"open_day": "2018-11-10 00:00:00",
+			"show_name": "两个俏公主",
+			"leading_role": "朱祎,马正阳,魏茹晨,赵欣,贺文潇",
+			"open_time": "2018-11-10",
+			"id": 1291578,
+			"show_version_list": "[]"
+		}],
+		"total": 44
+	}
 }

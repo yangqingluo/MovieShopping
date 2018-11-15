@@ -1,0 +1,103 @@
+{
+	"code": 200,
+	"msg": null,
+	"data": {
+		"items": [{
+			"play_desc_list": [{
+				"show_time": "20:40",
+				"show_version": "英语 3D",
+				"price": 28.0,
+				"id": "587715431"
+			}],
+			"cinema_name": "天智创客影城（川外店）",
+			"address": "都江堰市四川外国语大学成都学院百汇园4楼（都江堰市大观镇高尔夫大街367号）",
+			"min_price": 28.0,
+			"distance": 11301.11,
+			"latitude": "30.828867",
+			"id": 41769,
+			"longitude": "103.574197"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:50",
+				"show_version": "英语 3D",
+				"price": 28.0,
+				"id": "588617233"
+			}],
+			"cinema_name": "太平洋影城（安仁戏院店）",
+			"address": "大邑县裕民街仁和街交叉口南100米路东",
+			"min_price": 28.0,
+			"distance": 11309.69,
+			"latitude": "30.510297",
+			"id": 23746,
+			"longitude": "103.618894"
+		}, {
+			"play_desc_list": [{
+				"show_time": "21:50",
+				"show_version": "英语 3D",
+				"price": 32.0,
+				"id": "588624524"
+			}],
+			"cinema_name": "太平洋影城（温江店）",
+			"address": "温江区柳城南熏大道855号",
+			"min_price": 32.0,
+			"distance": 11326.55,
+			"latitude": "30.687384",
+			"id": 9967,
+			"longitude": "103.821938"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:50",
+				"show_version": "原版 3D",
+				"price": 28.0,
+				"id": "587771429"
+			}, {
+				"show_time": "21:25",
+				"show_version": "原版 3D",
+				"price": 28.0,
+				"id": "587771428"
+			}, {
+				"show_time": "22:05",
+				"show_version": "原版 3D",
+				"price": 28.0,
+				"id": "587771426"
+			}, {
+				"show_time": "22:45",
+				"show_version": "原版 3D",
+				"price": 28.0,
+				"id": "587771447"
+			}, {
+				"show_time": "23:20",
+				"show_version": "原版 3D",
+				"price": 28.0,
+				"id": "587771446"
+			}],
+			"cinema_name": "中影文星国际影城（温江店）",
+			"address": "温江区南浦路西段247号二楼",
+			"min_price": 28.0,
+			"distance": 11327.69,
+			"latitude": "30.688809",
+			"id": 49615,
+			"longitude": "103.834151"
+		}, {
+			"play_desc_list": [{
+				"show_time": "20:40",
+				"show_version": "英语 3D",
+				"price": 28.0,
+				"id": "588686519"
+			}, {
+				"show_time": "22:00",
+				"show_version": "英语 3D",
+				"price": 28.0,
+				"id": "588686516"
+			}],
+			"cinema_name": "成都欢乐小马影城",
+			"address": "温江区光华大道三段1868号德昆新天地2号楼4楼",
+			"min_price": 28.0,
+			"distance": 11329.84,
+			"latitude": "30.6880150084",
+			"id": 17789,
+			"longitude": "103.8566833659"
+		}],
+		"total": 51
+	}
+}

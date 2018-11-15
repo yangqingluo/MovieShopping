@@ -1,0 +1,17 @@
+{
+	"code": 200,
+	"msg": null,
+	"data": {
+		"items": [{
+			"market": 1,
+			"director": "鲁本·弗雷斯彻",
+			"show_name": "毒液：致命守护者",
+			"open_day": "2018-11-09 00:00:00",
+			"leading_role": "汤姆·哈迪,米歇尔·威廉姆斯,里兹·阿迈德",
+			"remark": "9.1",
+			"id": 154563,
+			"poster": "https://gw.alicdn.com/tfscom/i4/TB1ne5IlVYqK1RjSZLeXXbXppXa_.jpg"
+		}],
+		"total": 1
+	}
+}

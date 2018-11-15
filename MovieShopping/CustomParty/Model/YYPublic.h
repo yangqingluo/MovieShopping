@@ -19,7 +19,6 @@
 
 @property (nonatomic, weak) YYNavigationController *mainNav;
 @property (nonatomic, strong) YYCity *city;
-
-YYResponse *APIData(NSNumber *number);
+@property (nonatomic, strong) NSString *token;
 
 @end

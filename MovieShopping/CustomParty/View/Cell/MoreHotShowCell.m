@@ -63,7 +63,7 @@ static NSString *cellID = @"cell_hot_show";
     [cell.showImageView sd_setImageWithURL:dic[@"background_picture"] placeholderImage:[UIImage imageNamed:YYPlaceholderImageName]];
     cell.showLabel.text = dic[@"show_name"];
     cell.buyBtn.tag = indexPath.row;
-    if ([dic[@"market"] isEqualToString:@"presell"]) {
+    if ([dic[@"market"] isEqualToString:@"2"]) {
         [cell.buyBtn setTitle:@"预售" forState:UIControlStateNormal];
         cell.buyBtn.backgroundColor = YYBlueColor;
     }

@@ -1,0 +1,10 @@
+{
+	"code": 200,
+	"msg": null,
+	"data": [{
+		"pin_yin": "CHENGDU",
+		"city_code": 510100,
+		"region_name": "成都",
+		"id": 70
+	}]
+}

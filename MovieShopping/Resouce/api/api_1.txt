@@ -1,0 +1,25 @@
+{
+	"code": 200,
+	"msg": "返回影片详情成功！",
+	"data": {
+		"movieDetail": {
+			"country": "美国",
+			"show_mark": "IMAX3D",
+			"director": "鲁本·弗雷斯彻",
+			"show_name": "毒液：致命守护者",
+			"description": "2018漫威压轴巨制，蜘蛛侠最强劲敌“毒液”强势来袭！曾主演《敦刻尔克》《盗梦空间》等口碑大片的肌肉型男汤姆·哈迪在本片中饰演“毒液”的宿主–埃迪·布洛克。身为记者的埃迪在调查生命基金会老板卡尔顿·德雷克（里兹·阿迈德饰）的过程中，事业遭受重创，与未婚妻安妮·韦英（米歇尔·威廉姆斯饰）的关系岌岌可危，并意外被外星共生体入侵，历经挣扎对抗，最终成为拥有强大超能力，无人可挡的“毒液”。影片极具震撼的视效制作，颠覆想象的展示了“毒液”的变身过程，并将其酷炫的外形和强大的技能呈现的淋漓尽致。",
+			"open_time": "2018-11-09",
+			"language": "英语",
+			"show_name_en": "Venom",
+			"show_version_list": "[IMAX3D, 中国巨幕3D, 3D]",
+			"trailer_list": "[https://gw.alicdn.com/tfscom/cdn/i4/TB1D7NYXY1YBuNjSszhXXcUsFXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB1QGFUX9CWBuNjy0FhXXb6EVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB13eh0XYSYBuNjSspfXXcZCpXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i3/TB1QXRUX79WBuNjSspeXXaz5VXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i4/TB1xx4TXYuWBuNjSszgXXb8jVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB1QN8WXVOWBuNjy0FiXXXFxVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB10sRQX7KWBuNjy1zjXXcOypXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB1tg2BX_lYBeNjSszcXXbwhFXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB1M10SXYGYBuNjy0FoXXciBFXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB1P500X49YBuNjy0FfXXXIsVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i3/TB1Dp41X25TBuNjSspmXXaDRVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i4/TB1PQtNkGSWBuNjSsrbXXa0mVXa_.jpg]",
+			"type": "动作,科幻,惊悚",
+			"duration": 107,
+			"background_picture": "https://gw.alicdn.com/tfscom/cdn/i2/TB11ZOYikvoK1RjSZFDXXXY3pXa_.jpg",
+			"open_day": "2018-11-09 00:00:00",
+			"leading_role": "汤姆·哈迪,米歇尔·威廉姆斯,里兹·阿迈德",
+			"id": 154563,
+			"poster": "https://gw.alicdn.com/tfscom/cdn/i4/TB1ne5IlVYqK1RjSZLeXXbXppXa_.jpg"
+		}
+	}
+}

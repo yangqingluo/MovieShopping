@@ -1,0 +1,10 @@
+{
+	"code": 200,
+	"msg": "返回影片剧照列表成功！",
+	"data": {
+		"items": [{
+			"trailer_list": "[https://gw.alicdn.com/tfscom/cdn/i4/TB1D7NYXY1YBuNjSszhXXcUsFXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB1QGFUX9CWBuNjy0FhXXb6EVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB13eh0XYSYBuNjSspfXXcZCpXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i3/TB1QXRUX79WBuNjSspeXXaz5VXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i4/TB1xx4TXYuWBuNjSszgXXb8jVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB1QN8WXVOWBuNjy0FiXXXFxVXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB10sRQX7KWBuNjy1zjXXcOypXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i2/TB1tg2BX_lYBeNjSszcXXbwhFXa_.jpg, https://gw.alicdn.com/tfscom/cdn/i1/TB1M10SXYGYBuNjy0FoXXciBFXa_.jpg]"
+		}],
+		"total": 141
+	}
+}
