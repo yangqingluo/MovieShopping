@@ -281,7 +281,7 @@
         }
         NSDictionary *dic = self.dataList[indexPath.section];
         cell.dataList = dic[@"play_desc_list"];
-        cell.tag = indexPath.row;
+        cell.tag = indexPath.section;
         return cell;
     }
     

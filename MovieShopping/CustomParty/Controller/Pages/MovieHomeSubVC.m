@@ -102,7 +102,7 @@ static NSString *adCellID = @"adCell";
     //1.创建队列组
     dispatch_group_t group = dispatch_group_create();
     //2.创建队列
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t queue = dispatch_get_main_queue();
     //3.添加请求
     dispatch_group_async(group, queue, ^{
         dispatch_group_enter(group);
