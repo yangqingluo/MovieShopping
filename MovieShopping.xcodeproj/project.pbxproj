@@ -41,6 +41,7 @@
 		4A89A20B2199810900C0DAFE /* GF_CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2042199810800C0DAFE /* GF_CityTableViewCell.m */; };
 		4A89A20C2199810900C0DAFE /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A89A2072199810800C0DAFE /* citydict.plist */; };
 		4A89A20D2199810900C0DAFE /* GF_CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A89A2092199810800C0DAFE /* GF_CityListViewController.m */; };
+		E45F09EF219D987300B295B4 /* YYViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E45F09ED219D987300B295B4 /* YYViewController+HUD.m */; };
 		E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9C2196B854001BE69E /* AppDelegate.swift */; };
 		E4735E9F2196B854001BE69E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735E9E2196B854001BE69E /* ViewController.swift */; };
 		E4735EA22196B854001BE69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4735EA02196B854001BE69E /* Main.storyboard */; };
@@ -85,7 +86,6 @@
 		E4735F7021972F22001BE69E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F6621972F21001BE69E /* NSString+MJExtension.m */; };
 		E4735F782197309E001BE69E /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F732197309E001BE69E /* MBProgressHUD+Add.m */; };
 		E4735F792197309E001BE69E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F752197309E001BE69E /* MBProgressHUD.m */; };
-		E4735F7A2197309E001BE69E /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F772197309E001BE69E /* UIViewController+HUD.m */; };
 		E4735F80219738B7001BE69E /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */; };
 		E4735F8D21973A0E001BE69E /* seats 0.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8221973A0D001BE69E /* seats 0.plist */; };
 		E4735F8E21973A0E001BE69E /* seats 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4735F8321973A0D001BE69E /* seats 1.plist */; };
@@ -279,6 +279,8 @@
 		4A89A2072199810800C0DAFE /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
 		4A89A2082199810800C0DAFE /* GF_CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GF_CityListViewController.h; sourceTree = "<group>"; };
 		4A89A2092199810800C0DAFE /* GF_CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GF_CityListViewController.m; sourceTree = "<group>"; };
+		E45F09ED219D987300B295B4 /* YYViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYViewController+HUD.m"; sourceTree = "<group>"; };
+		E45F09EE219D987300B295B4 /* YYViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYViewController+HUD.h"; sourceTree = "<group>"; };
 		E4735E992196B854001BE69E /* MovieShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4735E9C2196B854001BE69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4735E9E2196B854001BE69E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -363,8 +365,6 @@
 		E4735F732197309E001BE69E /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		E4735F742197309E001BE69E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E4735F752197309E001BE69E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		E4735F762197309E001BE69E /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
-		E4735F772197309E001BE69E /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 		E4735F7E219738B6001BE69E /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
 		E4735F7F219738B7001BE69E /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
 		E4735F8221973A0D001BE69E /* seats 0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 0.plist"; sourceTree = "<group>"; };
@@ -971,8 +971,8 @@
 				E4735F732197309E001BE69E /* MBProgressHUD+Add.m */,
 				E4735F742197309E001BE69E /* MBProgressHUD.h */,
 				E4735F752197309E001BE69E /* MBProgressHUD.m */,
-				E4735F762197309E001BE69E /* UIViewController+HUD.h */,
-				E4735F772197309E001BE69E /* UIViewController+HUD.m */,
+				E45F09EE219D987300B295B4 /* YYViewController+HUD.h */,
+				E45F09ED219D987300B295B4 /* YYViewController+HUD.m */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
@@ -1489,7 +1489,6 @@
 				E49A88D521981234003EDD10 /* SDWebImageDownloaderOperation.m in Sources */,
 				E4735F442196D281001BE69E /* YYNavigationController.m in Sources */,
 				E4735F6A21972F22001BE69E /* MJPropertyKey.m in Sources */,
-				E4735F7A2197309E001BE69E /* UIViewController+HUD.m in Sources */,
 				4A12856C219907D500C462A8 /* AFHTTPSessionManager.m in Sources */,
 				4A89A1FB2199759D00C0DAFE /* FilmStillCell.m in Sources */,
 				E4735F4D21972DEE001BE69E /* CWCarousel.m in Sources */,
@@ -1533,6 +1532,7 @@
 				E4CF70B421982D6900002384 /* MoreSoonShowCell.m in Sources */,
 				E4735ECE2196B922001BE69E /* SeatViewController.m in Sources */,
 				E4CF70BA2198330200002384 /* FilmSoonSubTableVC.m in Sources */,
+				E45F09EF219D987300B295B4 /* YYViewController+HUD.m in Sources */,
 				4A89A1FE21997B3B00C0DAFE /* PerformerListVC.m in Sources */,
 				4A128573219907F900C462A8 /* YYNetwork.m in Sources */,
 				E4735F152196BB1B001BE69E /* YYSeat.m in Sources */,

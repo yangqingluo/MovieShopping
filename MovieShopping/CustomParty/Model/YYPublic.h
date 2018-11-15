@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "YYNavigationController.h"
 #import "YYViewPublic.h"
-#import "UIViewController+HUD.h"
+#import "YYViewController+HUD.h"
 #import "YYNetwork.h"
 #import "YYType.h"
 

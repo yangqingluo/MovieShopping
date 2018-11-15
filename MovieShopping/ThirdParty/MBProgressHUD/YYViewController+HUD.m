@@ -10,7 +10,7 @@
   * from EaseMob Technologies.
   */
 
-#import "UIViewController+HUD.h"
+#import "YYViewController+HUD.h"
 #import "MBProgressHUD+Add.h"
 #import <objc/runtime.h>
 
@@ -36,7 +36,7 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
     HUD.userInteractionEnabled = NO;
     HUD.mode = MBProgressHUDModeText;
     HUD.label.text = hint;
-    HUD.detailsLabel.text = hint;
+    HUD.detailsLabel.text= hint;
     [view addSubview:HUD];
     [HUD showAnimated:YES];
     [self setHUD:HUD];
