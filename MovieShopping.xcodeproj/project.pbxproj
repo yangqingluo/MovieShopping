@@ -41,7 +41,6 @@
 		4A8A8E5E219E5BC6001EEDD0 /* YYSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A8E5D219E5BC6001EEDD0 /* YYSectionView.swift */; };
 		4A8A8E64219E735D001EEDD0 /* YYSectionSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A8E63219E735D001EEDD0 /* YYSectionSeatView.swift */; };
 		4A8A8E66219E8AB7001EEDD0 /* YYSingleSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A8E65219E8AB7001EEDD0 /* YYSingleSeatView.swift */; };
-		4A8A8E68219E9A37001EEDD0 /* api_211.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A8E67219E9A37001EEDD0 /* api_211.txt */; };
 		4A8A8E6A219EAFE1001EEDD0 /* YYSectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A8E69219EAFE1001EEDD0 /* YYSectionRowView.swift */; };
 		E45F09EF219D987300B295B4 /* YYViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E45F09ED219D987300B295B4 /* YYViewController+HUD.m */; };
 		E45F0A08219D9EC700B295B4 /* api_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = E45F09F0219D9EC400B295B4 /* api_3.txt */; };
@@ -76,15 +75,9 @@
 		E4735EB22196B854001BE69E /* MovieShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EB12196B854001BE69E /* MovieShoppingTests.swift */; };
 		E4735EBD2196B854001BE69E /* MovieShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EBC2196B854001BE69E /* MovieShoppingUITests.swift */; };
 		E4735ECE2196B922001BE69E /* SeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735ECC2196B922001BE69E /* SeatViewController.m */; };
-		E4735F0A2196BB1B001BE69E /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EEB2196BB1B001BE69E /* JSONParse.swift */; };
 		E4735F0B2196BB1B001BE69E /* YYCenterLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EEC2196BB1B001BE69E /* YYCenterLineView.swift */; };
 		E4735F0C2196BB1B001BE69E /* YYHallNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EED2196BB1B001BE69E /* YYHallNameView.swift */; };
 		E4735F0D2196BB1B001BE69E /* YYIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EEE2196BB1B001BE69E /* YYIndicatorView.swift */; };
-		E4735F0E2196BB1B001BE69E /* YYRowIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EEF2196BB1B001BE69E /* YYRowIndexView.swift */; };
-		E4735F102196BB1B001BE69E /* YYSeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF12196BB1B001BE69E /* YYSeatButton.swift */; };
-		E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */; };
-		E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF42196BB1B001BE69E /* YYSeatView.swift */; };
-		E4735F152196BB1B001BE69E /* YYSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735EF72196BB1B001BE69E /* YYSeat.m */; };
 		E4735F1D2196C06C001BE69E /* YYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F1C2196C06C001BE69E /* YYBaseViewController.m */; };
 		E4735F242196C136001BE69E /* MovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F232196C136001BE69E /* MovieController.m */; };
 		E4735F272196CAC3001BE69E /* YYBaseSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4735F262196CAC3001BE69E /* YYBaseSubViewController.m */; };
@@ -214,6 +207,8 @@
 		E4CF712A21988A5700002384 /* NSMutableAttributedString+CTFrameRef.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712421988A5700002384 /* NSMutableAttributedString+CTFrameRef.m */; };
 		E4CF712B21988A5700002384 /* TLAttributedLabelUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712621988A5700002384 /* TLAttributedLabelUtils.m */; };
 		E4CF712C21988A5700002384 /* TLDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF712821988A5700002384 /* TLDisplayView.m */; };
+		E4E6F62A219EFF6C007C1A93 /* api_21_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4E6F629219EFF6A007C1A93 /* api_21_1.txt */; };
+		E4E6F62C219F1E10007C1A93 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E6F62B219F1E0F007C1A93 /* JSONParse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,7 +294,6 @@
 		4A8A8E5D219E5BC6001EEDD0 /* YYSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSectionView.swift; sourceTree = "<group>"; };
 		4A8A8E63219E735D001EEDD0 /* YYSectionSeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSectionSeatView.swift; sourceTree = "<group>"; };
 		4A8A8E65219E8AB7001EEDD0 /* YYSingleSeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSingleSeatView.swift; sourceTree = "<group>"; };
-		4A8A8E67219E9A37001EEDD0 /* api_211.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_211.txt; sourceTree = "<group>"; };
 		4A8A8E69219EAFE1001EEDD0 /* YYSectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSectionRowView.swift; sourceTree = "<group>"; };
 		E45F09ED219D987300B295B4 /* YYViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYViewController+HUD.m"; sourceTree = "<group>"; };
 		E45F09EE219D987300B295B4 /* YYViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYViewController+HUD.h"; sourceTree = "<group>"; };
@@ -343,16 +337,9 @@
 		E4735ECA2196B921001BE69E /* MovieShopping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieShopping-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4735ECB2196B922001BE69E /* SeatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeatViewController.h; sourceTree = "<group>"; };
 		E4735ECC2196B922001BE69E /* SeatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeatViewController.m; sourceTree = "<group>"; };
-		E4735EEB2196BB1B001BE69E /* JSONParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		E4735EEC2196BB1B001BE69E /* YYCenterLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCenterLineView.swift; sourceTree = "<group>"; };
 		E4735EED2196BB1B001BE69E /* YYHallNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHallNameView.swift; sourceTree = "<group>"; };
 		E4735EEE2196BB1B001BE69E /* YYIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYIndicatorView.swift; sourceTree = "<group>"; };
-		E4735EEF2196BB1B001BE69E /* YYRowIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRowIndexView.swift; sourceTree = "<group>"; };
-		E4735EF12196BB1B001BE69E /* YYSeatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatButton.swift; sourceTree = "<group>"; };
-		E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatSelectionView.swift; sourceTree = "<group>"; };
-		E4735EF42196BB1B001BE69E /* YYSeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSeatView.swift; sourceTree = "<group>"; };
-		E4735EF62196BB1B001BE69E /* YYSeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSeat.h; sourceTree = "<group>"; };
-		E4735EF72196BB1B001BE69E /* YYSeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSeat.m; sourceTree = "<group>"; };
 		E4735EF82196BB1B001BE69E /* Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swift.h; sourceTree = "<group>"; };
 		E4735F1B2196C06C001BE69E /* YYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBaseViewController.h; sourceTree = "<group>"; };
 		E4735F1C2196C06C001BE69E /* YYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBaseViewController.m; sourceTree = "<group>"; };
@@ -599,6 +586,8 @@
 		E4CF712621988A5700002384 /* TLAttributedLabelUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAttributedLabelUtils.m; sourceTree = "<group>"; };
 		E4CF712721988A5700002384 /* TLDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDisplayView.h; sourceTree = "<group>"; };
 		E4CF712821988A5700002384 /* TLDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDisplayView.m; sourceTree = "<group>"; };
+		E4E6F629219EFF6A007C1A93 /* api_21_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = api_21_1.txt; sourceTree = "<group>"; };
+		E4E6F62B219F1E0F007C1A93 /* JSONParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -696,7 +685,7 @@
 				E45F09F4219D9EC400B295B4 /* api_19.txt */,
 				E45F09FB219D9EC500B295B4 /* api_20.txt */,
 				E45F09F6219D9EC500B295B4 /* api_21.txt */,
-				4A8A8E67219E9A37001EEDD0 /* api_211.txt */,
+				E4E6F629219EFF6A007C1A93 /* api_21_1.txt */,
 				E45F09F7219D9EC500B295B4 /* api_22.txt */,
 				E45F09F8219D9EC500B295B4 /* api_23.txt */,
 				E45F09FE219D9EC600B295B4 /* api_24.txt */,
@@ -828,18 +817,14 @@
 		E4735EEA2196BB1B001BE69E /* YYMovieSeat */ = {
 			isa = PBXGroup;
 			children = (
-				E4735EEB2196BB1B001BE69E /* JSONParse.swift */,
-				E4735EEC2196BB1B001BE69E /* YYCenterLineView.swift */,
-				E4735EED2196BB1B001BE69E /* YYHallNameView.swift */,
-				E4735EEE2196BB1B001BE69E /* YYIndicatorView.swift */,
-				E4735EEF2196BB1B001BE69E /* YYRowIndexView.swift */,
-				E4735EF12196BB1B001BE69E /* YYSeatButton.swift */,
-				E4735EF42196BB1B001BE69E /* YYSeatView.swift */,
-				E4735EF32196BB1B001BE69E /* YYSeatSelectionView.swift */,
 				4A8A8E5D219E5BC6001EEDD0 /* YYSectionView.swift */,
 				4A8A8E63219E735D001EEDD0 /* YYSectionSeatView.swift */,
 				4A8A8E65219E8AB7001EEDD0 /* YYSingleSeatView.swift */,
 				4A8A8E69219EAFE1001EEDD0 /* YYSectionRowView.swift */,
+				E4735EEC2196BB1B001BE69E /* YYCenterLineView.swift */,
+				E4735EED2196BB1B001BE69E /* YYHallNameView.swift */,
+				E4735EEE2196BB1B001BE69E /* YYIndicatorView.swift */,
+				E4E6F62B219F1E0F007C1A93 /* JSONParse.swift */,
 			);
 			path = YYMovieSeat;
 			sourceTree = "<group>";
@@ -887,8 +872,6 @@
 				4A128572219907F900C462A8 /* YYNetwork.m */,
 				E4CF70AC219824FA00002384 /* UIResponder+Router.h */,
 				E4CF70AD219824FA00002384 /* UIResponder+Router.m */,
-				E4735EF62196BB1B001BE69E /* YYSeat.h */,
-				E4735EF72196BB1B001BE69E /* YYSeat.m */,
 				E4735F382196D0E6001BE69E /* UIImage+Categories */,
 			);
 			path = Model;
@@ -1459,9 +1442,9 @@
 				E4735EA42196B854001BE69E /* Assets.xcassets in Resources */,
 				E45F0A08219D9EC700B295B4 /* api_3.txt in Resources */,
 				E45F0A18219D9EC700B295B4 /* api_5.txt in Resources */,
-				4A8A8E68219E9A37001EEDD0 /* api_211.txt in Resources */,
 				4A12859721992C2000C462A8 /* DateTools.bundle in Resources */,
 				E45F0A15219D9EC700B295B4 /* api_8.txt in Resources */,
+				E4E6F62A219EFF6C007C1A93 /* api_21_1.txt in Resources */,
 				E4735F9121973A0E001BE69E /* seats 4.plist in Resources */,
 				E4CF7107219859C100002384 /* ico_make.png in Resources */,
 				E45F0A09219D9EC700B295B4 /* api_9.txt in Resources */,
@@ -1518,7 +1501,6 @@
 			files = (
 				E4CF70B121982B9900002384 /* YYSlideSwitchView.m in Sources */,
 				4A1285A121994C1A00C462A8 /* YYCellHeaderView.m in Sources */,
-				E4735F0E2196BB1B001BE69E /* YYRowIndexView.swift in Sources */,
 				E4CF70B7219832A000002384 /* FilmHotSubTableVC.m in Sources */,
 				E4735E9F2196B854001BE69E /* ViewController.swift in Sources */,
 				E49A88D421981234003EDD10 /* SDWebImageDownloader.m in Sources */,
@@ -1553,13 +1535,13 @@
 				E49A88D721981234003EDD10 /* SDWebImageGIFCoder.m in Sources */,
 				E4735F6821972F22001BE69E /* MJFoundation.m in Sources */,
 				E4735F782197309E001BE69E /* MBProgressHUD+Add.m in Sources */,
+				E4E6F62C219F1E10007C1A93 /* JSONParse.swift in Sources */,
 				E4CF710C219861F600002384 /* CinemaCell.m in Sources */,
 				E4CF70FB21983A6500002384 /* UIScrollView+MJExtension.m in Sources */,
 				4A89A20D2199810900C0DAFE /* GF_CityListViewController.m in Sources */,
 				4A12859A21992C2000C462A8 /* DTTimePeriodGroup.m in Sources */,
 				4A12859921992C2000C462A8 /* NSDate+DateTools.m in Sources */,
 				E4CF712B21988A5700002384 /* TLAttributedLabelUtils.m in Sources */,
-				E4735F132196BB1B001BE69E /* YYSeatView.swift in Sources */,
 				E4735F7021972F22001BE69E /* NSString+MJExtension.m in Sources */,
 				E49A88E021981234003EDD10 /* UIImage+MultiFormat.m in Sources */,
 				E49A88E221981234003EDD10 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1573,7 +1555,6 @@
 				4A12856C219907D500C462A8 /* AFHTTPSessionManager.m in Sources */,
 				4A89A1FB2199759D00C0DAFE /* FilmStillCell.m in Sources */,
 				E4735F4D21972DEE001BE69E /* CWCarousel.m in Sources */,
-				E4735F122196BB1B001BE69E /* YYSeatSelectionView.swift in Sources */,
 				E4735F272196CAC3001BE69E /* YYBaseSubViewController.m in Sources */,
 				E4CF711A21987FF300002384 /* FilmScoreCell.m in Sources */,
 				E4CF7113219876F200002384 /* FilmInfoView.m in Sources */,
@@ -1587,7 +1568,6 @@
 				E4735F6C21972F22001BE69E /* NSObject+MJClass.m in Sources */,
 				E4735F6721972F22001BE69E /* MJExtensionConst.m in Sources */,
 				E49A887A2197E9A3003EDD10 /* YYMoreCell.m in Sources */,
-				E4735F0A2196BB1B001BE69E /* JSONParse.swift in Sources */,
 				E49A88C921981234003EDD10 /* MKAnnotationView+WebCache.m in Sources */,
 				E4735F0B2196BB1B001BE69E /* YYCenterLineView.swift in Sources */,
 				E4895B21219B29C30004AC05 /* UIView+SGFrame.m in Sources */,
@@ -1615,7 +1595,6 @@
 				E45F09EF219D987300B295B4 /* YYViewController+HUD.m in Sources */,
 				4A89A1FE21997B3B00C0DAFE /* PerformerListVC.m in Sources */,
 				4A128573219907F900C462A8 /* YYNetwork.m in Sources */,
-				E4735F152196BB1B001BE69E /* YYSeat.m in Sources */,
 				E4CF70ED21983A6500002384 /* MJRefreshFooter.m in Sources */,
 				E49A88D321981234003EDD10 /* SDWebImageCompat.m in Sources */,
 				E4CF712C21988A5700002384 /* TLDisplayView.m in Sources */,
@@ -1636,7 +1615,6 @@
 				E4735F342196CF9A001BE69E /* YYPublic.m in Sources */,
 				4A128570219907D600C462A8 /* AFSecurityPolicy.m in Sources */,
 				E4CF712921988A5700002384 /* NSMutableAttributedString+Config.m in Sources */,
-				E4735F102196BB1B001BE69E /* YYSeatButton.swift in Sources */,
 				4A89A20A2199810900C0DAFE /* GF_LocateHeaderView.m in Sources */,
 				E49A88CC21981234003EDD10 /* NSImage+WebCache.m in Sources */,
 				E4735E9D2196B854001BE69E /* AppDelegate.swift in Sources */,

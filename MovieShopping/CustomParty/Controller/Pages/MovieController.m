@@ -41,7 +41,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_search"] style:UIBarButtonItemStylePlain target:self action:@selector(searchBtnAction)];
     
     UISegmentedControl *segment = [[UISegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 160, 30)];
-    segment.tintColor = [UIColor redColor];
+    segment.tintColor = YYRedColor;
     NSArray *titleArray = @[@"首页", @"电影", @"影院"];
     for (NSInteger i = 0; i < self.vcArray.count; i++) {
         [segment insertSegmentWithTitle:titleArray[i] atIndex:i animated:NO];

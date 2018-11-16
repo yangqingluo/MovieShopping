@@ -31,7 +31,7 @@
 #define YYMainColor                 RGBA(0xff, 0x00, 0x00, 1.0)
 
 #define YYRedColor                  RGBA(0xff, 0x66, 0x66, 1.0)
-#define YYLightRedColor             RGBA(0xff, 0x6b, 0x54, 1.0)
+#define YYLightRedColor             RGBA(0xff, 0xa0, 0xa0, 1.0)
 #define YYGreenColor                RGBA(0x22, 0xb5, 0x89, 1.0)
 #define YYLightGreenColor           RGBA(0xa5, 0xd5, 0x32, 1.0)
 #define YYBlueColor                 RGBA(0x3f, 0xa5, 0xf4, 1.0)

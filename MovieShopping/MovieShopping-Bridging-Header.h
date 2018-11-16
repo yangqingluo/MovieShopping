@@ -5,6 +5,5 @@
 #import "YYNavigationController.h"
 #import "MovieController.h"
 #import "SeatViewController.h"
-#import "YYSeat.h"
 #import "YYType.h"
 #import "UIView+KGViewExtend.h"

@@ -9,21 +9,58 @@
 #import "SeatViewController.h"
 #import "MJExtension.h"
 #import "MBProgressHUD.h"
+#import "UIImage+Color.h"
+#import "YYCollectionView.h"
+#import "YYLabel.h"
 #import "Swift.h"
-#import "YYSeat.h"
 
-@interface SeatViewController ()
+static NSString *cellID = @"cell_ticket";
 
+@interface SeatTicketCell: UICollectionViewCell
+
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) YYLabel *nameLabel;
+@property (nonatomic, strong) YYLabel *priceLabel;
+
+@end
+
+@implementation SeatTicketCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+//        self.contentView.backgroundColor = [UIColor clearColor];
+        _imageView = [[UIImageView alloc] initWithFrame:self.contentView.bounds];
+        _imageView.image = [UIImage imageNamed:@"yy_ticket"];
+        [self.contentView addSubview:_imageView];
+        
+        _nameLabel = [[YYLabel alloc] initWithFrame:CGRectMake(0,  YYEdgeSmall, self.contentView.width, 16)];
+        _nameLabel.textColor = YYTextColor;
+        _nameLabel.font = [UIFont systemFontOfSize:YYLabelFontSize];
+        _nameLabel.textAlignment = NSTextAlignmentCenter;
+        [self.contentView addSubview:_nameLabel];
+
+        _priceLabel = [[YYLabel alloc] initWithFrame:CGRectMake(0, self.nameLabel.bottom, self.width, 14)];
+        _priceLabel.textColor = YYRedColor;
+        _priceLabel.font = [UIFont systemFontOfSize:YYLabelFontSizeSmall];
+        _priceLabel.textAlignment = self.nameLabel.textAlignment;
+        [self.contentView addSubview:_priceLabel];
+    }
+    return self;
+}
+
+@end
+
+@interface SeatViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) YYCollectionView *collectionView;
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) UIView *footerView;
 @property (nonatomic, strong) UIButton *footerBtn;
+@property (nonatomic, strong) YYSectionView *sectionView;
 
-/**按钮数组*/
 @property (nonatomic, copy) NSArray *selecetedSeats;
-
-@property (nonatomic, copy) NSDictionary *allAvailableSeats;//所有可选的座位
-
-@property (nonatomic, strong) NSArray *seatsModelArray;
+@property (nonatomic, strong) YYSection *sectionData;
 
 @end
 
@@ -36,6 +73,7 @@
     self.footerView.bottom = self.view.height;
     [self.view addSubview:self.footerView];
     
+    [self.collectionView registerClass:[SeatTicketCell class] forCellWithReuseIdentifier:cellID];
     
     [self showHudInView:self.view hint:nil];
     __weak typeof(self) weakSelf = self;
@@ -47,65 +85,54 @@
         else {
             YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
             if (result.code == HTTP_SUCCESS) {
-                YYSection *data = [YYSection mj_objectWithKeyValues:response[@"data"]];
-                CGRect frame = CGRectMake(0, self.headerView.bottom, [UIScreen mainScreen].bounds.size.width, self.footerView.top - self.headerView.bottom);
-                YYSectionView *sectionView = [[YYSectionView alloc] initWithFrame:frame data:data hallName:self.scheduleData[@"hall_name"]];
-                sectionView.backgroundColor = RGBA(0xf5, 0xf5, 0xf5, 1.0);
-                [self.view addSubview:sectionView];
+                weakSelf.sectionData = [YYSection mj_objectWithKeyValues:response[@"data"]];
+                [weakSelf setUpSectionView];
             }
         }
     }];
-    
-    
-    
-//    //模拟延迟加载
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self hideHud];
-//        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
-//        //模拟网络加载数据
-//        NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
-//
-//        NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
-//        weakSelf.seatsModelArray = seatsModelArray;
-//
-//        //数据回来初始化选座模块
-//        [weakSelf initSelectionView:seatsModelArray];
-//    });
-    
 }
-//创建选座模块
-- (void)initSelectionView:(NSArray *)seatsModelArray {
+
+- (void)setUpSectionView {
+    CGRect frame = CGRectMake(0, self.headerView.bottom, [UIScreen mainScreen].bounds.size.width, self.footerView.top - self.headerView.bottom);
     __weak typeof(self) weakSelf = self;
-    YYSeatSelectionView *selectionView = [[YYSeatSelectionView alloc] initWithFrame:CGRectMake(0, self.headerView.bottom, [UIScreen mainScreen].bounds.size.width, self.footerView.top - self.headerView.bottom) seatsArray:seatsModelArray hallName:self.scheduleData[@"hall_name"]
-    actionBlock:^(NSArray *selecetedSeats, NSDictionary *allAvailableSeats, NSString *errorStr) {
-        NSLog(@"=====%zd个选中按钮===========%zd个可选座位==========errorStr====%@=========",selecetedSeats.count,allAvailableSeats.count,errorStr);
+    _sectionView = [[YYSectionView alloc] initWithFrame:frame data:self.sectionData actionBlock:^(NSArray *selecetedSeats, NSString *errorStr) {
         if (errorStr) {
-            //错误信息
-            [self showMessage:errorStr];
+            [weakSelf showMessage:errorStr];
         }
         else {
-            //储存选好的座位及全部可选座位
-            weakSelf.allAvailableSeats = allAvailableSeats;
             weakSelf.selecetedSeats = selecetedSeats;
+            [weakSelf updateFooterView];
         }
     }];
-    [self.view addSubview:selectionView];
+    _sectionView.backgroundColor = RGBA(0xf5, 0xf5, 0xf5, 1.0);
+    [self.view addSubview:_sectionView];
 }
 
--(void)sureBtnAction{
-    if (!self.selecetedSeats.count) {
-        [self showMessage:@"您还未选座"];
-        return;
+- (void)updateFooterView {
+    NSInteger count = self.selecetedSeats.count;
+    self.footerBtn.enabled = count > 0;
+    if (count) {
+        CGFloat price = [self.scheduleData[@"price"] floatValue];
+        [_footerBtn setTitle:[NSString stringWithFormat:@"%.1f元 确认选座", price * count] forState:UIControlStateNormal];
+        if (!self.collectionView.superview) {
+            [self.footerView addSubview:self.collectionView];
+        }
+        [self.collectionView reloadData];
     }
-    //验证是否落单
-    if (![YYSeatButton verifySelectedSeatsWithAllAvailableSeats:self.allAvailableSeats seatsArray:self.seatsModelArray]) {
-        [self showMessage:@"不能这样选择座位"];
-    }else{
-        [self showMessage:@"选座成功"];
+    else {
+        [self.collectionView removeFromSuperview];
     }
 }
 
--(void)showMessage:(NSString *)message{
+- (void)sureBtnAction{
+    
+}
+
+- (void)autoSelectBtnAction:(UIButton *)button {
+    NSLog(@"自动选择%d人", button.tag + 1);
+}
+
+- (void)showMessage:(NSString *)message {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
     [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:controller animated:YES completion:nil];
@@ -147,7 +174,7 @@
         [m_view addSubview:label2];
         
         UIImageView *img3 = [[UIImageView alloc] initWithFrame:CGRectMake(label2.right + YYEdge, 0, 20, 20)];
-        img3.image = [UIImage imageNamed:@"selected"];
+        img3.image = [UIImage imageNamed:@"seat_best_area"];
         img3.centerY = 0.5 * m_view.height;
         [m_view addSubview:img3];
         
@@ -169,14 +196,88 @@
 - (UIView *)footerView {
     if (!_footerView) {
         _footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 100)];
+        
+        UILabel *label = NewLabel(CGRectMake(YYEdgeMiddle, 0, 70, 50), YYTextColor, [UIFont systemFontOfSize: 12], NSTextAlignmentLeft);
+        label.text = @"推荐选座";
+        [_footerView addSubview:label];
+        
+        CGFloat width = 50;
+        for (int i = 0; i < 4; i++) {
+            UIButton *btn = NewTextButton([NSString stringWithFormat:@"%d人", i + 1], YYTextColor);
+            btn.frame = CGRectMake(label.right + i * width + i * 7, 0, width, 25);
+            btn.titleLabel.font = label.font;
+            btn.centerY = label.centerY;
+            btn.layer.borderColor = RGBA(0x99, 0x99, 0x99, 1.0).CGColor;
+            btn.layer.borderWidth = 1.0;
+            btn.layer.cornerRadius = 2.0;
+            btn.layer.masksToBounds = YES;
+            [_footerView addSubview:btn];
+            btn.tag = i;
+            [btn addTarget:self action:@selector(autoSelectBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        
         _footerBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _footerView.width, 50)];
         _footerBtn.bottom = _footerView.height;
-        [_footerBtn setTitle:@"请先选座" forState:UIControlStateNormal];
-        _footerBtn.backgroundColor = YYRedColor;
+        [_footerBtn setTitle:@"请先选座" forState:UIControlStateDisabled];
+        [_footerBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_footerBtn setTitleColor:YYLightWhiteColor forState:UIControlStateDisabled];
+        [_footerBtn setBackgroundImage:[UIImage imageWithColor:YYRedColor] forState:UIControlStateNormal];
+        [_footerBtn setBackgroundImage:[UIImage imageWithColor:YYLightRedColor] forState:UIControlStateDisabled];
+        _footerBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        _footerBtn.enabled = NO;
         [_footerView addSubview:_footerBtn];
         [_footerBtn addTarget:self action:@selector(sureBtnAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _footerView;
+}
+
+- (YYCollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *_flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        [_flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+        _flowLayout.headerReferenceSize = CGSizeMake(0, 0);
+        _flowLayout.footerReferenceSize = CGSizeMake(0, 0);
+        _flowLayout.minimumInteritemSpacing = 10.0;
+        _flowLayout.minimumLineSpacing = 10.0;
+        
+        _collectionView = [[YYCollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 50) collectionViewLayout:_flowLayout];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.backgroundColor = [UIColor whiteColor];
+    }
+    return _collectionView;
+}
+
+#pragma mark <UICollectionViewDataSource>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.selecetedSeats.count;
+}
+
+//定义每个Section的四边间距
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(0, YYEdgeMiddle, 0, 0);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(90, 40);
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    SeatTicketCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    YYSectionSeat *seat = self.selecetedSeats[indexPath.row];
+    cell.nameLabel.text = seat.name;
+    cell.priceLabel.text = [NSString stringWithFormat:@"%@元", self.scheduleData[@"price"]];
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    YYSectionSeat *seat = self.selecetedSeats[indexPath.row];
+    [self.sectionView removeSelection:seat];
 }
 
 @end

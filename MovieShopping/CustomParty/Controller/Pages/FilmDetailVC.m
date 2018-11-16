@@ -152,7 +152,7 @@
         }
         
         UIView *m_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _infoView.width, _infoView.bottom)];
-        m_view.backgroundColor = YYLightRedColor;
+        m_view.backgroundColor = YYRedColor;
         [_headerView addSubview:m_view];
         [_headerView addSubview:_infoView];
         

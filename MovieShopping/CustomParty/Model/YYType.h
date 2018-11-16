@@ -66,6 +66,7 @@
 @property (nonatomic, assign) NSInteger maxCanBuy;//可锁座的最大数
 @property (nonatomic, assign) NSInteger seatCount;//座位总数量
 @property (nonatomic, copy) NSString *tipMessage;//影院强制弹窗须知
+@property (nonatomic, copy) NSString *hall_name;
 @property (nonatomic, copy) NSArray<YYSectionSeat *> *seats;
 
 @end

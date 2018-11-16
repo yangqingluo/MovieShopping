@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias SectionBlock = (NSArray, String?) -> Void
+
 class YYSectionView: UIView {
     lazy var baseView = UIScrollView(frame: .zero)
     var seatView: YYSectionSeatView!
@@ -15,24 +17,35 @@ class YYSectionView: UIView {
     lazy var centerLine = YYCenterLineView()
     lazy var hallLogo = YYHallNameView()
     lazy var indicator = YYIndicatorView()
-    
     var data: YYSection!
     lazy var selecetedArray = NSMutableArray()
+    var blockProperty: SectionBlock?
     
-    @objc init(frame: CGRect, data: YYSection, hallName: String) {
+    @objc init(frame: CGRect, data: YYSection, actionBlock: @escaping SectionBlock) {
         super.init(frame: frame)
         self.data = data
+        self.blockProperty = actionBlock
         initScrollView()
         initSeatsView()
         initRowIndexView()
         initCenterLine()
-        initHallLogo(hallName)
+        initHallLogo()
         self.initIndicator()
         startAnimation()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    @objc func removeSelection(_ seat: YYSectionSeat) {
+        if self.data.seats.contains(seat) {
+            let index = self.data.seats.index(of: seat)!
+            guard let btn = self.seatView.viewWithTag(YYSeatTag + index) else {
+                return
+            }
+            self.seatBtnAction(btn as! YYSingleSeatView)
+        }
     }
     
     func initScrollView() {
@@ -70,8 +83,8 @@ class YYSectionView: UIView {
         baseView.addSubview(centerLine)
     }
     
-    func initHallLogo(_ name: String) {
-        hallLogo.name = name
+    func initHallLogo() {
+        hallLogo.name = data.hall_name
         hallLogo.width = YYHallLogoW
         hallLogo.height = 20.0
         hallLogo.centerX = seatView.centerX
@@ -80,19 +93,6 @@ class YYSectionView: UIView {
     }
     
     func initIndicator() {
-//        var ratio:CGFloat = 2.0
-//        let count = seatView.maxRow
-//        let miniMeIndicatorMaxHeight = self.height / 6.0
-//        var maxWidth = seatView.width * 0.5
-//        var currentMiniBtnW_H = maxWidth / CGFloat(count)
-//        var maxHeight = currentMiniBtnW_H * CGFloat(count)
-//
-//        if (maxHeight >= miniMeIndicatorMaxHeight) {
-//            currentMiniBtnW_H = miniMeIndicatorMaxHeight / CGFloat(count)
-//            maxWidth = currentMiniBtnW_H * CGFloat(count)
-//            maxHeight = miniMeIndicatorMaxHeight
-//            ratio = seatView.width / maxWidth
-//        }
         let maxWidth = 0.5 * seatView.width;
         let maxHeight = 0.5 * seatView.height;
         let ratio = seatView.width / maxWidth;
@@ -117,7 +117,8 @@ class YYSectionView: UIView {
     }
     
     func seatBtnAction(_ btn: YYSingleSeatView) -> Void {
-        let seat = self.data.seats[btn.tag]
+        var errorStr: String?
+        let seat = self.data.seats[btn.tag - YYSeatTag]
         if seat.status == 1 {
             if btn.isSelected {
                 btn.isSelected = false
@@ -127,7 +128,7 @@ class YYSectionView: UIView {
             }
             else {
                 if self.selecetedArray.count >= self.data.maxCanBuy {
-                    print("超过最大可选数目")
+                    errorStr = "最多可选择\(self.data.maxCanBuy)个座位"
                 }
                 else {
                     btn.isSelected = true
@@ -136,6 +137,9 @@ class YYSectionView: UIView {
             }
         }
         self.indicator.updateMiniImageView()
+        self.cancelIndicatorHidden()
+        self.goOnIndicatorHidden()
+        self.blockProperty?(self.selecetedArray, errorStr)
         if self.baseView.maximumZoomScale - self.baseView.zoomScale < 0.1 {
             return
         }
@@ -144,15 +148,25 @@ class YYSectionView: UIView {
         self.baseView.zoom(to: zoomRect, animated: true)
     }
     
-    func cancelIndicator() {
+    func cancelIndicatorHidden() {
         object_getClass(self)?.cancelPreviousPerformRequests(withTarget: self.indicator, selector: #selector(YYIndicatorView.indicatorHidden), object: nil)
+    }
+    
+    func goOnIndicatorHidden() {
+        if (!indicator.isHidden || baseView.isZoomBouncing) {
+            
+        }
+        else {
+            indicator.alpha = 1;
+            indicator.isHidden = false
+        }
+        indicator.perform(#selector(YYIndicatorView.indicatorHidden), with: nil, afterDelay: 2.0)
     }
 }
 
 // MARK: UIScrollViewDelegate
 extension YYSectionView: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         // 更新索引条
         rowView.left = scrollView.contentOffset.x + YYSeatMinW_H
         
@@ -161,13 +175,7 @@ extension YYSectionView: UIScrollViewDelegate {
         
         //更新indicator大小位置
         indicator.updateMiniIndicator()
-        if (!indicator.isHidden || baseView.isZoomBouncing) {
-            
-        }
-        else {
-            indicator.alpha = 1;
-            indicator.isHidden = false
-        }
+        self.goOnIndicatorHidden()
         
         scrollView.setNeedsDisplay()
     }
@@ -177,7 +185,7 @@ extension YYSectionView: UIScrollViewDelegate {
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        self.cancelIndicator()
+        self.cancelIndicatorHidden()
         rowView.height = seatView.height + 2 * YYSmallMargin
         centerLine.zoomScale = scrollView.zoomScale
         centerLine.frame = CGRect.init(x: 0, y: -YYSmallMargin, width: seatView.width, height: seatView.height + 2 * YYSmallMargin)
@@ -194,10 +202,10 @@ extension YYSectionView: UIScrollViewDelegate {
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        self.cancelIndicator()
+        self.cancelIndicatorHidden()
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        indicator.perform(#selector(YYIndicatorView.indicatorHidden), with: nil, afterDelay: 2.0)
+        self.goOnIndicatorHidden()
     }
 }

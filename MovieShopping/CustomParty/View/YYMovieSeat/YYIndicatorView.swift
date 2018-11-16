@@ -82,7 +82,7 @@ class YYIndicatorView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.miniMe.frame = CGRect(x: -3, y: -3 * 3, width: self.width  + 2 * 3, height: self.height + 4 * 3)
+        self.miniMe.frame = CGRect(x: -3, y: -3 * 3, width: self.width + 2 * 3, height: self.height + 4 * 3)
         self.logoImageView.frame = CGRect(x: 2 * 3, y: 3, width: self.width - 4 * 3, height: 3)
         self.miniImageView?.frame = self.bounds
         

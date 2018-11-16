@@ -52,7 +52,7 @@ class YYSectionSeatView: UIView {
         for (i, item) in self.data.seats!.enumerated() {
             let seat = item as YYSectionSeat
             let btn = YYSingleSeatView()
-            btn.tag = i
+            btn.tag = YYSeatTag + i
             if seat.status == 1 {
                 btn.setImage(UIImage(named: "choosable"), for: .normal)
                 btn.setImage(UIImage(named: "selected"), for: .selected)
