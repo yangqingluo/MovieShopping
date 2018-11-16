@@ -30,11 +30,11 @@
 #define YYTextColor                 RGBA(0x21, 0x21, 0x21, 1.0)
 #define YYMainColor                 RGBA(0xff, 0x00, 0x00, 1.0)
 
-#define YYRedColor                  RGBA(0xff, 0x00, 0x00, 1.0)
+#define YYRedColor                  RGBA(0xff, 0x66, 0x66, 1.0)
 #define YYLightRedColor             RGBA(0xff, 0x6b, 0x54, 1.0)
 #define YYGreenColor                RGBA(0x22, 0xb5, 0x89, 1.0)
 #define YYLightGreenColor           RGBA(0xa5, 0xd5, 0x32, 1.0)
-#define YYBlueColor                 RGBA(0x00, 0xa4, 0xff, 1.0)
+#define YYBlueColor                 RGBA(0x3f, 0xa5, 0xf4, 1.0)
 #define YYLightBlueColor            RGBA(0x3f, 0xcc, 0xe9, 1.0)
 #define YYDarkOrangeColor           RGBA(0xff, 0x8c, 0x00, 1.0)
 #define YYDeepGrayColor             RGBA(0xae, 0xae, 0xae, 1.0)
