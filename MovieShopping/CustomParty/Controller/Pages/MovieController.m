@@ -30,7 +30,14 @@
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationItem.leftBarButtonItems = @[self.navigationItem.leftBarButtonItem, [[UIBarButtonItem alloc] initWithTitle:[YYPublic getInstance].city.region_name style:UIBarButtonItemStylePlain target:self action:@selector(cityBtnAction)]];
+    
+    UIButton *cityBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    [cityBtn setTitle:[YYPublic getInstance].city.region_name forState:UIControlStateNormal];
+    [cityBtn setTitleColor:YYTextColor forState:UIControlStateNormal];
+    cityBtn.titleLabel.font = [UIFont systemFontOfSize:15.0];
+    [cityBtn addTarget:self action:@selector(cityBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *cityItem = [[UIBarButtonItem alloc] initWithCustomView:cityBtn];
+    self.navigationItem.leftBarButtonItems = @[self.navigationItem.leftBarButtonItem, cityItem];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_search"] style:UIBarButtonItemStylePlain target:self action:@selector(searchBtnAction)];
     
     UISegmentedControl *segment = [[UISegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 160, 30)];

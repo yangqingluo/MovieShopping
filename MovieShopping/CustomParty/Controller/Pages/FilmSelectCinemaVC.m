@@ -138,8 +138,8 @@
 - (UIView *)headerView {
     if (!_headerView) {
         CGFloat width = CGRectGetWidth(self.view.frame);
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 0.4 * width)];
-        _headerView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"ad_01.jpg"].CGImage);
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, (402.0 / 1125.0) * width)];
+        _headerView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"yy_banner"].CGImage);
     }
     return _headerView;
 }

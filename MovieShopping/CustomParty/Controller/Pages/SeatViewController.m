@@ -39,19 +39,38 @@
     
     [self showHudInView:self.view hint:nil];
     __weak typeof(self) weakSelf = self;
-    //模拟延迟加载
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self hideHud];
-        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
-        //模拟网络加载数据
-        NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
-
-        NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
-        weakSelf.seatsModelArray = seatsModelArray;
-
-        //数据回来初始化选座模块
-        [weakSelf initSelectionView:seatsModelArray];
-    });
+    [[YYNetwork getInstance] POST:@21 parameters:@{@"cityId": [YYPublic getInstance].city.ID} headers:nil response:^(id response, NSError *error) {
+        [weakSelf hideHud];
+        if (error) {
+            
+        }
+        else {
+            YYResponse *result = [YYResponse mj_objectWithKeyValues:response];
+            if (result.code == HTTP_SUCCESS) {
+                YYSection *data = [YYSection mj_objectWithKeyValues:response[@"data"]];
+                CGRect frame = CGRectMake(0, self.headerView.bottom, [UIScreen mainScreen].bounds.size.width, self.footerView.top - self.headerView.bottom);
+                YYSectionView *sectionView = [[YYSectionView alloc] initWithFrame:frame data:data hallName:self.scheduleData[@"hall_name"]];
+                sectionView.backgroundColor = RGBA(0xf5, 0xf5, 0xf5, 1.0);
+                [self.view addSubview:sectionView];
+            }
+        }
+    }];
+    
+    
+    
+//    //模拟延迟加载
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self hideHud];
+//        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %u.plist", arc4random_uniform(5)] ofType:nil];
+//        //模拟网络加载数据
+//        NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:path];
+//
+//        NSArray *seatsModelArray = [YYSeats mj_objectArrayWithKeyValuesArray:seatsDic[@"seats"]];
+//        weakSelf.seatsModelArray = seatsModelArray;
+//
+//        //数据回来初始化选座模块
+//        [weakSelf initSelectionView:seatsModelArray];
+//    });
     
 }
 //创建选座模块
@@ -110,7 +129,7 @@
         [_headerView addSubview:m_view];
         
         UIImageView *img1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-        img1.image = [UIImage imageNamed:@"kexuan"];
+        img1.image = [UIImage imageNamed:@"choosable"];
         img1.centerY = 0.5 * m_view.height;
         [m_view addSubview:img1];
         
@@ -119,7 +138,7 @@
         [m_view addSubview:label1];
         
         UIImageView *img2 = [[UIImageView alloc] initWithFrame:CGRectMake(label1.right + YYEdge, 0, 20, 20)];
-        img2.image = [UIImage imageNamed:@"yishou"];
+        img2.image = [UIImage imageNamed:@"sold"];
         img2.centerY = 0.5 * m_view.height;
         [m_view addSubview:img2];
         
@@ -128,11 +147,11 @@
         [m_view addSubview:label2];
         
         UIImageView *img3 = [[UIImageView alloc] initWithFrame:CGRectMake(label2.right + YYEdge, 0, 20, 20)];
-        img3.image = [UIImage imageNamed:@"xuanzhong"];
+        img3.image = [UIImage imageNamed:@"selected"];
         img3.centerY = 0.5 * m_view.height;
         [m_view addSubview:img3];
         
-        UILabel *label3 = NewLabel(CGRectMake(img3.right, 0, 60, m_view.height), YYTextColor, [UIFont systemFontOfSize:YYLabelFontSizeSmall], NSTextAlignmentCenter);
+        UILabel *label3 = NewLabel(CGRectMake(img3.right, 0, 80, m_view.height), YYTextColor, [UIFont systemFontOfSize:YYLabelFontSizeSmall], NSTextAlignmentCenter);
         label3.text = @"最佳观影区";
         [m_view addSubview:label3];
         

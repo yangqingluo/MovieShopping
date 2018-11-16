@@ -64,16 +64,16 @@ class YYCenterLineView: UIView {
         context.setStrokeColor(UIColor.lightGray.cgColor)
         context.setLineDash(phase: 0, lengths: [6, 3])
         context.move(to: CGPoint(x: 0.5 * self.width, y: 0))
-        context.addLine(to: CGPoint(x: 0.5 * self.width, y: self.height + 5))
+        context.addLine(to: CGPoint(x: 0.5 * self.width, y: self.height))
         context.strokePath()
         
-        context.setStrokeColor(UIColor.red.cgColor)
-        let widthR:CGFloat = 60.0 * zoomScale, heightR:CGFloat = 30.0 * zoomScale
-        let pathRect = UIEdgeInsetsInsetRect(CGRect.init(x: 0.5 * self.width - widthR, y: 0.5 * self.height - heightR, width: 2 * widthR, height: 2 * heightR),  UIEdgeInsetsMake(1, 1, 1, 1))
-        context.setLineDash(phase: 0, lengths: [2, 2])
-        context.setLineJoin(.round)
-        context.addRect(pathRect)
-        context.strokePath()
+//        context.setStrokeColor(UIColor.red.cgColor)
+//        let widthR:CGFloat = 60.0 * zoomScale, heightR:CGFloat = 30.0 * zoomScale
+//        let pathRect = UIEdgeInsetsInsetRect(CGRect.init(x: 0.5 * self.width - widthR, y: 0.5 * self.height - heightR, width: 2 * widthR, height: 2 * heightR),  UIEdgeInsetsMake(1, 1, 1, 1))
+//        context.setLineDash(phase: 0, lengths: [2, 2])
+//        context.setLineJoin(.round)
+//        context.addRect(pathRect)
+//        context.strokePath()
     }
 
     override func layoutSubviews() {

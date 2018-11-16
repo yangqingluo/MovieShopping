@@ -28,3 +28,16 @@
 @implementation YYResponse
 
 @end
+
+
+@implementation YYSectionSeat
+
+@end
+
+@implementation YYSection
+
++ (NSDictionary *)mj_objectClassInArray{
+    return @{@"seats" : @"YYSectionSeat"};
+}
+
+@end

@@ -23,22 +23,6 @@ class YYSeatSelectionView: UIView {
     
     @objc init(frame: CGRect, seatsArray: NSArray, hallName: String, actionBlock: @escaping SelectionBlock) {
         super.init(frame: frame)
-        
-//        // TODO: swift读取并转换model
-//        guard let path = Bundle.main.path(forResource: "seats \(arc4random_uniform(5))", ofType: "plist") else {
-//            return
-//        }
-//
-//        let data = NSDictionary(contentsOfFile: path)
-//        let seats = data?.value(forKey: "seats") as! NSArray
-//
-//        seatsArray.removeAllObjects()
-//        for item in seats {
-//            if let model = try? JSONParse.decode(YYSeatsModel.self, param: item as! [String : Any]){
-//                seatsArray.add(model)
-//            }
-//        }
-        
         self.backgroundColor = UIColor(red: 245.0/255.0, green: 245.0/255.0, blue: 245.0/255.0, alpha: 1.0)
         self.blockProperty = actionBlock
         self.initScrollView()
@@ -49,8 +33,6 @@ class YYSeatSelectionView: UIView {
         self.initCenterLine(seatsArray)
         self.initHallLogo(hallName)
         self.startAnimation()//开场动画
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

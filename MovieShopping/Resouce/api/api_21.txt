@@ -1,737 +1,5638 @@
 {
-	"code": 200,
-	"msg": null,
-	"data": {
-		"soldCount": 0.0,
-		"maxLeftPx": 510.0,
-		"maxCanBuy": 5.0,
-		"minLeftPx": 30.0,
-		"maxTopPx": 390.0,
-		"minTopPx": 210.0,
-		"tipMessage": "",
-		"seatCount": 90.0,
-		"seats": [{
-			"extId": "766",
-			"flag": 0.0,
-			"leftPx": 30.0,
-			"name": "1排7座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "768",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "1排5座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "771",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "1排3座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "773",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "1排1座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "775",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "1排2座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "777",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "1排4座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "780",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "1排6座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "782",
-			"flag": 0.0,
-			"leftPx": 510.0,
-			"name": "1排8座",
-			"rowName": "1",
-			"status": 1.0,
-			"topPx": 210.0
-		}, {
-			"extId": "784",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "2排3座",
-			"rowName": "2",
-			"status": 1.0,
-			"topPx": 240.0
-		}, {
-			"extId": "789",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "2排1座",
-			"rowName": "2",
-			"status": 1.0,
-			"topPx": 240.0
-		}, {
-			"extId": "793",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "2排2座",
-			"rowName": "2",
-			"status": 1.0,
-			"topPx": 240.0
-		}, {
-			"extId": "798",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "2排4座",
-			"rowName": "2",
-			"status": 1.0,
-			"topPx": 240.0
-		}, {
-			"extId": "800",
-			"flag": 0.0,
-			"leftPx": 30.0,
-			"name": "3排15座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "801",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "3排13座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "802",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "3排11座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "803",
-			"flag": 0.0,
-			"leftPx": 120.0,
-			"name": "3排9座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "804",
-			"flag": 0.0,
-			"leftPx": 150.0,
-			"name": "3排7座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "805",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "3排5座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "806",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "3排3座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "807",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "3排1座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "809",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "3排2座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "810",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "3排4座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "811",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "3排6座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "812",
-			"flag": 0.0,
-			"leftPx": 390.0,
-			"name": "3排8座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "813",
-			"flag": 0.0,
-			"leftPx": 420.0,
-			"name": "3排10座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "814",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "3排12座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "815",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "3排14座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "816",
-			"flag": 0.0,
-			"leftPx": 510.0,
-			"name": "3排16座",
-			"rowName": "3",
-			"status": 1.0,
-			"topPx": 270.0
-		}, {
-			"extId": "818",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "4排13座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "819",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "4排11座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "820",
-			"flag": 0.0,
-			"leftPx": 120.0,
-			"name": "4排9座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "821",
-			"flag": 0.0,
-			"leftPx": 150.0,
-			"name": "4排7座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "822",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "4排5座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "823",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "4排3座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "824",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "4排1座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "826",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "4排2座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "827",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "4排4座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "828",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "4排6座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "829",
-			"flag": 0.0,
-			"leftPx": 390.0,
-			"name": "4排8座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "830",
-			"flag": 0.0,
-			"leftPx": 420.0,
-			"name": "4排10座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "831",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "4排12座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "832",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "4排14座",
-			"rowName": "4",
-			"status": 1.0,
-			"topPx": 300.0
-		}, {
-			"extId": "834",
-			"flag": 0.0,
-			"leftPx": 30.0,
-			"name": "5排15座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "835",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "5排13座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "836",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "5排11座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "837",
-			"flag": 0.0,
-			"leftPx": 120.0,
-			"name": "5排9座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "838",
-			"flag": 0.0,
-			"leftPx": 150.0,
-			"name": "5排7座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "839",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "5排5座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "840",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "5排3座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "841",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "5排1座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "843",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "5排2座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "844",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "5排4座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "845",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "5排6座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "846",
-			"flag": 0.0,
-			"leftPx": 390.0,
-			"name": "5排8座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "847",
-			"flag": 0.0,
-			"leftPx": 420.0,
-			"name": "5排10座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "848",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "5排12座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "849",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "5排14座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "850",
-			"flag": 0.0,
-			"leftPx": 510.0,
-			"name": "5排16座",
-			"rowName": "5",
-			"status": 1.0,
-			"topPx": 330.0
-		}, {
-			"extId": "851",
-			"flag": 0.0,
-			"leftPx": 30.0,
-			"name": "6排15座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "852",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "6排13座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "853",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "6排11座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "854",
-			"flag": 0.0,
-			"leftPx": 120.0,
-			"name": "6排9座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "855",
-			"flag": 0.0,
-			"leftPx": 150.0,
-			"name": "6排7座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "856",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "6排5座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "857",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "6排3座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "858",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "6排1座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "860",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "6排2座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "861",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "6排4座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "862",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "6排6座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "863",
-			"flag": 0.0,
-			"leftPx": 390.0,
-			"name": "6排8座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "864",
-			"flag": 0.0,
-			"leftPx": 420.0,
-			"name": "6排10座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "865",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "6排12座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "866",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "6排14座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "867",
-			"flag": 0.0,
-			"leftPx": 510.0,
-			"name": "6排16座",
-			"rowName": "6",
-			"status": 1.0,
-			"topPx": 360.0
-		}, {
-			"extId": "868",
-			"flag": 0.0,
-			"leftPx": 30.0,
-			"name": "7排15座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "869",
-			"flag": 0.0,
-			"leftPx": 60.0,
-			"name": "7排13座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "870",
-			"flag": 0.0,
-			"leftPx": 90.0,
-			"name": "7排11座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "871",
-			"flag": 0.0,
-			"leftPx": 120.0,
-			"name": "7排9座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "872",
-			"flag": 0.0,
-			"leftPx": 150.0,
-			"name": "7排7座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "873",
-			"flag": 0.0,
-			"leftPx": 180.0,
-			"name": "7排5座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "874",
-			"flag": 0.0,
-			"leftPx": 210.0,
-			"name": "7排3座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "875",
-			"flag": 0.0,
-			"leftPx": 240.0,
-			"name": "7排1座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "877",
-			"flag": 0.0,
-			"leftPx": 300.0,
-			"name": "7排2座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "878",
-			"flag": 0.0,
-			"leftPx": 330.0,
-			"name": "7排4座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "879",
-			"flag": 0.0,
-			"leftPx": 360.0,
-			"name": "7排6座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "880",
-			"flag": 0.0,
-			"leftPx": 390.0,
-			"name": "7排8座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "881",
-			"flag": 0.0,
-			"leftPx": 420.0,
-			"name": "7排10座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "882",
-			"flag": 0.0,
-			"leftPx": 450.0,
-			"name": "7排12座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "883",
-			"flag": 0.0,
-			"leftPx": 480.0,
-			"name": "7排14座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}, {
-			"extId": "884",
-			"flag": 0.0,
-			"leftPx": 510.0,
-			"name": "7排16座",
-			"rowName": "7",
-			"status": 1.0,
-			"topPx": 390.0
-		}],
-		"regular": false,
-		"notice": "1、选座票由鼎新提供，客服热线:0571-88157838\n2、请确认场次和时间无误，购买成功后将不予退换\n3、由于设备故障等不可抗力因素，存在少量场次取消的情况，会进行退票退款\n4、由于影院系统不稳定等因素，存在出票失败的情况，会进行退款"
-	}
+    "code": 200,
+    "msg": null,
+    "data": {
+        "soldCount": 265,
+        "maxLeftPx": 1230,
+        "maxCanBuy": 4,
+        "minLeftPx": 30,
+        "maxTopPx": 420,
+        "minTopPx": 30,
+        "tipMessage": "",
+        "seatCount": 562,
+        "seats": [
+            {
+                "area": "01",
+                "extId": "01010101",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "1排41座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010102",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "1排39座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010103",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "1排37座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010104",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "1排35座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010105",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "1排33座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010106",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "1排31座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010107",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "1排29座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010108",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "1排27座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010109",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "1排25座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010110",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "1排23座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010111",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "1排21座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010112",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "1排19座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010113",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "1排17座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010114",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "1排15座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010115",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "1排13座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010116",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "1排11座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010117",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "1排9座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010118",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "1排7座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010119",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "1排5座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010120",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "1排3座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010121",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "1排1座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010122",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "1排2座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010123",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "1排4座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010124",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "1排6座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010125",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "1排8座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010126",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "1排10座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010127",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "1排12座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010128",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "1排14座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010129",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "1排16座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010130",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "1排18座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010131",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "1排20座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010132",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "1排22座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010133",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "1排24座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010134",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "1排26座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010135",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "1排28座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010136",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "1排30座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010137",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "1排32座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010138",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "1排34座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010139",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "1排36座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010140",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "1排38座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010141",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "1排40座",
+                "rowName": "1",
+                "status": 1,
+                "topPx": 30
+            },
+            {
+                "area": "01",
+                "extId": "01010201",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "2排41座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010202",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "2排39座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010203",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "2排37座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010204",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "2排35座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010205",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "2排33座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010206",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "2排31座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010207",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "2排29座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010208",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "2排27座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010209",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "2排25座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010210",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "2排23座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010211",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "2排21座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010212",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "2排19座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010213",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "2排17座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010214",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "2排15座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010215",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "2排13座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010216",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "2排11座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010217",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "2排9座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010218",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "2排7座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010219",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "2排5座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010220",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "2排3座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010221",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "2排1座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010222",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "2排2座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010223",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "2排4座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010224",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "2排6座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010225",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "2排8座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010226",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "2排10座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010227",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "2排12座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010228",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "2排14座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010229",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "2排16座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010230",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "2排18座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010231",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "2排20座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010232",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "2排22座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010233",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "2排24座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010234",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "2排26座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010235",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "2排28座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010236",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "2排30座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010237",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "2排32座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010238",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "2排34座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010239",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "2排36座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010240",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "2排38座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010241",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "2排40座",
+                "rowName": "2",
+                "status": 1,
+                "topPx": 60
+            },
+            {
+                "area": "01",
+                "extId": "01010301",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "3排41座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010302",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "3排39座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010303",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "3排37座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010304",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "3排35座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010305",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "3排33座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010306",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "3排31座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010307",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "3排29座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010308",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "3排27座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010309",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "3排25座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010310",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "3排23座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010311",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "3排21座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010312",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "3排19座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010313",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "3排17座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010314",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "3排15座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010315",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "3排13座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010316",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "3排11座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010317",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "3排9座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010318",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "3排7座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010319",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "3排5座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010320",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "3排3座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010321",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "3排1座",
+                "rowName": "3",
+                "status": 0,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010322",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "3排2座",
+                "rowName": "3",
+                "status": 0,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010323",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "3排4座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010324",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "3排6座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010325",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "3排8座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010326",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "3排10座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010327",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "3排12座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010328",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "3排14座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010329",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "3排16座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010330",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "3排18座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010331",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "3排20座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010332",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "3排22座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010333",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "3排24座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010334",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "3排26座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010335",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "3排28座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010336",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "3排30座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010337",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "3排32座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010338",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "3排34座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010339",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "3排36座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010340",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "3排38座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010341",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "3排40座",
+                "rowName": "3",
+                "status": 1,
+                "topPx": 90
+            },
+            {
+                "area": "01",
+                "extId": "01010401",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "4排41座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010402",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "4排39座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010403",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "4排37座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010404",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "4排35座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010405",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "4排33座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010406",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "4排31座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010407",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "4排29座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010408",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "4排27座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010409",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "4排25座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010410",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "4排23座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010411",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "4排21座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010412",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "4排19座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010413",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "4排17座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010414",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "4排15座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010415",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "4排13座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010416",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "4排11座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010417",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "4排9座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010418",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "4排7座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010419",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "4排5座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010420",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "4排3座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010421",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "4排1座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010422",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "4排2座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010423",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "4排4座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010424",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "4排6座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010425",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "4排8座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010426",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "4排10座",
+                "rowName": "4",
+                "status": 0,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010427",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "4排12座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010428",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "4排14座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010429",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "4排16座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010430",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "4排18座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010431",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "4排20座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010432",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "4排22座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010433",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "4排24座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010434",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "4排26座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010435",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "4排28座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010436",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "4排30座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010437",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "4排32座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010438",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "4排34座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010439",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "4排36座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010440",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "4排38座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010441",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "4排40座",
+                "rowName": "4",
+                "status": 1,
+                "topPx": 120
+            },
+            {
+                "area": "01",
+                "extId": "01010501",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "5排41座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010502",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "5排39座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010503",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "5排37座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010504",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "5排35座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010505",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "5排33座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010506",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "5排31座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010507",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "5排29座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010508",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "5排27座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010509",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "5排25座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010510",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "5排23座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010511",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "5排21座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010512",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "5排19座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010513",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "5排17座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010514",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "5排15座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010515",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "5排13座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010516",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "5排11座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010517",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "5排9座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010518",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "5排7座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010519",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "5排5座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010520",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "5排3座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010521",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "5排1座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010522",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "5排2座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010523",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "5排4座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010524",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "5排6座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010525",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "5排8座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010526",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "5排10座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010527",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "5排12座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010528",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "5排14座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010529",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "5排16座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010530",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "5排18座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010531",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "5排20座",
+                "rowName": "5",
+                "status": 0,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010532",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "5排22座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010533",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "5排24座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010534",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "5排26座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010535",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "5排28座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010536",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "5排30座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010537",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "5排32座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010538",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "5排34座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010539",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "5排36座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010540",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "5排38座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010541",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "5排40座",
+                "rowName": "5",
+                "status": 1,
+                "topPx": 150
+            },
+            {
+                "area": "01",
+                "extId": "01010601",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "6排41座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010602",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "6排39座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010603",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "6排37座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010604",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "6排35座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010605",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "6排33座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010606",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "6排31座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010607",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "6排29座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010608",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "6排27座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010609",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "6排25座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010610",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "6排23座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010611",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "6排21座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010612",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "6排19座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010613",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "6排17座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010614",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "6排15座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010615",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "6排13座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010616",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "6排11座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010617",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "6排9座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010618",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "6排7座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010619",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "6排5座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010620",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "6排3座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010621",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "6排1座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010622",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "6排2座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010623",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "6排4座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010624",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "6排6座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010625",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "6排8座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010626",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "6排10座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010627",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "6排12座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010628",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "6排14座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010629",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "6排16座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010630",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "6排18座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010631",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "6排20座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010632",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "6排22座",
+                "rowName": "6",
+                "status": 0,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010633",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "6排24座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010634",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "6排26座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010635",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "6排28座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010636",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "6排30座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010637",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "6排32座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010638",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "6排34座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010639",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "6排36座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010640",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "6排38座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010641",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "6排40座",
+                "rowName": "6",
+                "status": 1,
+                "topPx": 180
+            },
+            {
+                "area": "01",
+                "extId": "01010701",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "7排41座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010702",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "7排39座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010703",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "7排37座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010704",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "7排35座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010705",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "7排33座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010706",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "7排31座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010707",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "7排29座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010708",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "7排27座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010709",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "7排25座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010710",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "7排23座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010711",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "7排21座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010712",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "7排19座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010713",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "7排17座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010714",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "7排15座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010715",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "7排13座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010716",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "7排11座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010717",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "7排9座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010718",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "7排7座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010719",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "7排5座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010720",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "7排3座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010721",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "7排1座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010722",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "7排2座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010723",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "7排4座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010724",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "7排6座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010725",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "7排8座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010726",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "7排10座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010727",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "7排12座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010728",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "7排14座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010729",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "7排16座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010730",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "7排18座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010731",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "7排20座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010732",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "7排22座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010733",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "7排24座",
+                "rowName": "7",
+                "status": 0,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010734",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "7排26座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010735",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "7排28座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010736",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "7排30座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010737",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "7排32座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010738",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "7排34座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010739",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "7排36座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010740",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "7排38座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010741",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "7排40座",
+                "rowName": "7",
+                "status": 1,
+                "topPx": 210
+            },
+            {
+                "area": "01",
+                "extId": "01010801",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "8排41座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010802",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "8排39座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010803",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "8排37座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010804",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "8排35座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010805",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "8排33座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010806",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "8排31座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010807",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "8排29座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010808",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "8排27座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010809",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "8排25座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010810",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "8排23座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010811",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "8排21座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010812",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "8排19座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010813",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "8排17座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010814",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "8排15座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010815",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "8排13座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010816",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "8排11座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010817",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "8排9座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010818",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "8排7座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010819",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "8排5座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010820",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "8排3座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010821",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "8排1座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010822",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "8排2座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010823",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "8排4座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010824",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "8排6座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010825",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "8排8座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010826",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "8排10座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010827",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "8排12座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010828",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "8排14座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010829",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "8排16座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010830",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "8排18座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010831",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "8排20座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010832",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "8排22座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010833",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "8排24座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010834",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "8排26座",
+                "rowName": "8",
+                "status": 0,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010835",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "8排28座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010836",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "8排30座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010837",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "8排32座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010838",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "8排34座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010839",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "8排36座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010840",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "8排38座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010841",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "8排40座",
+                "rowName": "8",
+                "status": 1,
+                "topPx": 240
+            },
+            {
+                "area": "01",
+                "extId": "01010901",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "9排41座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010902",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "9排39座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010903",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "9排37座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010904",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "9排35座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010905",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "9排33座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010906",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "9排31座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010907",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "9排29座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010908",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "9排27座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010909",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "9排25座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010910",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "9排23座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010911",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "9排21座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010912",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "9排19座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010913",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "9排17座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010914",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "9排15座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010915",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "9排13座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010916",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "9排11座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010917",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "9排9座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010918",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "9排7座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010919",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "9排5座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010920",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "9排3座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010921",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "9排1座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010922",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "9排2座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010923",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "9排4座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010924",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "9排6座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010925",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "9排8座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010926",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "9排10座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010927",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "9排12座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010928",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "9排14座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010929",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "9排16座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010930",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "9排18座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010931",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "9排20座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010932",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "9排22座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010933",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "9排24座",
+                "rowName": "9",
+                "status": 0,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010934",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "9排26座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010935",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "9排28座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010936",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "9排30座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010937",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "9排32座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010938",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "9排34座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010939",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "9排36座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010940",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "9排38座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01010941",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "9排40座",
+                "rowName": "9",
+                "status": 1,
+                "topPx": 270
+            },
+            {
+                "area": "01",
+                "extId": "01011001",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "10排41座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011002",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "10排39座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011003",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "10排37座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011004",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "10排35座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011005",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "10排33座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011006",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "10排31座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011007",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "10排29座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011008",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "10排27座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011009",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "10排25座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011010",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "10排23座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011011",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "10排21座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011012",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "10排19座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011013",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "10排17座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011014",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "10排15座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011015",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "10排13座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011016",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "10排11座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011017",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "10排9座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011018",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "10排7座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011019",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "10排5座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011020",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "10排3座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011021",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "10排1座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011022",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "10排2座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011023",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "10排4座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011024",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "10排6座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011025",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "10排8座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011026",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "10排10座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011027",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "10排12座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011028",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "10排14座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011029",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "10排16座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011030",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "10排18座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011031",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "10排20座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011032",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "10排22座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011033",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "10排24座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011034",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "10排26座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011035",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "10排28座",
+                "rowName": "10",
+                "status": 0,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011036",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "10排30座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011037",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "10排32座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011038",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "10排34座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011039",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "10排36座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011040",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "10排38座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011041",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "10排40座",
+                "rowName": "10",
+                "status": 1,
+                "topPx": 300
+            },
+            {
+                "area": "01",
+                "extId": "01011103",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "11排37座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011104",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "11排35座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011105",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "11排33座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011106",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "11排31座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011107",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "11排29座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011108",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "11排27座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011109",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "11排25座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011110",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "11排23座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011111",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "11排21座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011112",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "11排19座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011113",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "11排17座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011114",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "11排15座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011115",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "11排13座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011116",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "11排11座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011117",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "11排9座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011118",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "11排7座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011119",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "11排5座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011120",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "11排3座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011121",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "11排1座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011122",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "11排2座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011123",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "11排4座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011124",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "11排6座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011125",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "11排8座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011126",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "11排10座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011127",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "11排12座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011128",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "11排14座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011129",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "11排16座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011130",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "11排18座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011131",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "11排20座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011132",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "11排22座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011133",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "11排24座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011134",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "11排26座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011135",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "11排28座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011136",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "11排30座",
+                "rowName": "11",
+                "status": 0,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011137",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "11排32座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011138",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "11排34座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011139",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "11排36座",
+                "rowName": "11",
+                "status": 1,
+                "topPx": 330
+            },
+            {
+                "area": "01",
+                "extId": "01011203",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "12排37座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011204",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "12排35座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011205",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "12排33座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011206",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "12排31座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011207",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "12排29座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011208",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "12排27座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011209",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "12排25座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011210",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "12排23座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011211",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "12排21座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011212",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "12排19座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011213",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "12排17座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011214",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "12排15座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011215",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "12排13座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011216",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "12排11座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011217",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "12排9座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011218",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "12排7座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011219",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "12排5座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011220",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "12排3座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011221",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "12排1座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011222",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "12排2座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011223",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "12排4座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011224",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "12排6座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011225",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "12排8座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011226",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "12排10座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011227",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "12排12座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011228",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "12排14座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011229",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "12排16座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011230",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "12排18座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011231",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "12排20座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011232",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "12排22座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011233",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "12排24座",
+                "rowName": "12",
+                "status": 0,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011234",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "12排26座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011235",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "12排28座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011236",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "12排30座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011237",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "12排32座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011238",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "12排34座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011239",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "12排36座",
+                "rowName": "12",
+                "status": 1,
+                "topPx": 360
+            },
+            {
+                "area": "01",
+                "extId": "01011303",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "13排37座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011304",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "13排35座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011305",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "13排33座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011306",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "13排31座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011307",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "13排29座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011308",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "13排27座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011309",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "13排25座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011310",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "13排23座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011311",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "13排21座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011312",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "13排19座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011313",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "13排17座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011314",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "13排15座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011315",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "13排13座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011316",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "13排11座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011317",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "13排9座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011318",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "13排7座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011319",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "13排5座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011320",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "13排3座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011321",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "13排1座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011322",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "13排2座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011323",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "13排4座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011324",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "13排6座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011325",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "13排8座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011326",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "13排10座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011327",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "13排12座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011328",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "13排14座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011329",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "13排16座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011330",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "13排18座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011331",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "13排20座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011332",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "13排22座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011333",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "13排24座",
+                "rowName": "13",
+                "status": 0,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011334",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "13排26座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011335",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "13排28座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011336",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "13排30座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011337",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "13排32座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011338",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "13排34座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011339",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "13排36座",
+                "rowName": "13",
+                "status": 1,
+                "topPx": 390
+            },
+            {
+                "area": "01",
+                "extId": "01011401",
+                "flag": 0,
+                "leftPx": 30,
+                "name": "14排41座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011402",
+                "flag": 0,
+                "leftPx": 60,
+                "name": "14排39座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011403",
+                "flag": 0,
+                "leftPx": 90,
+                "name": "14排37座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011404",
+                "flag": 0,
+                "leftPx": 120,
+                "name": "14排35座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011405",
+                "flag": 0,
+                "leftPx": 150,
+                "name": "14排33座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011406",
+                "flag": 0,
+                "leftPx": 180,
+                "name": "14排31座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011407",
+                "flag": 0,
+                "leftPx": 210,
+                "name": "14排29座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011408",
+                "flag": 0,
+                "leftPx": 240,
+                "name": "14排27座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011409",
+                "flag": 0,
+                "leftPx": 270,
+                "name": "14排25座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011410",
+                "flag": 0,
+                "leftPx": 300,
+                "name": "14排23座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011411",
+                "flag": 0,
+                "leftPx": 330,
+                "name": "14排21座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011412",
+                "flag": 0,
+                "leftPx": 360,
+                "name": "14排19座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011413",
+                "flag": 0,
+                "leftPx": 390,
+                "name": "14排17座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011414",
+                "flag": 0,
+                "leftPx": 420,
+                "name": "14排15座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011415",
+                "flag": 0,
+                "leftPx": 450,
+                "name": "14排13座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011416",
+                "flag": 0,
+                "leftPx": 480,
+                "name": "14排11座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011417",
+                "flag": 0,
+                "leftPx": 510,
+                "name": "14排9座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011418",
+                "flag": 0,
+                "leftPx": 540,
+                "name": "14排7座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011419",
+                "flag": 0,
+                "leftPx": 570,
+                "name": "14排5座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011420",
+                "flag": 0,
+                "leftPx": 600,
+                "name": "14排3座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011421",
+                "flag": 0,
+                "leftPx": 630,
+                "name": "14排1座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011422",
+                "flag": 0,
+                "leftPx": 660,
+                "name": "14排2座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011423",
+                "flag": 0,
+                "leftPx": 690,
+                "name": "14排4座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011424",
+                "flag": 0,
+                "leftPx": 720,
+                "name": "14排6座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011425",
+                "flag": 0,
+                "leftPx": 750,
+                "name": "14排8座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011426",
+                "flag": 0,
+                "leftPx": 780,
+                "name": "14排10座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011427",
+                "flag": 0,
+                "leftPx": 810,
+                "name": "14排12座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011428",
+                "flag": 0,
+                "leftPx": 840,
+                "name": "14排14座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011429",
+                "flag": 0,
+                "leftPx": 870,
+                "name": "14排16座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011430",
+                "flag": 0,
+                "leftPx": 900,
+                "name": "14排18座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011431",
+                "flag": 0,
+                "leftPx": 930,
+                "name": "14排20座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011432",
+                "flag": 0,
+                "leftPx": 960,
+                "name": "14排22座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011433",
+                "flag": 0,
+                "leftPx": 990,
+                "name": "14排24座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011434",
+                "flag": 0,
+                "leftPx": 1020,
+                "name": "14排26座",
+                "rowName": "14",
+                "status": 0,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011435",
+                "flag": 0,
+                "leftPx": 1050,
+                "name": "14排28座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011436",
+                "flag": 0,
+                "leftPx": 1080,
+                "name": "14排30座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011437",
+                "flag": 0,
+                "leftPx": 1110,
+                "name": "14排32座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011438",
+                "flag": 0,
+                "leftPx": 1140,
+                "name": "14排34座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011439",
+                "flag": 0,
+                "leftPx": 1170,
+                "name": "14排36座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011440",
+                "flag": 0,
+                "leftPx": 1200,
+                "name": "14排38座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            },
+            {
+                "area": "01",
+                "extId": "01011441",
+                "flag": 0,
+                "leftPx": 1230,
+                "name": "14排40座",
+                "rowName": "14",
+                "status": 1,
+                "topPx": 420
+            }
+        ],
+        "regular": false,
+        "notice": "1、选座票由满天星B提供，客服热线:0571-88157838\n2、请确认场次和时间无误，购买成功后将不予退换\n3、由于设备故障等不可抗力因素，存在少量场次取消的情况，会进行退票退款\n4、由于影院系统不稳定等因素，存在出票失败的情况，会进行退款"
+    }
 }

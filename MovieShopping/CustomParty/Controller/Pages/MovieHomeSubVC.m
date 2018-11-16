@@ -60,7 +60,7 @@ static NSString *adCellID = @"adCell";
         [self.carousel removeFromSuperview];
         self.carousel = nil;
     }
-    CWFlowLayout *flowLayout = [[CWFlowLayout alloc] initWithStyle:CWCarouselStyle_Normal];
+    CWFlowLayout *flowLayout = [[CWFlowLayout alloc] initWithStyle:CWCarouselStyle_H_3];
     CWCarousel *carousel = [[CWCarousel alloc] initWithFrame:CGRectZero
                                                     delegate:self
                                                   datasource:self

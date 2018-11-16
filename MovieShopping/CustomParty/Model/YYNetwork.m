@@ -83,10 +83,13 @@ NSString *urlStringWithPath(NSString *path) {
     return [NSString stringWithFormat:@"%@%@", API_URL, path];
 }
 
-YYResponse *APIData(NSNumber *number) {
+NSDictionary *APIData(NSNumber *number) {
+//    if ([number isEqual: @21]) {
+//        number = @211;
+//    }
     NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"api_%@.txt", number] ofType:nil];
     NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    return [YYResponse mj_objectWithKeyValues:[jsonString mj_keyValues]];
+    return [jsonString mj_JSONObject];
 }
 
 #pragma mark - Public

@@ -1,0 +1,1428 @@
+{
+    "code": 200,
+    "msg": null,
+    "data": {
+        "soldCount": 18,
+        "minRow": 1,
+        "maxCanBuy": 6,
+        "minColumn": 1,
+        "maxRow": 11,
+        "tipMessage": "",
+        "seatCount": 141,
+        "seats": [
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-1-1",
+                "flag": 0,
+                "name": "1排1座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-1-2",
+                "flag": 0,
+                "name": "1排2座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-1-3",
+                "flag": 0,
+                "name": "1排3座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-1-4",
+                "flag": 0,
+                "name": "1排4座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-1-5",
+                "flag": 0,
+                "name": "1排5座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-1-6",
+                "flag": 0,
+                "name": "1排6座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-1-7",
+                "flag": 0,
+                "name": "1排7座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-1-8",
+                "flag": 0,
+                "name": "1排8座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-1-9",
+                "flag": 0,
+                "name": "1排9座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-2-1",
+                "flag": 0,
+                "name": "2排1座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-2-2",
+                "flag": 0,
+                "name": "2排2座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-2-3",
+                "flag": 0,
+                "name": "2排3座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-2-4",
+                "flag": 0,
+                "name": "2排4座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-2-5",
+                "flag": 0,
+                "name": "2排5座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-2-6",
+                "flag": 0,
+                "name": "2排6座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-2-7",
+                "flag": 0,
+                "name": "2排7座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-2-8",
+                "flag": 0,
+                "name": "2排8座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-2-9",
+                "flag": 0,
+                "name": "2排9座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-3-1",
+                "flag": 0,
+                "name": "3排1座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-3-2",
+                "flag": 0,
+                "name": "3排2座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-3-3",
+                "flag": 0,
+                "name": "3排3座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-3-4",
+                "flag": 0,
+                "name": "3排4座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-3-5",
+                "flag": 0,
+                "name": "3排5座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-3-6",
+                "flag": 0,
+                "name": "3排6座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-3-7",
+                "flag": 0,
+                "name": "3排7座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-3-8",
+                "flag": 0,
+                "name": "3排8座",
+                "row": 3,
+                "rowName": "3",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-3-9",
+                "flag": 0,
+                "name": "3排9座",
+                "row": 3,
+                "rowName": "3",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-4-1",
+                "flag": 0,
+                "name": "4排1座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-4-2",
+                "flag": 0,
+                "name": "4排2座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-4-3",
+                "flag": 0,
+                "name": "4排3座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-4-4",
+                "flag": 0,
+                "name": "4排4座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-4-5",
+                "flag": 0,
+                "name": "4排5座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-4-6",
+                "flag": 0,
+                "name": "4排6座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-4-7",
+                "flag": 0,
+                "name": "4排7座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-4-8",
+                "flag": 0,
+                "name": "4排8座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-4-9",
+                "flag": 0,
+                "name": "4排9座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-5-1",
+                "flag": 0,
+                "name": "5排1座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-5-2",
+                "flag": 0,
+                "name": "5排2座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-5-3",
+                "flag": 0,
+                "name": "5排3座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-5-4",
+                "flag": 0,
+                "name": "5排4座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-5-5",
+                "flag": 0,
+                "name": "5排5座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-5-6",
+                "flag": 0,
+                "name": "5排6座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-5-7",
+                "flag": 0,
+                "name": "5排7座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-5-8",
+                "flag": 0,
+                "name": "5排8座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-5-9",
+                "flag": 0,
+                "name": "5排9座",
+                "row": 5,
+                "rowName": "5",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-6-1",
+                "flag": 0,
+                "name": "6排1座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-6-2",
+                "flag": 0,
+                "name": "6排2座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-6-3",
+                "flag": 0,
+                "name": "6排3座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-6-4",
+                "flag": 0,
+                "name": "6排4座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-6-5",
+                "flag": 0,
+                "name": "6排5座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-6-6",
+                "flag": 0,
+                "name": "6排6座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-6-7",
+                "flag": 0,
+                "name": "6排7座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-6-8",
+                "flag": 0,
+                "name": "6排8座",
+                "row": 6,
+                "rowName": "6",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-6-9",
+                "flag": 0,
+                "name": "6排9座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-7-1",
+                "flag": 0,
+                "name": "7排1座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-7-2",
+                "flag": 0,
+                "name": "7排2座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-7-3",
+                "flag": 0,
+                "name": "7排3座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-7-4",
+                "flag": 0,
+                "name": "7排4座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-7-5",
+                "flag": 0,
+                "name": "7排5座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-7-6",
+                "flag": 0,
+                "name": "7排6座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-7-7",
+                "flag": 0,
+                "name": "7排7座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-7-8",
+                "flag": 0,
+                "name": "7排8座",
+                "row": 7,
+                "rowName": "7",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-7-9",
+                "flag": 0,
+                "name": "7排9座",
+                "row": 7,
+                "rowName": "7",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-8-1",
+                "flag": 0,
+                "name": "8排1座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-8-2",
+                "flag": 0,
+                "name": "8排2座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-8-3",
+                "flag": 0,
+                "name": "8排3座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-8-4",
+                "flag": 0,
+                "name": "8排4座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-8-5",
+                "flag": 0,
+                "name": "8排5座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-8-6",
+                "flag": 0,
+                "name": "8排6座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-8-7",
+                "flag": 0,
+                "name": "8排7座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-8-8",
+                "flag": 0,
+                "name": "8排8座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-8-9",
+                "flag": 0,
+                "name": "8排9座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "000000000503-9-1",
+                "flag": 0,
+                "name": "9排1座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "000000000503-9-2",
+                "flag": 0,
+                "name": "9排2座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "000000000503-9-3",
+                "flag": 0,
+                "name": "9排3座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "000000000503-9-4",
+                "flag": 0,
+                "name": "9排4座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "000000000503-9-5",
+                "flag": 0,
+                "name": "9排5座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "000000000503-9-6",
+                "flag": 0,
+                "name": "9排6座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "000000000503-9-7",
+                "flag": 0,
+                "name": "9排7座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "000000000503-9-8",
+                "flag": 0,
+                "name": "9排8座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "000000000503-9-9",
+                "flag": 0,
+                "name": "9排9座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-1-10",
+                "flag": 0,
+                "name": "1排10座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-1-11",
+                "flag": 0,
+                "name": "1排11座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-1-12",
+                "flag": 0,
+                "name": "1排12座",
+                "row": 1,
+                "rowName": "1",
+                "status": 0
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "00000000503-10-1",
+                "flag": 0,
+                "name": "10排1座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "00000000503-10-2",
+                "flag": 0,
+                "name": "10排2座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "00000000503-10-3",
+                "flag": 0,
+                "name": "10排3座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "00000000503-10-4",
+                "flag": 0,
+                "name": "10排4座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "00000000503-10-5",
+                "flag": 0,
+                "name": "10排5座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "00000000503-10-6",
+                "flag": 0,
+                "name": "10排6座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "00000000503-10-7",
+                "flag": 0,
+                "name": "10排7座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "00000000503-10-8",
+                "flag": 0,
+                "name": "10排8座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "00000000503-10-9",
+                "flag": 0,
+                "name": "10排9座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 1,
+                "extId": "00000000503-11-1",
+                "flag": 0,
+                "name": "11排1座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 2,
+                "extId": "00000000503-11-2",
+                "flag": 0,
+                "name": "11排2座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 3,
+                "extId": "00000000503-11-3",
+                "flag": 0,
+                "name": "11排3座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 4,
+                "extId": "00000000503-11-4",
+                "flag": 0,
+                "name": "11排4座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 5,
+                "extId": "00000000503-11-5",
+                "flag": 0,
+                "name": "11排5座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 6,
+                "extId": "00000000503-11-6",
+                "flag": 0,
+                "name": "11排6座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 7,
+                "extId": "00000000503-11-7",
+                "flag": 0,
+                "name": "11排7座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 8,
+                "extId": "00000000503-11-8",
+                "flag": 0,
+                "name": "11排8座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 9,
+                "extId": "00000000503-11-9",
+                "flag": 0,
+                "name": "11排9座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-2-10",
+                "flag": 0,
+                "name": "2排10座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-2-11",
+                "flag": 0,
+                "name": "2排11座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-2-12",
+                "flag": 0,
+                "name": "2排12座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "00000000503-2-13",
+                "flag": 0,
+                "name": "2排13座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 14,
+                "extId": "00000000503-2-14",
+                "flag": 0,
+                "name": "2排14座",
+                "row": 2,
+                "rowName": "2",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-3-10",
+                "flag": 0,
+                "name": "3排10座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-3-11",
+                "flag": 0,
+                "name": "3排11座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-3-12",
+                "flag": 0,
+                "name": "3排12座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "00000000503-3-13",
+                "flag": 0,
+                "name": "3排13座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 14,
+                "extId": "00000000503-3-14",
+                "flag": 0,
+                "name": "3排14座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 15,
+                "extId": "00000000503-3-15",
+                "flag": 0,
+                "name": "3排15座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 16,
+                "extId": "00000000503-3-16",
+                "flag": 0,
+                "name": "3排16座",
+                "row": 3,
+                "rowName": "3",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-4-10",
+                "flag": 0,
+                "name": "4排10座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-4-11",
+                "flag": 0,
+                "name": "4排11座",
+                "row": 4,
+                "rowName": "4",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-5-10",
+                "flag": 0,
+                "name": "5排10座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-5-11",
+                "flag": 0,
+                "name": "5排11座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-5-12",
+                "flag": 0,
+                "name": "5排12座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "00000000503-5-13",
+                "flag": 0,
+                "name": "5排13座",
+                "row": 5,
+                "rowName": "5",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-6-10",
+                "flag": 0,
+                "name": "6排10座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-6-11",
+                "flag": 0,
+                "name": "6排11座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-6-12",
+                "flag": 0,
+                "name": "6排12座",
+                "row": 6,
+                "rowName": "6",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-7-10",
+                "flag": 0,
+                "name": "7排10座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-7-11",
+                "flag": 0,
+                "name": "7排11座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-7-12",
+                "flag": 0,
+                "name": "7排12座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "00000000503-7-13",
+                "flag": 0,
+                "name": "7排13座",
+                "row": 7,
+                "rowName": "7",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-8-10",
+                "flag": 0,
+                "name": "8排10座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-8-11",
+                "flag": 0,
+                "name": "8排11座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-8-12",
+                "flag": 0,
+                "name": "8排12座",
+                "row": 8,
+                "rowName": "8",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "00000000503-9-10",
+                "flag": 0,
+                "name": "9排10座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "00000000503-9-11",
+                "flag": 0,
+                "name": "9排11座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "00000000503-9-12",
+                "flag": 0,
+                "name": "9排12座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "00000000503-9-13",
+                "flag": 0,
+                "name": "9排13座",
+                "row": 9,
+                "rowName": "9",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "0000000503-10-10",
+                "flag": 0,
+                "name": "10排10座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "0000000503-10-11",
+                "flag": 0,
+                "name": "10排11座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "0000000503-10-12",
+                "flag": 0,
+                "name": "10排12座",
+                "row": 10,
+                "rowName": "10",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 10,
+                "extId": "0000000503-11-10",
+                "flag": 0,
+                "name": "11排10座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 11,
+                "extId": "0000000503-11-11",
+                "flag": 0,
+                "name": "11排11座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 12,
+                "extId": "0000000503-11-12",
+                "flag": 0,
+                "name": "11排12座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            },
+            {
+                "area": "503",
+                "column": 13,
+                "extId": "0000000503-11-13",
+                "flag": 0,
+                "name": "11排13座",
+                "row": 11,
+                "rowName": "11",
+                "status": 1
+            }
+        ],
+        "maxColumn": 16,
+        "regular": true,
+        "notice": "1、选座票由粤科云智提供，客服热线:0571-88157838\n2、请确认场次和时间无误，购买成功后将不予退换\n3、由于设备故障等不可抗力因素，存在少量场次取消的情况，会进行退票退款\n4、由于影院系统不稳定等因素，存在出票失败的情况，会进行退款"
+    }
+}
